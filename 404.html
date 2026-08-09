@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — StitchDuck</title>
+<style>
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 14px; text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+    background: linear-gradient(180deg, #FFF7E3, #FCEBC4); color: #554D49;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: linear-gradient(180deg, #241C15, #1C150F); color: #D8CCC0; }
+  }
+  h1 { font-family: Georgia, 'Songti SC', serif; color: inherit; font-size: 34px; margin: 0; }
+  a { color: #A65A41; }
+  @media (prefers-color-scheme: dark) { a { color: #EDA177; } }
+</style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Page not found · 页面不存在</p>
+  <p><a id="home" href="/">Back to StitchDuck · 回首页</a></p>
+  <script>
+    // On *.github.io project pages the site root is /<repo>/; on the custom domain it's /.
+    if (/\.github\.io$/.test(location.hostname)) {
+      var seg = location.pathname.split('/')[1];
+      if (seg && seg.indexOf('.') === -1) document.getElementById('home').href = '/' + seg + '/';
+    }
+  </script>
+</body>
+</html>
