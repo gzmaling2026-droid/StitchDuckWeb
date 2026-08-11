@@ -71,11 +71,14 @@ a { color: var(--accent-text); }
 .header-inner {
   max-width: 1020px; margin: 0 auto; padding: 12px 20px;
   display: flex; align-items: center; gap: 10px;
+  /* Safety net: on ultra-narrow screens the nav drops to a second row instead of
+     spilling past the right edge. A no-op at every width where the row fits. */
+  flex-wrap: wrap;
 }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.brand img { width: 32px; height: 32px; display: block; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; min-width: 0; }
+.brand img { width: 32px; height: 32px; display: block; flex: none; }
 .brand-name { font-size: 20px; line-height: 1; }
-.site-nav { margin-left: auto; display: flex; gap: 2px; align-items: center; }
+.site-nav { margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2px; align-items: center; }
 .site-nav a {
   padding: 8px 12px; border-radius: 10px; text-decoration: none;
   color: var(--muted); font-size: 14px; font-weight: 500; white-space: nowrap;
@@ -148,7 +151,8 @@ a { color: var(--accent-text); }
 /* ---------- Feature cards ---------- */
 .features {
   max-width: 1020px; margin: 0 auto; padding: 20px 20px 8px;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;
+  /* min() keeps the 280px track from outgrowing the viewport on very narrow screens. */
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px;
 }
 .card { border-radius: 15px; padding: 22px 22px 24px; }
 .card h3 { font-size: 20px; margin-bottom: 7px; }
@@ -221,8 +225,18 @@ a { color: var(--accent-text); }
 .site-footer a:hover { color: var(--accent-text); text-decoration: underline; }
 
 @media (max-width: 560px) {
-  .site-nav a { padding: 8px 7px; font-size: 13px; }
-  .lang-btn { padding: 6px 10px; font-size: 12.5px; }
+  .header-inner { gap: 8px; }
+  .site-nav a { padding: 8px 6px; font-size: 13px; }
+  .lang-menu { margin-left: 4px; }
+  .lang-btn { padding: 6px 10px; font-size: 12.5px; gap: 6px; }
   .hero { padding-top: 44px; }
   .hero-frame img { width: 104px; height: 104px; }
+}
+
+/* Below ~460px the wordmark can no longer share a row with the nav and the
+   language menu, so the logo carries the brand on phones. Under 360px even the
+   logo-only row won't fit, so the wordmark comes back and the header wraps to
+   two rows rather than leaving a lone logo on the first one. */
+@media (min-width: 360px) and (max-width: 460px) {
+  .brand-name { display: none; }
 }
