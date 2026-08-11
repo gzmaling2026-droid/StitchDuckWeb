@@ -147,21 +147,55 @@ a { color: var(--accent-text); }
 .store-badge .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-badge .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
 .hero-note { margin-top: 16px; font-size: 13px; color: var(--eyebrow); }
-/* Revealed by platform.js when the badge is tapped somewhere that can't reach
-   the App Store. html[data-platform] picks which line applies: "browser" is an
-   Apple device on a third-party browser or in-app webview, "other" is a
-   non-Apple device. Stays hidden (and the badge stays a plain link) elsewhere. */
-.platform-note {
-  max-width: 420px; margin: 20px auto 0; padding: 13px 16px;
-  background: var(--soft-fill); border: 1px solid var(--soft-border);
-  border-radius: 12px;
-  font-size: 13.5px; line-height: 1.55; color: var(--body); text-align: left;
+/* ---------- Download toast ---------- */
+/* Filled in and shown by platform.js when the App Store badge can't get
+   anywhere; the copy-the-address row only appears on iPhone/iPad outside
+   Safari, the one case the visitor can act on. */
+.toast {
+  position: fixed; z-index: 100;
+  left: 50%; bottom: max(20px, env(safe-area-inset-bottom));
+  width: min(420px, calc(100vw - 32px));
+  display: grid; grid-template-columns: 1fr auto; gap: 10px 12px; align-items: start;
+  padding: 14px 16px; border-radius: 14px;
+  background: var(--card); border: 1px solid var(--border);
+  box-shadow: var(--shadow-hero);
+  font-size: 13.5px; line-height: 1.5; color: var(--body); text-align: left;
+  opacity: 0; transform: translateX(-50%) translateY(10px);
+  transition: opacity .18s ease, transform .18s ease;
 }
-.platform-note:focus { outline: none; }
-.platform-note p { display: none; }
-html[data-platform="browser"] .note-browser { display: block; }
-html[data-platform="other"] .note-device { display: block; }
-.note-continue { display: inline-block; margin-top: 9px; font-size: 13px; font-weight: 600; }
+.toast[hidden] { display: none; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast-msg { grid-column: 1; }
+.toast-close {
+  grid-column: 2; grid-row: 1; flex: none;
+  display: flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px; margin: -3px -4px 0 0;
+  padding: 0; border: 0; border-radius: 7px; cursor: pointer;
+  background: transparent; color: var(--muted);
+}
+.toast-close:hover { background: var(--soft-fill); color: var(--accent-text); }
+.toast-copy { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; }
+.toast-copy[hidden] { display: none; }
+.toast-url {
+  flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap;
+  -webkit-user-select: all; user-select: all;
+  padding: 7px 10px; border-radius: 8px;
+  background: var(--soft-fill); border: 1px solid var(--soft-border);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px; color: var(--heading);
+}
+.toast-copy-btn {
+  flex: none; cursor: pointer; border: 0; border-radius: 8px; padding: 8px 14px;
+  background: var(--accent); color: var(--on-accent);
+  font-family: inherit; font-size: 13px; font-weight: 600; white-space: nowrap;
+}
+.toast-hint { grid-column: 1 / -1; font-size: 12.5px; color: var(--muted); }
+.toast-hint[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .toast { transition: none; transform: translateX(-50%); }
+  .toast.show { transform: translateX(-50%); }
+}
 
 /* ---------- Feature cards ---------- */
 .features {

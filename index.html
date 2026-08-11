@@ -67,23 +67,6 @@
         <span class="big"><span class="l-en">App Store</span><span class="l-zh">下载</span><span class="l-zht">下載</span></span>
       </span>
     </a>
-    <div class="platform-note" id="platformNote" role="status" tabindex="-1" hidden>
-      <p class="note-browser">
-        <span class="l-en">This browser may block the jump to the App Store. If nothing opens, open this page in Safari.</span>
-        <span class="l-zh">当前浏览器可能拦截跳转到 App Store。如果没有反应，请在 Safari 中打开本页。</span>
-        <span class="l-zht">目前瀏覽器可能攔截跳轉到 App Store。如果沒有反應，請在 Safari 中開啟本頁。</span>
-      </p>
-      <p class="note-device">
-        <span class="l-en">StitchDuck is an iPhone and iPad app — this device can’t install it. Open this page on an iPhone or iPad to download.</span>
-        <span class="l-zh">绣鸭是 iPhone、iPad 应用，当前设备无法安装。请在 iPhone 或 iPad 上打开本页下载。</span>
-        <span class="l-zht">StitchDuck 是 iPhone、iPad 應用程式，目前裝置無法安裝。請在 iPhone 或 iPad 上開啟本頁下載。</span>
-      </p>
-      <a class="note-continue" href="https://apps.apple.com/app/id6797516970">
-        <span class="l-en">Continue to the App Store anyway</span>
-        <span class="l-zh">仍要前往 App Store</span>
-        <span class="l-zht">仍要前往 App Store</span>
-      </a>
-    </div>
     <p class="hero-note">
       <span class="l-en">For iPhone &amp; iPad · Mac coming soon · Works fully offline</span>
       <span class="l-zh">iPhone、iPad 通用 · Mac 版即将上线 · 完全离线可用</span>
@@ -166,6 +149,19 @@
     · <a href="privacy/"><span class="l-en">Privacy Policy</span><span class="l-zh">隐私政策</span><span class="l-zht">隱私權政策</span></a>
   </p>
 </footer>
+
+<!-- Filled in and shown by platform.js when the App Store badge can't get anywhere. -->
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <p class="toast-msg" id="toastMsg"></p>
+  <button type="button" class="toast-close" id="toastClose" aria-label="Dismiss">
+    <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 1l10 10M11 1L1 11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+  </button>
+  <div class="toast-copy" id="toastCopy" hidden>
+    <code class="toast-url" id="siteUrl">stitchduckapp.com</code>
+    <button type="button" class="toast-copy-btn" id="copyUrl">Copy</button>
+  </div>
+  <p class="toast-hint" id="toastHint" hidden></p>
+</div>
 
 </body>
 </html>
