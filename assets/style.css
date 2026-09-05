@@ -147,6 +147,16 @@ a { color: var(--accent-text); }
 .store-badge .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-badge .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
 .hero-note { margin-top: 16px; font-size: 13px; color: var(--eyebrow); }
+/* App Store badge plus the not-yet-shipped platforms, on one row where they fit. */
+.platforms { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 10px; }
+.store-soon {
+  display: inline-flex; align-items: center; gap: 11px; text-align: left;
+  color: var(--muted); border: 1px dashed var(--border-strong);
+  padding: 9px 20px 11px; border-radius: 14px;
+}
+.store-soon svg { width: 22px; height: 22px; fill: currentColor; flex: none; opacity: .75; }
+.store-soon .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
+.store-soon .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
 /* ---------- Download toast ---------- */
 /* Filled in and shown by platform.js when the App Store badge can't get
    anywhere; the copy-the-address row only appears on iPhone/iPad outside

@@ -68,19 +68,19 @@
       zht: function (b) { return b + '無法開啟 App Store，請複製下面的網址，在 Safari 中開啟。'; }
     },
     android: {
-      en:  function () { return 'StitchDuck isn’t available on Android yet — it’s an iPhone and iPad app.'; },
-      zh:  function () { return '绣鸭暂不支持 Android，目前只有 iPhone、iPad 版。'; },
-      zht: function () { return 'StitchDuck 暫不支援 Android，目前只有 iPhone、iPad 版。'; }
+      en:  function () { return 'StitchDuck for Android is coming soon. For now it’s available on iPhone, iPad and Mac.'; },
+      zh:  function () { return '绣鸭 Android 版即将上架，目前有 iPhone、iPad、Mac 版。'; },
+      zht: function () { return 'StitchDuck Android 版即將上架，目前有 iPhone、iPad、Mac 版。'; }
     },
     windows: {
-      en:  function () { return 'StitchDuck isn’t available on Windows — it’s an iPhone and iPad app, with a Mac version coming.'; },
-      zh:  function () { return '绣鸭暂不支持 Windows，目前只有 iPhone、iPad 版，Mac 版即将上线。'; },
-      zht: function () { return 'StitchDuck 暫不支援 Windows，目前只有 iPhone、iPad 版，Mac 版即將上線。'; }
+      en:  function () { return 'StitchDuck for Windows is coming soon. For now it’s available on iPhone, iPad and Mac.'; },
+      zh:  function () { return '绣鸭 Windows 版即将上架，目前有 iPhone、iPad、Mac 版。'; },
+      zht: function () { return 'StitchDuck Windows 版即將上架，目前有 iPhone、iPad、Mac 版。'; }
     },
     other: {
-      en:  function () { return 'StitchDuck is an iPhone and iPad app — this device can’t install it.'; },
-      zh:  function () { return '绣鸭是 iPhone、iPad 应用，当前设备无法安装。'; },
-      zht: function () { return 'StitchDuck 是 iPhone、iPad 應用程式，目前裝置無法安裝。'; }
+      en:  function () { return 'StitchDuck is available on iPhone, iPad and Mac — this device can’t install it.'; },
+      zh:  function () { return '绣鸭目前有 iPhone、iPad、Mac 版，当前设备无法安装。'; },
+      zht: function () { return 'StitchDuck 目前有 iPhone、iPad、Mac 版，目前裝置無法安裝。'; }
     }
   };
   var COPY  = {en: ['Copy', 'Copied'], zh: ['复制', '已复制'], zht: ['複製', '已複製']};

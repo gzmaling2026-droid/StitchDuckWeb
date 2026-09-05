@@ -1,7 +1,7 @@
 # StitchDuck Website
 
 Official website for [StitchDuck (绣鸭)](https://stitchduckapp.com), a cross-stitch
-pattern maker for iPhone and iPad.
+pattern maker for iPhone, iPad and Mac.
 
 Static HTML/CSS, no build step. Available in English, 简体中文, and 繁體中文.
 
