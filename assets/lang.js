@@ -1,9 +1,9 @@
-/* Language menu: English (default) / 简体中文 / 繁體中文.
- * Every language has its own URL — / for English, /zh-hans/ and /zh-hant/ — and
- * the menu entries are ordinary links between them. English is what everyone
- * gets first: the browser language is never sniffed, and only an explicit
- * choice is remembered. A visitor who picked Chinese and later arrives at an
- * English URL is sent on to the same page in their language; a Chinese URL is
+/* Language menu. Every language has its own URL — / for English, then
+ * /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/ and /ru/ — and the menu entries
+ * are ordinary links between them. English is what everyone gets first: the
+ * browser language is never sniffed, and only an explicit choice is
+ * remembered. A visitor who picked another language and later arrives at an
+ * English URL is sent on to the same page in their language; any other URL is
  * always shown as asked for. Loaded synchronously in <head> so that hop happens
  * before anything paints. Without JS the popover stays shut and the footer
  * links do the same job. */
@@ -13,7 +13,8 @@
   var saved = null;
   try { saved = localStorage.getItem(KEY); } catch (e) {}
 
-  if (root.getAttribute('data-lang') === 'en' && (saved === 'zh' || saved === 'zht')) {
+  if (root.getAttribute('data-lang') === 'en' && /^[a-z]{2,3}$/.test(saved || '') && saved !== 'en') {
+    // Only ever a path the page itself lists; an unknown value finds nothing.
     var to = root.getAttribute('data-alt-' + saved);
     if (to) {
       location.replace(to + location.search + location.hash);

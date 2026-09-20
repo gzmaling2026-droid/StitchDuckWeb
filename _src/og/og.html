@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Link preview card, 1200×630. Rendered to /assets/og/ by _src/og/render.sh; pick the language with ?lang=en|zh|zht. -->
+<!-- Link preview card, 1200×630. Rendered to /assets/og/ by _src/og/render.sh; pick the language with ?lang=en|zh|zht|de|es|fr|ja|ru. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -43,9 +43,11 @@
      Songti TC has no Black, so the Traditional Chinese headline borrows Songti SC as well. */
   :lang(zh-Hans) h1, :lang(zh-Hant) h1 { font-family: 'Songti SC', serif; font-size: 68px; line-height: 1.18; letter-spacing: 0; font-weight: 900; }
   :lang(zh-Hans) .name { font-weight: 900; }
+  /* Georgia's Chinese-font fallback would draw kana and kanji the Chinese way. */
+  :lang(ja) h1 { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; letter-spacing: 0; line-height: 1.24; }
   .marks { display: flex; gap: 12px; margin: 30px 0 26px; }
   .marks svg { width: 26px; height: 26px; }
-  .sub { font-size: 25px; line-height: 1.4; color: #726864; font-weight: 500; }
+  .sub { font-size: 25px; line-height: 1.4; color: #726864; font-weight: 500; white-space: nowrap; }
   .device {
     position: absolute; left: 640px; top: 118px; width: 760px;
     border-radius: 34px; overflow: hidden;
@@ -75,7 +77,12 @@
   var COPY = {
     en:  { tag: 'en',      name: 'StitchDuck', headline: 'Turn photos into <em>cross-stitch</em> patterns.', sub: 'Pattern maker for iPhone, iPad &amp; Mac', device: 'device-en.webp' },
     zh:  { tag: 'zh-Hans', name: '绣鸭',        headline: '把照片变成<br><em>十字绣</em>图纸',                 sub: '十字绣图纸设计 · iPhone、iPad、Mac',      device: 'device-zh.webp' },
-    zht: { tag: 'zh-Hant', name: 'StitchDuck', headline: '把照片變成<br><em>十字繡</em>圖紙',                 sub: '十字繡圖紙設計 · iPhone、iPad、Mac',      device: 'device-en.webp' }
+    zht: { tag: 'zh-Hant', name: 'StitchDuck', headline: '把照片變成<br><em>十字繡</em>圖紙',                 sub: '十字繡圖紙設計 · iPhone、iPad、Mac',      device: 'device-en.webp' },
+    de: { tag: 'de', name: 'StitchDuck', headline: 'Aus Fotos werden <em>Kreuzstich</em>muster.', sub: 'Muster-Designer für iPhone, iPad &amp; Mac', device: 'device-en.webp' },
+    es: { tag: 'es', name: 'StitchDuck', headline: 'Pasa tus fotos a <em>punto de cruz</em>.', sub: 'Creador de patrones · iPhone, iPad y Mac', device: 'device-en.webp' },
+    fr: { tag: 'fr', name: 'StitchDuck', headline: 'Vos photos<br>en modèles de<br><em>point de croix</em>.', sub: 'Créez vos modèles sur iPhone, iPad et Mac', device: 'device-en.webp' },
+    ja: { tag: 'ja', name: 'StitchDuck', headline: '写真を<br><em>クロスステッチ</em><br>図案に', sub: 'iPhone・iPad・Mac 対応の図案作成アプリ', device: 'device-en.webp' },
+    ru: { tag: 'ru', name: 'StitchDuck', headline: 'Фото — в схему <em>вышивки крестом</em>', sub: 'Редактор схем для iPhone, iPad и Mac', device: 'device-en.webp' }
   };
   var c = COPY[new URLSearchParams(location.search).get('lang')] || COPY.en;
   document.documentElement.lang = c.tag;
@@ -83,6 +90,23 @@
   document.getElementById('headline').innerHTML = c.headline;
   document.getElementById('sub').innerHTML = c.sub;
   document.getElementById('device').src = c.device;
+
+  // Longer languages shrink to fit the column: a headline with no overflowing word and
+  // three lines at most, and a sub-line that stays on one line.
+  var h1 = document.getElementById('headline'), sub = document.getElementById('sub');
+  var size = parseFloat(getComputedStyle(h1).fontSize), subSize = parseFloat(getComputedStyle(sub).fontSize);
+  function fit() {
+    while (size > 40 && (h1.scrollWidth > h1.clientWidth || h1.offsetHeight > 250)) {
+      size -= 2;
+      h1.style.fontSize = size + 'px';
+    }
+    while (subSize > 18 && sub.scrollWidth > sub.clientWidth) {
+      subSize -= 1;
+      sub.style.fontSize = subSize + 'px';
+    }
+  }
+  fit();
+  document.fonts.ready.then(fit);
 </script>
 </body>
 </html>

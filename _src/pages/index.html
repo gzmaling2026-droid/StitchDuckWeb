@@ -3,11 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><span class="l-en">StitchDuck — Cross Stitch Pattern Maker for iPhone, iPad &amp; Mac</span><span class="l-zh">绣鸭 StitchDuck — 十字绣图纸设计 App，照片一键转图纸</span><span class="l-zht">StitchDuck — 十字繡圖紙設計 App，照片一鍵轉圖紙</span></title>
+<title><span class="l-en">StitchDuck — Cross Stitch Pattern Maker for iPhone, iPad &amp; Mac</span><span class="l-zh">绣鸭 StitchDuck — 十字绣图纸设计 App，照片一键转图纸</span><span class="l-zht">StitchDuck — 十字繡圖紙設計 App，照片一鍵轉圖紙</span><span class="l-de">StitchDuck – Kreuzstichmuster erstellen: iPhone, iPad &amp; Mac</span><span class="l-es">StitchDuck — Patrones de punto de cruz en iPhone, iPad y Mac</span><span class="l-fr">StitchDuck – App de point de croix pour iPhone, iPad et Mac</span><span class="l-ja">StitchDuck｜写真からクロスステッチ図案を作れるアプリ</span><span class="l-ru">Редактор схем вышивки крестом StitchDuck — iPhone, iPad, Mac</span></title>
 <meta name="description"
   data-en-content="Turn any photo into a cross-stitch pattern, or design your own. Real DMC &amp; Anchor colors, every stitch type, print-ready PDF charts. Free on iPhone, iPad &amp; Mac."
   data-zh-content="把照片变成十字绣图纸，或用完整编辑器逐针设计。自动匹配 DMC、Anchor 真实线号，针法齐全，可导出打印级 PDF。iPhone、iPad、Mac 免费下载。"
-  data-zht-content="把照片變成十字繡圖紙，或用完整編輯器逐針設計。自動對應 DMC、Anchor 真實線號，針法齊全，可匯出列印級 PDF。iPhone、iPad、Mac 免費下載。">
+  data-zht-content="把照片變成十字繡圖紙，或用完整編輯器逐針設計。自動對應 DMC、Anchor 真實線號，針法齊全，可匯出列印級 PDF。iPhone、iPad、Mac 免費下載。"
+  data-de-content="Kreuzstichmuster aus jedem Foto – oder selbst entworfen. Echte DMC- &amp; Anchor-Farben, alle Sticharten, druckfertige PDFs. Gratis für iPhone, iPad &amp; Mac."
+  data-es-content="Convierte fotos en patrones de punto de cruz o diseña el tuyo. Colores DMC y Anchor reales, todos los puntos, PDF imprimible. Gratis en iPhone, iPad y Mac."
+  data-fr-content="D’une photo ou de zéro, créez vos modèles de point de croix. Vrais fils DMC et Anchor, tous les points, PDF prêt à imprimer. Gratuit sur iPhone, iPad, Mac."
+  data-ja-content="写真をクロスステッチ図案に。自分でデザインも。DMC・Anchor の実色、全種類のステッチ、印刷用 PDF 図案。iPhone・iPad・Mac で無料。"
+  data-ru-content="Превратите фото в схему для вышивки крестом или создайте свою. Реальные цвета DMC и Anchor, все виды стежков, PDF для печати. Бесплатно на iPhone, iPad и Mac.">
 <!--seo-->
 <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
@@ -25,18 +30,18 @@
   <div class="header-inner">
     <a class="brand" href="{{home}}">
       <img src="/assets/logo.svg" alt="" width="32" height="32">
-      <span class="brand-name"><span class="l-en">StitchDuck</span><span class="l-zh">绣鸭</span><span class="l-zht">StitchDuck</span></span>
+      <span class="brand-name"><span class="l-en">StitchDuck</span><span class="l-zh">绣鸭</span><span class="l-zht">StitchDuck</span><span class="l-de">StitchDuck</span><span class="l-es">StitchDuck</span><span class="l-fr">StitchDuck</span><span class="l-ja">StitchDuck</span><span class="l-ru">StitchDuck</span></span>
     </a>
     <nav class="site-nav">
-      <a href="{{home}}" class="active"><span class="l-en">Home</span><span class="l-zh">首页</span><span class="l-zht">首頁</span></a>
-      <a href="{{home}}support/"><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span></a>
-      <a href="{{home}}privacy/"><span class="l-en">Privacy</span><span class="l-zh">隐私</span><span class="l-zht">隱私</span></a>
+      <a href="{{home}}" class="active"><span class="l-en">Home</span><span class="l-zh">首页</span><span class="l-zht">首頁</span><span class="l-de">Start</span><span class="l-es">Inicio</span><span class="l-fr">Accueil</span><span class="l-ja">ホーム</span><span class="l-ru">Главная</span></a>
+      <a href="{{home}}support/"><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span><span class="l-de">Hilfe</span><span class="l-es">Ayuda</span><span class="l-fr">Aide</span><span class="l-ja">サポート</span><span class="l-ru">Помощь</span></a>
+      <a href="{{home}}privacy/"><span class="l-en">Privacy</span><span class="l-zh">隐私</span><span class="l-zht">隱私</span><span class="l-de">Datenschutz</span><span class="l-es">Privacidad</span><span class="l-fr">Vie privée</span><span class="l-ja">プライバシー</span><span class="l-ru">Приватность</span></a>
       <div class="lang-menu">
         <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
           <span id="langBtnLabel">{{lang_label}}</span>
           <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="lang-pop" id="langPop" role="group" data-en-aria-label="Language" data-zh-aria-label="语言" data-zht-aria-label="語言" hidden>
+        <div class="lang-pop" id="langPop" role="group" data-en-aria-label="Language" data-zh-aria-label="语言" data-zht-aria-label="語言" data-de-aria-label="Sprache" data-es-aria-label="Idioma" data-fr-aria-label="Langue" data-ja-aria-label="言語" data-ru-aria-label="Язык" hidden>
           <!--lang-menu-->
         </div>
       </div>
@@ -50,25 +55,40 @@
       <img src="/assets/logo.svg" width="128" height="128"
         data-en-alt="StitchDuck — a cross-stitched duck face in a 5×5 grid"
         data-zh-alt="绣鸭——5×5 十字绣格子里的小鸭脸"
-        data-zht-alt="StitchDuck——5×5 十字繡格子裡的小鴨臉">
+        data-zht-alt="StitchDuck——5×5 十字繡格子裡的小鴨臉"
+        data-de-alt="StitchDuck – ein im Kreuzstich gesticktes Entengesicht auf einem 5×5-Raster"
+        data-es-alt="StitchDuck: una cara de pato bordada a punto de cruz en una cuadrícula de 5×5"
+        data-fr-alt="StitchDuck – une tête de canard brodée au point de croix sur une grille 5×5"
+        data-ja-alt="StitchDuck：5×5 のマス目にクロスステッチで刺したアヒルの顔"
+        data-ru-alt="StitchDuck — мордочка утёнка, вышитая крестом на сетке 5×5">
     </div>
     <h1>
       <span class="l-en">Turn photos into<br>cross-stitch patterns.</span>
       <span class="l-zh">把照片变成<br>十字绣图纸</span>
       <span class="l-zht">把照片變成<br>十字繡圖紙</span>
+      <span class="l-de">Aus Fotos werden<br>Kreuzstichmuster.</span>
+      <span class="l-es">Pasa tus fotos<br>a punto de cruz.</span>
+      <span class="l-fr">Vos photos en modèles<br>de point de croix.</span>
+      <span class="l-ja">写真を<br>クロスステッチ図案に</span>
+      <span class="l-ru">Фото — в схему<br>вышивки крестом</span>
     </h1>
     <p class="sub">
       <span class="l-en">Convert a photo, trace a reference, or start from a blank canvas — then fine-tune every stitch with a complete editor. Fully offline, no account, no subscription.</span>
       <span class="l-zh">照片转图、描摹起稿、空白起稿，随后用完整编辑器逐针精修。全程离线，无需注册，没有订阅。</span>
       <span class="l-zht">照片轉圖、描摹起稿、空白起稿，隨後用完整編輯器逐針精修。全程離線，無需註冊，沒有訂閱。</span>
+      <span class="l-de">Foto umwandeln, Referenz abpausen oder auf leerer Arbeitsfläche starten – und danach jeden Stich im vollwertigen Editor verfeinern. Komplett offline, ohne Account, ohne Abo.</span>
+      <span class="l-es">Convierte una foto, calca una referencia o empieza con un lienzo en blanco, y después retoca cada punto con un editor completo. Totalmente sin conexión, sin cuenta y sin suscripción.</span>
+      <span class="l-fr">Convertissez une photo, décalquez une référence ou partez d’une toile vierge – puis peaufinez chaque point avec un éditeur complet. Entièrement hors ligne, sans compte, sans abonnement.</span>
+      <span class="l-ja">写真を変換する、下絵をなぞる、まっさらなキャンバスから描く。どの始め方でも、あとは本格的なエディタで一目一目を細かく仕上げられます。完全オフラインで、アカウントもサブスクリプションも不要です。</span>
+      <span class="l-ru">Сделайте схему из фото, обведите образец или начните с чистой канвы — а затем доработайте каждый стежок в полноценном редакторе. Полностью офлайн, без регистрации, без подписки.</span>
     </p>
     <div class="platforms">
     <a class="store-badge" href="{{appstore}}">
       <!-- Apple glyph: Font Awesome Free (CC BY 4.0) -->
       <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.9-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
       <span>
-        <span class="small"><span class="l-en">Download on the</span><span class="l-zh">在 App Store</span><span class="l-zht">在 App Store</span></span>
-        <span class="big"><span class="l-en">App Store</span><span class="l-zh">下载</span><span class="l-zht">下載</span></span>
+        <span class="small"><span class="l-en">Download on the</span><span class="l-zh">在 App Store</span><span class="l-zht">在 App Store</span><span class="l-de">Laden im</span><span class="l-es">Consíguelo en el</span><span class="l-fr">Télécharger dans</span><span class="l-ja">App Store から</span><span class="l-ru">Загрузите в</span></span>
+        <span class="big"><span class="l-en">App Store</span><span class="l-zh">下载</span><span class="l-zht">下載</span><span class="l-de">App Store</span><span class="l-es">App Store</span><span class="l-fr">l’App Store</span><span class="l-ja">ダウンロード</span><span class="l-ru">App Store</span></span>
       </span>
     </a>
     <!-- Not links yet: these platforms have nowhere to go until they ship. -->
@@ -76,7 +96,7 @@
       <!-- Android robot glyph: Font Awesome Free (CC BY 4.0) -->
       <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1-24 24m273.7-144.5 47.9-83a10 10 0 1 0-17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0-246.6 0L116.2 64.5a10 10 0 1 0-17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384h576c-8.2-98.5-64.5-181.8-146.9-226.6"/></svg>
       <span>
-        <span class="small"><span class="l-en">Coming soon to</span><span class="l-zh">即将上架</span><span class="l-zht">即將上架</span></span>
+        <span class="small"><span class="l-en">Coming soon to</span><span class="l-zh">即将上架</span><span class="l-zht">即將上架</span><span class="l-de">Demnächst für</span><span class="l-es">Próximamente en</span><span class="l-fr">Bientôt sur</span><span class="l-ja">近日公開</span><span class="l-ru">Скоро на</span></span>
         <span class="big">Android</span>
       </span>
     </span>
@@ -84,7 +104,7 @@
       <!-- Windows glyph: Font Awesome Free (CC BY 4.0) -->
       <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg>
       <span>
-        <span class="small"><span class="l-en">Coming soon to</span><span class="l-zh">即将上架</span><span class="l-zht">即將上架</span></span>
+        <span class="small"><span class="l-en">Coming soon to</span><span class="l-zh">即将上架</span><span class="l-zht">即將上架</span><span class="l-de">Demnächst für</span><span class="l-es">Próximamente en</span><span class="l-fr">Bientôt sur</span><span class="l-ja">近日公開</span><span class="l-ru">Скоро на</span></span>
         <span class="big">Windows</span>
       </span>
     </span>
@@ -93,10 +113,15 @@
       <span class="l-en">For iPhone, iPad &amp; Mac · Android &amp; Windows coming soon · Works fully offline</span>
       <span class="l-zh">iPhone、iPad、Mac 通用 · Android、Windows 版即将上架 · 完全离线可用</span>
       <span class="l-zht">iPhone、iPad、Mac 通用 · Android、Windows 版即將上架 · 完全離線可用</span>
+      <span class="l-de">Für iPhone, iPad &amp; Mac · Demnächst für Android &amp; Windows · Funktioniert komplett offline</span>
+      <span class="l-es">Para iPhone, iPad y Mac · Próximamente en Android y Windows · Funciona totalmente sin conexión</span>
+      <span class="l-fr">Pour iPhone, iPad et Mac · Bientôt sur Android et Windows · Fonctionne entièrement hors ligne</span>
+      <span class="l-ja">iPhone・iPad・Mac 対応 · Android 版と Windows 版は近日公開 · 完全オフラインで使えます</span>
+      <span class="l-ru">Для iPhone, iPad и Mac · скоро на Android и Windows · работает полностью офлайн</span>
     </p>
   </section>
 
-  <section class="shots" data-en-aria-label="Screenshots" data-zh-aria-label="应用截图" data-zht-aria-label="App 截圖">
+  <section class="shots" data-en-aria-label="Screenshots" data-zh-aria-label="应用截图" data-zht-aria-label="App 截圖" data-de-aria-label="Screenshots" data-es-aria-label="Capturas de pantalla" data-fr-aria-label="Captures d’écran" data-ja-aria-label="スクリーンショット" data-ru-aria-label="Скриншоты">
     <figure class="shot">
       <img src="{{shots}}/photo-to-pattern-720.webp"
         srcset="{{shots}}/photo-to-pattern-720.webp 720w, {{shots}}/photo-to-pattern-1366.webp 1366w"
@@ -104,7 +129,12 @@
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="StitchDuck on iPad turning a photo of a duck into a cross-stitch pattern, with DMC colors and brightness, contrast and saturation controls"
         data-zh-alt="绣鸭在 iPad 上把小鸭照片一键转成十字绣图纸，自动匹配 DMC 色号，可调亮度、对比度、饱和度"
-        data-zht-alt="StitchDuck 在 iPad 上把小鴨照片一鍵轉成十字繡圖紙，自動對應 DMC 色號，可調亮度、對比、飽和度">
+        data-zht-alt="StitchDuck 在 iPad 上把小鴨照片一鍵轉成十字繡圖紙，自動對應 DMC 色號，可調亮度、對比、飽和度"
+        data-de-alt="StitchDuck auf dem iPad verwandelt ein Entenfoto in ein Kreuzstichmuster – mit DMC-Farben und Reglern für Helligkeit, Kontrast und Sättigung"
+        data-es-alt="StitchDuck en el iPad convirtiendo la foto de un pato en un patrón de punto de cruz, con colores DMC y controles de brillo, contraste y saturación"
+        data-fr-alt="StitchDuck sur iPad transforme une photo de canard en modèle de point de croix, avec couleurs DMC et réglages de luminosité, de contraste et de saturation"
+        data-ja-alt="iPad の StitchDuck でアヒルの写真をクロスステッチ図案に変換している画面。DMC の色と、明るさ・コントラスト・彩度の調整つき"
+        data-ru-alt="StitchDuck на iPad превращает фото утёнка в схему для вышивки крестом: цвета DMC и настройки яркости, контраста и насыщенности">
     </figure>
     <figure class="shot">
       <img src="{{shots}}/cross-stitch-editor-720.webp"
@@ -113,7 +143,12 @@
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="StitchDuck pattern editor on iPad showing stitches in cross view, with block and symbol views one tap away"
         data-zh-alt="绣鸭 iPad 编辑器的十字视图，可随时切换色块视图与符号视图"
-        data-zht-alt="StitchDuck iPad 編輯器的十字檢視，可隨時切換色塊檢視與符號檢視">
+        data-zht-alt="StitchDuck iPad 編輯器的十字檢視，可隨時切換色塊檢視與符號檢視"
+        data-de-alt="Muster-Editor von StitchDuck auf dem iPad mit Stichen in der Kreuzansicht; Farbflächen- und Symbolansicht sind nur einen Tipp entfernt"
+        data-es-alt="Editor de patrones de StitchDuck en el iPad mostrando los puntos en vista de cruz, con las vistas de bloque y de símbolo a un toque"
+        data-fr-alt="Éditeur de modèles de StitchDuck sur iPad, points affichés en mode Croix, avec les modes Aplat et Symbole accessibles en un geste"
+        data-ja-alt="iPad の StitchDuck の図案エディタ。ステッチをクロス表示にした画面で、ベタ塗り表示と記号表示にもワンタップで切り替えられる"
+        data-ru-alt="Редактор схем StitchDuck на iPad: стежки в режиме «Крестики», а режимы «Блоки» и «Символы» — в одно касание">
     </figure>
     <figure class="shot">
       <img src="{{shots}}/pdf-chart-export-720.webp"
@@ -122,7 +157,12 @@
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="PDF chart exported from StitchDuck with a symbol chart, thread list, floss usage and shopping list"
         data-zh-alt="绣鸭导出的 PDF 图纸：符号图、线材表、用线量与采购清单"
-        data-zht-alt="StitchDuck 匯出的 PDF 圖紙：符號圖、線材表、用線量與採購清單">
+        data-zht-alt="StitchDuck 匯出的 PDF 圖紙：符號圖、線材表、用線量與採購清單"
+        data-de-alt="Aus StitchDuck exportiertes PDF-Muster mit Symbolmuster, Garnliste, Garnverbrauch und Einkaufsliste"
+        data-es-alt="PDF exportado desde StitchDuck con patrón de símbolos, lista de hilos, consumo de hilo y lista de compra"
+        data-fr-alt="Modèle PDF exporté depuis StitchDuck avec grille de symboles, liste des fils, consommation de fil et liste d’achat"
+        data-ja-alt="StitchDuck から書き出した PDF 図案。記号図案、糸リスト、糸の使用量、買い物リストつき"
+        data-ru-alt="PDF-схема, экспортированная из StitchDuck: схема с символами, список ниток, расход нитей и список покупок">
     </figure>
     <figure class="shot">
       <img src="{{shots}}/stitch-types-720.webp"
@@ -131,7 +171,12 @@
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="StitchDuck stitch tools on iPad: full, half, quarter, three-quarter and petite stitches, backstitch, French knots and beads"
         data-zh-alt="绣鸭 iPad 编辑器的针法工具：全针、半针、1/4、3/4、小针、背针勾边、法国结、珠子"
-        data-zht-alt="StitchDuck iPad 編輯器的針法工具：全針、半針、1/4、3/4、小針、回針勾邊、法國結、珠子">
+        data-zht-alt="StitchDuck iPad 編輯器的針法工具：全針、半針、1/4、3/4、小針、回針勾邊、法國結、珠子"
+        data-de-alt="Stichwerkzeuge von StitchDuck auf dem iPad: ganze, halbe, 1/4-, 3/4- und Petite-Stiche, Rückstich, Knötchenstiche und Perlen"
+        data-es-alt="Herramientas de punto de StitchDuck en el iPad: puntos enteros, medios, 1/4, 3/4 y petite, pespunte, nudos franceses y cuentas"
+        data-fr-alt="Outils de points de StitchDuck sur iPad : points entiers, demi-points, points 1/4, 3/4 et petite, point arrière, nœuds et perles"
+        data-ja-alt="iPad の StitchDuck のステッチツール：フル、ハーフ、1/4、3/4、プチの各ステッチ、バックステッチ、フレンチノット、ビーズ"
+        data-ru-alt="Инструменты стежков StitchDuck на iPad: полные крестики, полукрест, 1/4 и 3/4 крестика, petite, бэкстич, французские узелки и бисер">
     </figure>
     <figure class="shot">
       <img src="{{shots}}/large-charts-720.webp"
@@ -140,7 +185,12 @@
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="A 1000 × 1000 stitch cross-stitch chart open in StitchDuck on iPad"
         data-zh-alt="绣鸭在 iPad 上打开 1000 × 1000 针的大幅十字绣图纸"
-        data-zht-alt="StitchDuck 在 iPad 上開啟 1000 × 1000 針的大幅十字繡圖紙">
+        data-zht-alt="StitchDuck 在 iPad 上開啟 1000 × 1000 針的大幅十字繡圖紙"
+        data-de-alt="Ein Kreuzstichmuster mit 1000 × 1000 Stichen, geöffnet in StitchDuck auf dem iPad"
+        data-es-alt="Un patrón de punto de cruz de 1000 × 1000 puntos abierto en StitchDuck en el iPad"
+        data-fr-alt="Un modèle de point de croix de 1000 × 1000 points ouvert dans StitchDuck sur iPad"
+        data-ja-alt="iPad の StitchDuck で開いた 1000 × 1000 目のクロスステッチ図案"
+        data-ru-alt="Схема для вышивки крестом размером 1000 × 1000 крестиков, открытая в StitchDuck на iPad">
     </figure>
     <figure class="shot">
       <img src="{{shots}}/layers-720.webp"
@@ -149,57 +199,92 @@
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="Layers panel in StitchDuck on iPad, each layer with its own thumbnail"
         data-zh-alt="绣鸭 iPad 编辑器的图层面板，每个图层都带缩略图"
-        data-zht-alt="StitchDuck iPad 編輯器的圖層面板，每個圖層都有縮圖">
+        data-zht-alt="StitchDuck iPad 編輯器的圖層面板，每個圖層都有縮圖"
+        data-de-alt="Ebenen-Menü in StitchDuck auf dem iPad, jede Ebene mit eigenem Vorschaubild"
+        data-es-alt="Panel de capas de StitchDuck en el iPad, cada capa con su propia miniatura"
+        data-fr-alt="Panneau Calques de StitchDuck sur iPad, chaque calque avec sa propre vignette"
+        data-ja-alt="iPad の StitchDuck のレイヤーパネル。各レイヤーにサムネイルが付いている"
+        data-ru-alt="Панель слоёв в StitchDuck на iPad: у каждого слоя своя миниатюра">
     </figure>
   </section>
 
   <section class="features">
     <div class="card peach">
-      <h2><span class="l-en">Photo to pattern</span><span class="l-zh">照片转图纸</span><span class="l-zht">照片轉圖紙</span></h2>
+      <h2><span class="l-en">Photo to pattern</span><span class="l-zh">照片转图纸</span><span class="l-zht">照片轉圖紙</span><span class="l-de">Vom Foto zum Muster</span><span class="l-es">De foto a patrón</span><span class="l-fr">De la photo au modèle</span><span class="l-ja">写真を図案に</span><span class="l-ru">Схема по фото</span></h2>
       <p>
         <span class="l-en">Any photo becomes a stitchable chart — live preview, adjustable stitch count, and up to 100 colors matched to real DMC and Anchor threads.</span>
         <span class="l-zh">任意照片秒变可绣图纸——实时预览，针数随手调，最多 100 色自动匹配 DMC、Anchor 真实线号。</span>
         <span class="l-zht">任意照片秒變可繡圖紙——即時預覽，針數隨手調，最多 100 色自動對應 DMC、Anchor 真實線號。</span>
+        <span class="l-de">Aus jedem Foto wird ein stickbares Muster – mit Live-Vorschau, einstellbarer Stichzahl und bis zu 100 Farben, abgestimmt auf echte DMC- und Anchor-Garne.</span>
+        <span class="l-es">Cualquier foto se convierte en un patrón bordable: vista previa en tiempo real, número de puntos ajustable y hasta 100 colores emparejados con hilos reales de DMC y Anchor.</span>
+        <span class="l-fr">N’importe quelle photo devient un modèle à broder – aperçu en direct, nombre de points réglable et jusqu’à 100 couleurs associées à de vrais fils DMC et Anchor.</span>
+        <span class="l-ja">どんな写真も、刺せる図案になります。リアルタイムのプレビューを見ながら目数を調整でき、最大 100 色を、実在する DMC・Anchor の糸色に合わせます。</span>
+        <span class="l-ru">Любое фото превращается в схему для вышивки — с живым предпросмотром, настраиваемым числом крестиков и палитрой до 100 цветов, подобранных под реальные нитки DMC и Anchor.</span>
       </p>
     </div>
     <div class="card butter">
-      <h2><span class="l-en">Every stitch type</span><span class="l-zh">全部针法</span><span class="l-zht">全部針法</span></h2>
+      <h2><span class="l-en">Every stitch type</span><span class="l-zh">全部针法</span><span class="l-zht">全部針法</span><span class="l-de">Alle Sticharten</span><span class="l-es">Todos los tipos de punto</span><span class="l-fr">Tous les types de points</span><span class="l-ja">全種類のステッチ</span><span class="l-ru">Все виды стежков</span></h2>
       <p>
         <span class="l-en">Full, half, quarter, three-quarter and petite stitches, backstitch lines, French knots, and beads — the complete kit.</span>
         <span class="l-zh">全针、半针、1/4、3/4、小针、背针勾边、法国结、珠子，一样不少。</span>
         <span class="l-zht">全針、半針、1/4、3/4、小針、回針勾邊、法國結、珠子，一樣不少。</span>
+        <span class="l-de">Ganze, halbe, 1/4-, 3/4- und Petite-Stiche, Rückstichlinien, Knötchenstiche und Perlen – alles dabei.</span>
+        <span class="l-es">Puntos enteros, medios, 1/4, 3/4 y petite, líneas de pespunte, nudos franceses y cuentas: el repertorio completo.</span>
+        <span class="l-fr">Points entiers, demi-points, points 1/4, 3/4 et petite, lignes au point arrière, nœuds et perles – la panoplie complète.</span>
+        <span class="l-ja">フル、ハーフ、1/4、3/4、プチの各ステッチに、バックステッチの線、フレンチノット、ビーズまで。必要なものがひととおり揃っています。</span>
+        <span class="l-ru">Полные крестики, полукрест, 1/4 и 3/4 крестика, petite, линии бэкстича, французские узелки и бисер — полный набор.</span>
       </p>
     </div>
     <div class="card blue">
-      <h2><span class="l-en">Layers &amp; pro tools</span><span class="l-zh">图层与专业工具</span><span class="l-zht">圖層與專業工具</span></h2>
+      <h2><span class="l-en">Layers &amp; pro tools</span><span class="l-zh">图层与专业工具</span><span class="l-zht">圖層與專業工具</span><span class="l-de">Ebenen &amp; Profi-Werkzeuge</span><span class="l-es">Capas y herramientas pro</span><span class="l-fr">Calques et outils pro</span><span class="l-ja">レイヤーと本格ツール</span><span class="l-ru">Слои и продвинутые инструменты</span></h2>
       <p>
         <span class="l-en">Up to 10 layers, shapes, a text tool, fill and eyedropper, plus selections you can move, copy, mirror, or rotate.</span>
         <span class="l-zh">最多 10 个图层；形状、文字、油漆桶、吸管，圈选区域即可移动、复制、镜像、旋转。</span>
         <span class="l-zht">最多 10 個圖層；形狀、文字、油漆桶、滴管，圈選區域即可移動、複製、鏡像、旋轉。</span>
+        <span class="l-de">Bis zu 10 Ebenen, Formen, ein Textwerkzeug, Füllen und Pipette – dazu Auswahlbereiche, die du verschieben, kopieren, spiegeln oder drehen kannst.</span>
+        <span class="l-es">Hasta 10 capas, formas, herramienta de texto, relleno y cuentagotas, además de selecciones que puedes mover, copiar, reflejar o girar.</span>
+        <span class="l-fr">Jusqu’à 10 calques, les outils Forme, Texte, Remplir et Pipette, ainsi que des sélections à déplacer, copier, retourner en miroir ou faire pivoter.</span>
+        <span class="l-ja">最大 10 枚のレイヤー、図形、テキストツール、塗りつぶし、スポイト。さらに、囲んだ範囲は移動・コピー・反転・回転ができます。</span>
+        <span class="l-ru">До 10 слоёв, фигуры, текст, заливка и пипетка, а ещё выделение: любую область можно переместить, скопировать, отразить или повернуть.</span>
       </p>
     </div>
     <div class="card pink">
-      <h2><span class="l-en">Thread-true palettes</span><span class="l-zh">真实线色调色板</span><span class="l-zht">真實線色調色盤</span></h2>
+      <h2><span class="l-en">Thread-true palettes</span><span class="l-zh">真实线色调色板</span><span class="l-zht">真實線色調色盤</span><span class="l-de">Garntreue Paletten</span><span class="l-es">Paletas fieles al hilo</span><span class="l-fr">Palettes fidèles aux fils</span><span class="l-ja">糸に忠実なパレット</span><span class="l-ru">Палитры реальных ниток</span></h2>
       <p>
         <span class="l-en">Blend up to 4 threads, set strand counts per color, and give every color its own unique chart symbol.</span>
         <span class="l-zh">最多 4 线混线、每色单独设股数，每个颜色都有专属唯一符号。</span>
         <span class="l-zht">最多 4 線混線、每色單獨設股數，每個顏色都有專屬唯一符號。</span>
+        <span class="l-de">Mische bis zu 4 Garne, lege für jede Farbe die Anzahl der Fäden fest und gib jeder Farbe ihr eigenes, eindeutiges Symbol im Muster.</span>
+        <span class="l-es">Mezcla hasta 4 hilos, elige el número de hebras de cada color y asigna a cada uno su propio símbolo único en el patrón.</span>
+        <span class="l-fr">Mélangez jusqu’à 4 fils, réglez le nombre de brins de chaque couleur et donnez à chacune son propre symbole, unique dans le modèle.</span>
+        <span class="l-ja">糸は最大 4 本まで混ぜられ、本取りは色ごとに設定できます。すべての色に、図案上でほかと重ならない専用の記号を付けられます。</span>
+        <span class="l-ru">Смешивайте до 4 ниток, задавайте число нитей для каждого цвета и дайте каждому цвету собственный уникальный символ на схеме.</span>
       </p>
     </div>
     <div class="card blue">
-      <h2><span class="l-en">Bring your patterns</span><span class="l-zh">带上已有图纸</span><span class="l-zht">帶上既有圖紙</span></h2>
+      <h2><span class="l-en">Bring your patterns</span><span class="l-zh">带上已有图纸</span><span class="l-zht">帶上既有圖紙</span><span class="l-de">Bring deine Muster mit</span><span class="l-es">Trae tus patrones</span><span class="l-fr">Venez avec vos modèles</span><span class="l-ja">手持ちの図案も読み込める</span><span class="l-ru">Импорт ваших схем</span></h2>
       <p>
         <span class="l-en">Import OXS, Pattern Maker (.xsd) and PCStitch (.pat) files and keep working right where you left off.</span>
         <span class="l-zh">直接打开 OXS、Pattern Maker (.xsd)、PCStitch (.pat) 图纸，接着往下画。</span>
         <span class="l-zht">直接開啟 OXS、Pattern Maker (.xsd)、PCStitch (.pat) 圖紙，接著往下畫。</span>
+        <span class="l-de">Importiere OXS-Dateien sowie Muster aus Pattern Maker (.xsd) und PCStitch (.pat) und arbeite genau dort weiter, wo du aufgehört hast.</span>
+        <span class="l-es">Importa archivos OXS, de Pattern Maker (.xsd) y de PCStitch (.pat), y sigue trabajando justo donde lo dejaste.</span>
+        <span class="l-fr">Importez vos fichiers OXS, Pattern Maker (.xsd) et PCStitch (.pat), et reprenez exactement là où vous en étiez.</span>
+        <span class="l-ja">OXS、Pattern Maker（.xsd）、PCStitch（.pat）のファイルを読み込んで、中断したところからそのまま作業を続けられます。</span>
+        <span class="l-ru">Открывайте файлы OXS, Pattern Maker (.xsd) и PCStitch (.pat) и продолжайте работу с того места, где остановились.</span>
       </p>
     </div>
     <div class="card peach">
-      <h2><span class="l-en">Print-ready PDF</span><span class="l-zh">出版级 PDF</span><span class="l-zht">出版級 PDF</span></h2>
+      <h2><span class="l-en">Print-ready PDF</span><span class="l-zh">出版级 PDF</span><span class="l-zht">出版級 PDF</span><span class="l-de">Druckfertiges PDF</span><span class="l-es">PDF listo para imprimir</span><span class="l-fr">PDF prêt à imprimer</span><span class="l-ja">そのまま印刷できる PDF</span><span class="l-ru">PDF, готовый к печати</span></h2>
       <p>
         <span class="l-en">Export vector charts with a cover page, black-and-white symbol chart, thread list and floss estimates — crisp at any print size.</span>
         <span class="l-zh">导出含封面、黑白符号图、线材表与用线估算的矢量 PDF，任意尺寸打印都清晰。</span>
         <span class="l-zht">匯出含封面、黑白符號圖、線材表與用線估算的向量 PDF，任何尺寸列印都清晰。</span>
+        <span class="l-de">Exportiere Muster als Vektor-PDF mit Deckblatt, Symbolmuster in Schwarz-Weiß, Garnliste und geschätztem Garnverbrauch – gestochen scharf in jeder Druckgröße.</span>
+        <span class="l-es">Exporta un PDF vectorial con portada, patrón de símbolos en blanco y negro, lista de hilos y estimación de consumo de hilo: nítido a cualquier tamaño de impresión.</span>
+        <span class="l-fr">Exportez des modèles vectoriels avec page de couverture, grille de symboles en noir et blanc, liste des fils et estimation de la consommation de fil – nets quelle que soit la taille d’impression.</span>
+        <span class="l-ja">表紙、白黒の記号図案、糸リスト、糸の使用量の目安が付いた、ベクター形式の図案を書き出せます。どんなサイズで印刷しても、くっきり鮮明です。</span>
+        <span class="l-ru">Экспортируйте векторные схемы с обложкой, чёрно-белой схемой с символами, списком ниток и примерным расходом нитей — чёткие при любом размере печати.</span>
       </p>
     </div>
   </section>
@@ -210,11 +295,21 @@
         <span class="l-en">Free to design. One purchase to unlock.</span>
         <span class="l-zh">设计免费，一次买断</span>
         <span class="l-zht">設計免費，一次買斷</span>
+        <span class="l-de">Gratis entwerfen. Einmal kaufen und freischalten.</span>
+        <span class="l-es">Diseña gratis. Desbloquea con una sola compra.</span>
+        <span class="l-fr">Créez gratuitement. Un seul achat pour tout débloquer.</span>
+        <span class="l-ja">デザインは無料。アンロックは買い切り。</span>
+        <span class="l-ru">Творите бесплатно. Разблокируйте одной покупкой.</span>
       </h2>
       <p>
         <span class="l-en">All conversion and editing tools are free, with up to 3 saved projects. A single one-time purchase — no subscription — unlocks every export format and unlimited projects across iPhone, iPad and Mac.</span>
         <span class="l-zh">转换与编辑工具全部免费，可保存 3 个项目。一次性买断、非订阅，即解锁全部导出格式与不限量保存，iPhone、iPad、Mac 通用。</span>
         <span class="l-zht">轉換與編輯工具全部免費，可儲存 3 個專案。一次性買斷、非訂閱，即解鎖全部匯出格式與不限量儲存，iPhone、iPad、Mac 通用。</span>
+        <span class="l-de">Alle Werkzeuge zum Umwandeln und Bearbeiten sind gratis, mit bis zu 3 gespeicherten Projekten. Ein einziger Einmalkauf – kein Abo – schaltet alle Exportformate und unbegrenzt viele Projekte frei, auf iPhone, iPad und Mac gleichermaßen.</span>
+        <span class="l-es">Todas las herramientas de conversión y edición son gratis, con hasta 3 proyectos guardados. Una compra única —sin suscripción— desbloquea todos los formatos de exportación y proyectos ilimitados en iPhone, iPad y Mac.</span>
+        <span class="l-fr">Tous les outils de conversion et d’édition sont gratuits, avec jusqu’à 3 projets enregistrés. Un achat unique – sans abonnement – débloque tous les formats d’export et un nombre illimité de projets sur iPhone, iPad et Mac.</span>
+        <span class="l-ja">変換ツールも編集ツールもすべて無料で、プロジェクトは 3 件まで保存できます。一度きりの買い切り（サブスクリプションではありません）で、すべての書き出し形式と無制限のプロジェクト保存が、iPhone・iPad・Mac のすべてでアンロックされます。</span>
+        <span class="l-ru">Все инструменты преобразования и редактирования бесплатны, сохранить можно до 3 проектов. Одна разовая покупка — без подписки — разблокирует все форматы экспорта и неограниченное число проектов сразу на iPhone, iPad и Mac.</span>
       </p>
     </div>
   </section>
@@ -224,8 +319,8 @@
   <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
   <p>
     <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
-    · <a href="{{home}}support/"><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span></a>
-    · <a href="{{home}}privacy/"><span class="l-en">Privacy Policy</span><span class="l-zh">隐私政策</span><span class="l-zht">隱私權政策</span></a>
+    · <a href="{{home}}support/"><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span><span class="l-de">Hilfe</span><span class="l-es">Ayuda</span><span class="l-fr">Aide</span><span class="l-ja">サポート</span><span class="l-ru">Помощь</span></a>
+    · <a href="{{home}}privacy/"><span class="l-en">Privacy Policy</span><span class="l-zh">隐私政策</span><span class="l-zht">隱私權政策</span><span class="l-de">Datenschutzerklärung</span><span class="l-es">Política de privacidad</span><span class="l-fr">Politique de confidentialité</span><span class="l-ja">プライバシーポリシー</span><span class="l-ru">Политика конфиденциальности</span></a>
   </p>
   <p class="footer-langs"><!--lang-links--></p>
 </footer>

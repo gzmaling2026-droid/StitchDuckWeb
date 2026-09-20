@@ -13,7 +13,7 @@ trap 'kill "$SERVER" 2>/dev/null' EXIT
 sleep 1
 
 mkdir -p assets/og
-for pair in en:en zh:zh-hans zht:zh-hant; do
+for pair in en:en zh:zh-hans zht:zh-hant de:de es:es fr:fr ja:ja ru:ru; do
   out="assets/og/og-${pair#*:}"
   "$CHROME" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 \
     --window-size=1200,630 --virtual-time-budget=8000 \

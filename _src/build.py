@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Build the published pages from the trilingual sources in _src/pages/.
+"""Build the published pages from the multilingual sources in _src/pages/.
 
-A source page carries all three languages side by side:
+A source page carries every language side by side:
 
-  text        <span class="l-en">…</span><span class="l-zh">…</span><span class="l-zht">…</span>
-  attributes  <img data-en-alt="…" data-zh-alt="…" data-zht-alt="…">   ->   <img alt="…">
+  text        <span class="l-en">…</span><span class="l-zh">…</span><span class="l-zht">…</span> … one per language
+  attributes  <img data-en-alt="…" data-zh-alt="…" … >   ->   <img alt="…">
+
+A piece of copy that lacks a language stops the build.
 
 and may use these tokens:
 
@@ -16,8 +18,9 @@ and may use these tokens:
   <!--lang-menu-->   links to the same page in every language
   <!--lang-links-->  the same links as one line of plain text
 
-Output is one page per language: / (English, also the x-default), /zh-hans/ and
-/zh-hant/, plus sitemap.xml. Only the standard library is needed.
+Output is one page per language — / for English, which is also the x-default,
+and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/, /ru/ — plus sitemap.xml. The
+languages and their order follow the app. Only the standard library is needed.
 
   python3 _src/build.py           build
   python3 _src/build.py --check   exit 1 if the published files are out of date
@@ -66,6 +69,11 @@ LANGS = (
          f'https://apps.apple.com/cn/app/id{APP_ID}', '/assets/shots/zh-hans', '/assets/og/og-zh-hans.jpg'),
     Lang('zht', 'zh-hant/', 'zh-Hant', 'zh_TW', '繁體中文', 'StitchDuck', 'StitchDuck',
          f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', '/assets/og/og-zh-hant.jpg'),
+) + tuple(
+    Lang(key, f'{key}/', key, og_locale, label, 'StitchDuck', 'StitchDuck',
+         f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', f'/assets/og/og-{key}.jpg')
+    for key, og_locale, label in (('de', 'de_DE', 'Deutsch'), ('es', 'es_ES', 'Español'), ('fr', 'fr_FR', 'Français'),
+                                  ('ja', 'ja_JP', '日本語'), ('ru', 'ru_RU', 'Русский'))
 )
 DEFAULT = LANGS[0]
 KEYS = '|'.join(l.key for l in LANGS)
@@ -87,37 +95,62 @@ L_ATTR = re.compile(rf'\s+data-({KEYS})-([a-z][a-z-]*)="([^"]*)"')
 TAG = re.compile(r'<[a-zA-Z][^<>]*>')
 
 
-def pick_text(src, key, where):
-    """Keep the contents of the l-<key> spans, drop the other languages' spans."""
-    out, stack, pos, dropping = [], [], 0, 0
+def language_spans(src, where):
+    """(start, end, inner start, inner end, key) of every l-<key> span, in document order."""
+    found, stack = [], []
     for m in SPAN.finditer(src):
-        if not dropping:
-            out.append(src[pos:m.start()])
-        pos = m.end()
         tag = m.group(0)
         if tag[1] == '/':
             if not stack:
                 raise BuildError(f'{where}: </span> without an opening tag')
-            kind = stack.pop()
-            if kind == 'drop':
-                dropping -= 1
-            elif kind == 'plain' and not dropping:
-                out.append(tag)
+            key, start, inner = stack.pop()
+            if key:
+                found.append((start, m.end(), inner, m.start(), key))
             continue
         lm = L_SPAN.fullmatch(tag)
         if not lm and L_CLASS.search(tag):
             raise BuildError(f'{where}: write language spans exactly as <span class="l-xx">, got {tag}')
-        kind = 'plain' if not lm else 'keep' if lm.group(1) == key else 'drop'
-        stack.append(kind)
-        if kind == 'drop':
-            if not dropping and out:
-                # A dropped span on a line of its own takes the line with it.
-                out[-1] = re.sub(r'\n[ \t]*$', '', out[-1])
-            dropping += 1
-        elif kind == 'plain' and not dropping:
-            out.append(tag)
+        if lm and any(key for key, _, _ in stack):
+            raise BuildError(f'{where}: language spans must not nest, near {src[m.start():m.start() + 60]!r}')
+        stack.append((lm.group(1) if lm else None, m.start(), m.end()))
     if stack:
         raise BuildError(f'{where}: unclosed <span>')
+    found.sort()
+    check_groups(src, found, where)
+    return found
+
+
+def check_groups(src, spans, where):
+    """Adjacent language spans form one piece of copy; each piece needs every language once."""
+    def verify(group):
+        keys = sorted(s[4] for s in group)
+        if keys != sorted(l.key for l in LANGS):
+            line = src.count('\n', 0, group[0][0]) + 1
+            missing = sorted({l.key for l in LANGS} - set(keys))
+            raise BuildError(f'{where}, line {line}: has {keys}, missing {missing}')
+
+    group = []
+    for span in spans:
+        apart = group and src[group[-1][1]:span[0]].strip()
+        if group and (apart or span[4] in {s[4] for s in group}):
+            verify(group)
+            group = []
+        group.append(span)
+    if group:
+        verify(group)
+
+
+def pick_text(src, key, where):
+    """Keep the contents of the l-<key> spans, drop the other languages' spans."""
+    out, pos = [], 0
+    for start, end, inner_start, inner_end, span_key in language_spans(src, where):
+        before = src[pos:start]
+        if span_key == key:
+            out += [before, src[inner_start:inner_end]]
+        else:
+            # A dropped span on a line of its own takes the line with it.
+            out.append(re.sub(r'\n[ \t]*$', '', before))
+        pos = end
     out.append(src[pos:])
     return ''.join(out)
 

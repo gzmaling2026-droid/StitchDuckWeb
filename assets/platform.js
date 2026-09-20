@@ -11,8 +11,8 @@
  * Silent where the badge works: Safari on iOS/iPadOS, and macOS on any browser.
  * Without JS the badge stays a plain link and behaves as it always did.
  *
- * Message text lives here rather than in l-en/l-zh/l-zht spans like the rest of
- * the site because the browser name has to be interpolated into it. */
+ * Message text lives here rather than in the page sources like the rest of the
+ * site because the browser name has to be interpolated into it. */
 (function () {
   var ua = navigator.userAgent || '';
   var touch = navigator.maxTouchPoints > 1;
@@ -22,7 +22,9 @@
   var isMac = /Macintosh/.test(ua) && !touch;
 
   /* In-app webviews are matched before real browsers: they almost all carry a
-   * Chrome or Safari token too, so a generic match would shadow them. */
+   * Chrome or Safari token too, so a generic match would shadow them. A name is
+   * localized only where the local one is what people know it by; every other
+   * language uses the English entry. */
   var BROWSERS = [
     [/MicroMessenger/i,                {en: 'WeChat',           zh: '微信',       zht: '微信'}],
     [/Weibo/i,                         {en: 'Weibo',            zh: '微博',       zht: '微博'}],
@@ -43,7 +45,6 @@
     [/HuaweiBrowser/i,                 {en: 'Huawei Browser',   zh: '华为浏览器', zht: '華為瀏覽器'}],
     [/CriOS|Chrome/i,                  {en: 'Chrome',           zh: 'Chrome',     zht: 'Chrome'}]
   ];
-  var GENERIC = {en: 'This browser', zh: '当前浏览器', zht: '目前瀏覽器'};
 
   var named = null;
   for (var i = 0; i < BROWSERS.length; i++) {
@@ -55,41 +56,82 @@
   if (isMac) return;                // the Mac App Store opens fine from any browser
   if (isIOS && isSafari) return;    // Safari hands off to the App Store fine
 
-  var browser = named || GENERIC;
   var kind = isIOS ? 'ios'
            : /Android/i.test(ua) ? 'android'
            : /Windows/i.test(ua) ? 'windows'
            : 'other';
 
-  var MSG = {
-    ios: {
-      en:  function (b) { return b + ' can’t open the App Store. Copy the address below and open it in Safari.'; },
-      zh:  function (b) { return b + '无法打开 App Store，请复制下面的网址，在 Safari 中打开。'; },
-      zht: function (b) { return b + '無法開啟 App Store，請複製下面的網址，在 Safari 中開啟。'; }
+  // {browser} is the app or browser the page is open in, or the "browser" entry when it isn't known.
+  var TEXT = {
+    en: {
+      ios: '{browser} can’t open the App Store. Copy the address below and open it in Safari.',
+      android: 'StitchDuck for Android is coming soon. For now it’s available on iPhone, iPad and Mac.',
+      windows: 'StitchDuck for Windows is coming soon. For now it’s available on iPhone, iPad and Mac.',
+      other: 'StitchDuck is available on iPhone, iPad and Mac — this device can’t install it.',
+      browser: 'This browser', copy: 'Copy', copied: 'Copied',
+      hint: 'Press and hold the address to copy it.', dismiss: 'Dismiss'
     },
-    android: {
-      en:  function () { return 'StitchDuck for Android is coming soon. For now it’s available on iPhone, iPad and Mac.'; },
-      zh:  function () { return '绣鸭 Android 版即将上架，目前有 iPhone、iPad、Mac 版。'; },
-      zht: function () { return 'StitchDuck Android 版即將上架，目前有 iPhone、iPad、Mac 版。'; }
+    zh: {
+      ios: '{browser}无法打开 App Store，请复制下面的网址，在 Safari 中打开。',
+      android: '绣鸭 Android 版即将上架，目前有 iPhone、iPad、Mac 版。',
+      windows: '绣鸭 Windows 版即将上架，目前有 iPhone、iPad、Mac 版。',
+      other: '绣鸭目前有 iPhone、iPad、Mac 版，当前设备无法安装。',
+      browser: '当前浏览器', copy: '复制', copied: '已复制',
+      hint: '请长按网址手动复制。', dismiss: '关闭'
     },
-    windows: {
-      en:  function () { return 'StitchDuck for Windows is coming soon. For now it’s available on iPhone, iPad and Mac.'; },
-      zh:  function () { return '绣鸭 Windows 版即将上架，目前有 iPhone、iPad、Mac 版。'; },
-      zht: function () { return 'StitchDuck Windows 版即將上架，目前有 iPhone、iPad、Mac 版。'; }
+    zht: {
+      ios: '{browser}無法開啟 App Store，請複製下面的網址，在 Safari 中開啟。',
+      android: 'StitchDuck Android 版即將上架，目前有 iPhone、iPad、Mac 版。',
+      windows: 'StitchDuck Windows 版即將上架，目前有 iPhone、iPad、Mac 版。',
+      other: 'StitchDuck 目前有 iPhone、iPad、Mac 版，目前裝置無法安裝。',
+      browser: '目前瀏覽器', copy: '複製', copied: '已複製',
+      hint: '請長按網址手動複製。', dismiss: '關閉'
     },
-    other: {
-      en:  function () { return 'StitchDuck is available on iPhone, iPad and Mac — this device can’t install it.'; },
-      zh:  function () { return '绣鸭目前有 iPhone、iPad、Mac 版，当前设备无法安装。'; },
-      zht: function () { return 'StitchDuck 目前有 iPhone、iPad、Mac 版，目前裝置無法安裝。'; }
+    de: {
+      ios: '{browser} kann den App Store nicht öffnen. Kopiere die Adresse unten und öffne sie in Safari.',
+      android: 'StitchDuck für Android kommt demnächst. Aktuell gibt es die App für iPhone, iPad und Mac.',
+      windows: 'StitchDuck für Windows kommt demnächst. Aktuell gibt es die App für iPhone, iPad und Mac.',
+      other: 'StitchDuck gibt es für iPhone, iPad und Mac – auf diesem Gerät lässt sich die App nicht installieren.',
+      browser: 'Dieser Browser', copy: 'Kopieren', copied: 'Kopiert',
+      hint: 'Adresse lange drücken, um sie zu kopieren.', dismiss: 'Schließen'
+    },
+    es: {
+      ios: '{browser} no puede abrir el App Store. Copia la dirección de abajo y ábrela en Safari.',
+      android: 'StitchDuck para Android llegará pronto. Por ahora está disponible en iPhone, iPad y Mac.',
+      windows: 'StitchDuck para Windows llegará pronto. Por ahora está disponible en iPhone, iPad y Mac.',
+      other: 'StitchDuck está disponible en iPhone, iPad y Mac: no se puede instalar en este dispositivo.',
+      browser: 'Este navegador', copy: 'Copiar', copied: 'Copiado',
+      hint: 'Mantén pulsada la dirección para copiarla.', dismiss: 'Cerrar'
+    },
+    fr: {
+      ios: '{browser} ne peut pas ouvrir l’App Store. Copiez l’adresse ci-dessous et ouvrez-la dans Safari.',
+      android: 'StitchDuck pour Android arrive bientôt. Pour l’instant, il est disponible sur iPhone, iPad et Mac.',
+      windows: 'StitchDuck pour Windows arrive bientôt. Pour l’instant, il est disponible sur iPhone, iPad et Mac.',
+      other: 'StitchDuck est disponible sur iPhone, iPad et Mac – cet appareil ne peut pas l’installer.',
+      browser: 'Ce navigateur', copy: 'Copier', copied: 'Copié',
+      hint: 'Faites un appui long sur l’adresse pour la copier.', dismiss: 'Fermer'
+    },
+    ja: {
+      ios: '{browser}では App Store を開けません。下のアドレスをコピーして、Safari で開いてください。',
+      android: 'StitchDuck の Android 版は近日公開です。現在は iPhone・iPad・Mac でご利用いただけます。',
+      windows: 'StitchDuck の Windows 版は近日公開です。現在は iPhone・iPad・Mac でご利用いただけます。',
+      other: 'StitchDuck は iPhone・iPad・Mac でご利用いただけます。この端末にはインストールできません。',
+      browser: 'このブラウザ', copy: 'コピー', copied: 'コピー済み',
+      hint: 'アドレスを長押ししてコピーしてください。', dismiss: '閉じる'
+    },
+    ru: {
+      ios: '{browser} не может открыть App Store. Скопируйте адрес ниже и откройте его в Safari.',
+      android: 'StitchDuck для Android скоро появится. Пока приложение доступно на iPhone, iPad и Mac.',
+      windows: 'StitchDuck для Windows скоро появится. Пока приложение доступно на iPhone, iPad и Mac.',
+      other: 'StitchDuck доступен на iPhone, iPad и Mac — на это устройство установить его нельзя.',
+      browser: 'Этот браузер', copy: 'Скопировать', copied: 'Скопировано',
+      hint: 'Нажмите и удерживайте адрес, чтобы скопировать его.', dismiss: 'Закрыть'
     }
   };
-  var COPY  = {en: ['Copy', 'Copied'], zh: ['复制', '已复制'], zht: ['複製', '已複製']};
-  var HINT  = {en: 'Press and hold the address to copy it.', zh: '请长按网址手动复制。', zht: '請長按網址手動複製。'};
-  var CLOSE = {en: 'Dismiss', zh: '关闭', zht: '關閉'};
 
   function lang() {
     var l = document.documentElement.getAttribute('data-lang');
-    return (l === 'zh' || l === 'zht') ? l : 'en';
+    return TEXT.hasOwnProperty(l) ? l : 'en';
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -121,24 +163,25 @@
     });
     closeBtn.addEventListener('click', hide);
     copyBtn.addEventListener('click', function () {
-      var l = lang();
+      var t = TEXT[lang()];
       copy(url, function (ok) {
         if (ok) {
-          copyBtn.textContent = COPY[l][1];
+          copyBtn.textContent = t.copied;
           return;
         }
         // Fall back to letting them copy it by hand.
-        hintEl.textContent = HINT[l];
+        hintEl.textContent = t.hint;
         hintEl.hidden = false;
         selectNode(urlEl);
       });
     });
 
     function show() {
-      var l = lang();
-      msgEl.textContent = MSG[kind][l](browser[l]);
-      copyBtn.textContent = COPY[l][0];
-      closeBtn.setAttribute('aria-label', CLOSE[l]);
+      var l = lang(), t = TEXT[l];
+      var browser = named ? (named[l] || named.en) : t.browser;
+      msgEl.textContent = t[kind].replace('{browser}', browser);
+      copyBtn.textContent = t.copy;
+      closeBtn.setAttribute('aria-label', t.dismiss);
       hintEl.hidden = true;
       copyBox.hidden = kind !== 'ios';
       toast.hidden = false;
