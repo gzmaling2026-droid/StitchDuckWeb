@@ -201,6 +201,27 @@ a { color: var(--accent-text); }
   .toast.show { transform: translateX(-50%); }
 }
 
+/* ---------- Screenshots ---------- */
+.shots {
+  max-width: 1020px; margin: 0 auto; padding: 0 20px 12px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px;
+}
+.shot {
+  overflow: hidden; border-radius: 15px; border: 1px solid var(--border);
+  background: var(--panel); box-shadow: var(--shadow-accent);
+}
+.shot img { display: block; width: 100%; height: auto; }
+@media (max-width: 640px) {
+  /* One swipeable row on phones rather than six stacked cards. */
+  .shots {
+    display: flex; gap: 12px; overflow-x: auto; padding-bottom: 16px;
+    scroll-snap-type: x mandatory; scroll-padding: 0 20px;
+    scrollbar-width: none;
+  }
+  .shots::-webkit-scrollbar { display: none; }
+  .shot { flex: 0 0 84%; scroll-snap-align: center; }
+}
+
 /* ---------- Feature cards ---------- */
 .features {
   max-width: 1020px; margin: 0 auto; padding: 20px 20px 8px;
