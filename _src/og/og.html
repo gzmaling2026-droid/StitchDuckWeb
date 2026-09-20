@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Link preview card, 1200×630. Rendered to /assets/og/ by _src/og/render.sh; pick the language with ?lang=en|zh|zht. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>StitchDuck link preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: 'Work Sans', -apple-system, 'PingFang SC', 'PingFang TC', sans-serif;
+    color: #554D49;
+    background: linear-gradient(180deg, #FFF7E3, #FCEBC4);
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(180, 165, 136, .30) 0 1px, transparent 1px 30px),
+      repeating-linear-gradient(90deg, rgba(180, 165, 136, .30) 0 1px, transparent 1px 30px);
+    -webkit-mask-image: radial-gradient(ellipse 60% 80% at 24% 46%, #000 20%, transparent 78%);
+    mask-image: radial-gradient(ellipse 60% 80% at 24% 46%, #000 20%, transparent 78%);
+  }
+  .copy { position: absolute; left: 76px; top: 0; bottom: 0; width: 520px; display: flex; flex-direction: column; justify-content: center; }
+  .brand { display: flex; align-items: center; gap: 18px; margin-bottom: 38px; }
+  .tile {
+    width: 84px; height: 84px; padding: 12px; border-radius: 20px;
+    background: #FFFDF6; border: 1px solid #F0E3C6;
+    box-shadow: 0 10px 24px -10px rgba(226, 155, 95, .6);
+  }
+  .tile img { width: 100%; height: 100%; display: block; }
+  .name { font-family: 'Newsreader', Georgia, 'Songti SC', 'Songti TC', serif; font-weight: 600; font-size: 40px; color: #423B38; line-height: 1; }
+  h1 {
+    font-family: 'Newsreader', Georgia, 'Songti SC', 'Songti TC', serif; font-weight: 600;
+    font-size: 66px; line-height: 1.08; letter-spacing: -.01em; color: #423B38;
+  }
+  h1 em { font-style: normal; color: #E8804A; }
+  /* Songti's Bold is barely heavier than Regular; Black is the cut that stands up next to Newsreader 600.
+     Songti TC has no Black, so the Traditional Chinese headline borrows Songti SC as well. */
+  :lang(zh-Hans) h1, :lang(zh-Hant) h1 { font-family: 'Songti SC', serif; font-size: 68px; line-height: 1.18; letter-spacing: 0; font-weight: 900; }
+  :lang(zh-Hans) .name { font-weight: 900; }
+  .marks { display: flex; gap: 12px; margin: 30px 0 26px; }
+  .marks svg { width: 26px; height: 26px; }
+  .sub { font-size: 25px; line-height: 1.4; color: #726864; font-weight: 500; }
+  .device {
+    position: absolute; left: 640px; top: 118px; width: 760px;
+    border-radius: 34px; overflow: hidden;
+    box-shadow: 0 30px 60px -24px rgba(120, 80, 40, .45), 0 0 0 1px rgba(0, 0, 0, .06);
+  }
+  .device img { width: 100%; display: block; }
+</style>
+</head>
+<body>
+  <div class="copy">
+    <div class="brand">
+      <div class="tile"><img src="/assets/logo.svg" alt=""></div>
+      <span class="name" id="name"></span>
+    </div>
+    <h1 id="headline"></h1>
+    <div class="marks" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#E9B44C" stroke-width="4.4" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#E8804A" stroke-width="4.4" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#EE9E9A" stroke-width="4.4" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#7FA9CC" stroke-width="4.4" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="#423B38" stroke-width="4.4" stroke-linecap="round"/></svg>
+    </div>
+    <p class="sub" id="sub"></p>
+  </div>
+  <div class="device"><img id="device" alt=""></div>
+<script>
+  var COPY = {
+    en:  { tag: 'en',      name: 'StitchDuck', headline: 'Turn photos into <em>cross-stitch</em> patterns.', sub: 'Pattern maker for iPhone, iPad &amp; Mac', device: 'device-en.webp' },
+    zh:  { tag: 'zh-Hans', name: '绣鸭',        headline: '把照片变成<br><em>十字绣</em>图纸',                 sub: '十字绣图纸设计 · iPhone、iPad、Mac',      device: 'device-zh.webp' },
+    zht: { tag: 'zh-Hant', name: 'StitchDuck', headline: '把照片變成<br><em>十字繡</em>圖紙',                 sub: '十字繡圖紙設計 · iPhone、iPad、Mac',      device: 'device-en.webp' }
+  };
+  var c = COPY[new URLSearchParams(location.search).get('lang')] || COPY.en;
+  document.documentElement.lang = c.tag;
+  document.getElementById('name').textContent = c.name;
+  document.getElementById('headline').innerHTML = c.headline;
+  document.getElementById('sub').innerHTML = c.sub;
+  document.getElementById('device').src = c.device;
+</script>
+</body>
+</html>
