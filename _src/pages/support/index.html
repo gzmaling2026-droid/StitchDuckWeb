@@ -25,28 +25,7 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="{{home}}">
-      <img src="/assets/logo.svg" alt="" width="32" height="32">
-      <span class="brand-name"><span class="l-en">StitchDuck</span><span class="l-zh">绣鸭</span><span class="l-zht">StitchDuck</span><span class="l-de">StitchDuck</span><span class="l-es">StitchDuck</span><span class="l-fr">StitchDuck</span><span class="l-ja">StitchDuck</span><span class="l-ru">StitchDuck</span></span>
-    </a>
-    <nav class="site-nav">
-      <a href="{{home}}"><span class="l-en">Home</span><span class="l-zh">首页</span><span class="l-zht">首頁</span><span class="l-de">Start</span><span class="l-es">Inicio</span><span class="l-fr">Accueil</span><span class="l-ja">ホーム</span><span class="l-ru">Главная</span></a>
-      <a href="{{home}}support/" class="active"><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span><span class="l-de">Hilfe</span><span class="l-es">Ayuda</span><span class="l-fr">Aide</span><span class="l-ja">サポート</span><span class="l-ru">Помощь</span></a>
-      <a href="{{home}}privacy/"><span class="l-en">Privacy</span><span class="l-zh">隐私</span><span class="l-zht">隱私</span><span class="l-de">Datenschutz</span><span class="l-es">Privacidad</span><span class="l-fr">Vie privée</span><span class="l-ja">プライバシー</span><span class="l-ru">Приватность</span></a>
-      <div class="lang-menu">
-        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
-          <span id="langBtnLabel">{{lang_label}}</span>
-          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="lang-pop" id="langPop" role="group" data-en-aria-label="Language" data-zh-aria-label="语言" data-zht-aria-label="語言" data-de-aria-label="Sprache" data-es-aria-label="Idioma" data-fr-aria-label="Langue" data-ja-aria-label="言語" data-ru-aria-label="Язык" hidden>
-          <!--lang-menu-->
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
+<!--include:header-->
 
 <main class="page">
   <h1><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span><span class="l-de">Hilfe</span><span class="l-es">Ayuda</span><span class="l-fr">Aide</span><span class="l-ja">サポート</span><span class="l-ru">Помощь</span></h1>
@@ -180,15 +159,7 @@
   </div>
 </main>
 
-<footer class="site-footer">
-  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
-  <p>
-    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
-    · <a href="{{home}}support/"><span class="l-en">Support</span><span class="l-zh">支持</span><span class="l-zht">支援</span><span class="l-de">Hilfe</span><span class="l-es">Ayuda</span><span class="l-fr">Aide</span><span class="l-ja">サポート</span><span class="l-ru">Помощь</span></a>
-    · <a href="{{home}}privacy/"><span class="l-en">Privacy Policy</span><span class="l-zh">隐私政策</span><span class="l-zht">隱私權政策</span><span class="l-de">Datenschutzerklärung</span><span class="l-es">Política de privacidad</span><span class="l-fr">Politique de confidentialité</span><span class="l-ja">プライバシーポリシー</span><span class="l-ru">Политика конфиденциальности</span></a>
-  </p>
-  <p class="footer-langs"><!--lang-links--></p>
-</footer>
+<!--include:footer-->
 
 </body>
 </html>

@@ -17,6 +17,8 @@ and may use these tokens:
   <!--seo-->         canonical, hreflang, Open Graph and JSON-LD for the page
   <!--lang-menu-->   links to the same page in every language
   <!--lang-links-->  the same links as one line of plain text
+  <!--include:x-->   the shared fragment _src/partials/x.html (the header and the footer)
+  {{active:path}}    marks the header link of the page being built
 
 Output is one page per language — / for English, which is also the x-default,
 and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/, /ru/ — plus sitemap.xml. The
@@ -40,6 +42,7 @@ SITE = 'https://stitchduckapp.com'
 APP_ID = '6797516970'
 ROOT = Path(__file__).resolve().parent.parent
 PAGES_DIR = ROOT / '_src' / 'pages'
+PARTIALS_DIR = ROOT / '_src' / 'partials'
 
 ORG_NAME = 'Guangzhou Maling Information Technology Co., Ltd.'
 ORG_EMAIL = 'stitchduckapp@icloud.com'
@@ -93,6 +96,8 @@ L_SPAN = re.compile(rf'<span class="l-({KEYS})">')
 L_CLASS = re.compile(rf'class="[^"]*\bl-(?:{KEYS})\b')
 L_ATTR = re.compile(rf'\s+data-({KEYS})-([a-z][a-z-]*)="([^"]*)"')
 TAG = re.compile(r'<[a-zA-Z][^<>]*>')
+INCLUDE = re.compile(r'<!--include:([a-z-]+)-->')
+ACTIVE = re.compile(r'\{\{active:([^}]*)\}\}')
 
 
 def language_spans(src, where):
@@ -283,7 +288,10 @@ def asset_version(m):
 
 def build_page(src_path, lang, page, invites_install):
     where = f'{src_path.relative_to(ROOT)} [{lang.key}]'
-    out = pick_attrs(pick_text(src_path.read_text(encoding='utf-8'), lang.key, where), lang.key, where)
+    src = INCLUDE.sub(lambda m: (PARTIALS_DIR / f'{m.group(1)}.html').read_text(encoding='utf-8').rstrip('\n'),
+                      src_path.read_text(encoding='utf-8'))
+    out = pick_attrs(pick_text(src, lang.key, where), lang.key, where)
+    out = ACTIVE.sub(lambda m: ' class="active"' if m.group(1) == page else '', out)
 
     html_tag = f'<html lang="{lang.tag}" data-lang="{lang.key}"'
     if lang is DEFAULT:
@@ -311,9 +319,10 @@ def build_page(src_path, lang, page, invites_install):
 
 
 def last_modified(src_path):
-    """Date of the last commit that touched the source; today if it has uncommitted edits."""
+    """Date of the last commit to the page source or a shared fragment; today if any has uncommitted edits."""
+    paths = [str(src_path)] + sorted(str(p) for p in PARTIALS_DIR.glob('*.html'))
     try:
-        git = lambda *args: subprocess.run(('git',) + args + ('--', str(src_path)), cwd=ROOT,
+        git = lambda *args: subprocess.run(('git',) + args + ('--',) + tuple(paths), cwd=ROOT,
                                            capture_output=True, text=True).stdout.strip()
         if not git('status', '--porcelain'):
             return git('log', '-1', '--format=%cs') or date.today().isoformat()
