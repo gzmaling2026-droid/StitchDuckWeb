@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Generated from _src/pages/fabric-calculator/index.html by _src/build.py. Edit the source, then rebuild. -->
+<html lang="de" data-lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kreuzstich-Stoffrechner: Stoffgröße berechnen – StitchDuck</title>
+<meta name="description" content="Kostenloser Kreuzstich-Stoffrechner: Stichzahl und Stoffdichte (Aida, Evenweave oder Leinen) eingeben und Endgröße sowie Stoffzuschnitt in cm und Zoll erhalten.">
+<link rel="canonical" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/">
+<link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/">
+<link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StitchDuck">
+<meta property="og:title" content="Kreuzstich-Stoffrechner: Stoffgröße berechnen – StitchDuck">
+<meta property="og:description" content="Kostenloser Kreuzstich-Stoffrechner: Stichzahl und Stoffdichte (Aida, Evenweave oder Leinen) eingeben und Endgröße sowie Stoffzuschnitt in cm und Zoll erhalten.">
+<meta property="og:url" content="https://stitchduckapp.com/de/fabric-calculator/">
+<meta property="og:image" content="https://stitchduckapp.com/assets/og/og-de.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6797516970">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was bedeutet die Stoffdichte (ct)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Anzahl der Stiche pro Zoll. Aida 14 ct hat 14 Kästchen pro Zoll, also etwa 5,5 pro Zentimeter (54 Stiche auf 10 cm). Je höher der Wert, desto kleiner der einzelne Stich – und desto kleiner die fertige Arbeit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Zugabe sollte ich lassen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Meist lässt man an jeder Seite 5–8 cm (2–3 Zoll) für das Rahmen und Fertigstellen. Planst du ein breites Passepartout oder willst die Arbeit im Stickrahmen präsentieren, gib etwas mehr zu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was heißt „über zwei Fäden“?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auf Evenweave und Leinen geht jedes Kreuz meist in beide Richtungen über zwei Gewebefäden; 28 ct über zwei Fäden ergibt also 14 Stiche pro Zoll. Aida ist in Kästchen gewebt und wird über ein Kästchen gestickt."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=7ab74900">
+<script src="/assets/lang.js?v=0e4b28b6"></script>
+<script src="/assets/calculator.js?v=8a7adc17" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/de/">
+      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <span class="brand-name">StitchDuck</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/de/">Start</a>
+      <a href="/de/support/">Hilfe</a>
+      <a href="/de/privacy/">Datenschutz</a>
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
+          <span id="langBtnLabel">Deutsch</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="langPop" role="group" aria-label="Sprache" hidden>
+          <a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a>
+          <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a>
+          <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a>
+          <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de" aria-current="page">Deutsch</a>
+          <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a>
+          <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a>
+          <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a>
+          <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>Stoffrechner für Kreuzstich</h1>
+  <p class="lead">
+    Gib die Stichzahl deines Musters und die Dichte deines Stoffs ein – du siehst sofort die Endgröße und wie groß du den Stoff zuschneiden solltest.
+  </p>
+
+  <form class="calc" id="calc" novalidate data-unit-in="″" data-unit-cm="cm" data-primary="cm">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label">Breite (Stiche)</span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label">Höhe (Stiche)</span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label">Stoffdichte (Stiche pro Zoll)</span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">Gestickt über</span>
+        <select id="calcOver">
+          <option value="1">1 Kästchen – Aida</option>
+          <option value="2">2 Fäden – Evenweave, Leinen</option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel">Zugabe pro Seite</span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel" value="8">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in">Zoll</option>
+            <option value="cm">cm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label">Endgröße</span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label">Stoffzuschnitt</span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        Dieser Rechner braucht JavaScript. Die Rechnung selbst ist einfach: Stiche ÷ Stoffdichte (ct) = Zoll.
+      </p>
+    </noscript>
+  </form>
+
+  <h2>Dasselbe Muster auf anderen Stoffdichten</h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col">Stoff</th>
+          <th scope="col">Zoll</th>
+          <th scope="col">Zentimeter</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>So wird gerechnet</h2>
+  <p>
+    Die Endgröße ist die Stichzahl geteilt durch die Stoffdichte. Ein Muster mit 140 × 100 Stichen wird auf Aida 14 ct 25,4 × 18,1 cm groß (10 × 7,1 Zoll). Auf Evenweave und Leinen geht jedes Kreuz meist über zwei Fäden, die Dichte halbiert sich also: 28 ct über zwei Fäden ergibt dieselbe Größe wie Aida 14 ct. Die Zugabe kommt an jeder Seite dazu und zählt deshalb in jeder Richtung doppelt.
+  </p>
+
+  <h2>Häufige Fragen</h2>
+  <div class="faq">
+
+    <details>
+      <summary>Was bedeutet die Stoffdichte (ct)?</summary>
+      <p>
+        Die Anzahl der Stiche pro Zoll. Aida 14 ct hat 14 Kästchen pro Zoll, also etwa 5,5 pro Zentimeter (54 Stiche auf 10 cm). Je höher der Wert, desto kleiner der einzelne Stich – und desto kleiner die fertige Arbeit.
+      </p>
+    </details>
+
+    <details>
+      <summary>Wie viel Zugabe sollte ich lassen?</summary>
+      <p>
+        Meist lässt man an jeder Seite 5–8 cm (2–3 Zoll) für das Rahmen und Fertigstellen. Planst du ein breites Passepartout oder willst die Arbeit im Stickrahmen präsentieren, gib etwas mehr zu.
+      </p>
+    </details>
+
+    <details>
+      <summary>Was heißt „über zwei Fäden“?</summary>
+      <p>
+        Auf Evenweave und Leinen geht jedes Kreuz meist in beide Richtungen über zwei Gewebefäden; 28 ct über zwei Fäden ergibt also 14 Stiche pro Zoll. Aida ist in Kästchen gewebt und wird über ein Kästchen gestickt.
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      Du entwirfst auch das Muster selbst? StitchDuck macht aus Fotos Kreuzstichmuster und gibt auf jedem exportierten PDF-Muster die Endgröße an.
+    </p>
+    <div class="email-row">
+      <a class="btn" href="/de/">StitchDuck ansehen</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
+  <p>
+    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
+    · <a href="/de/support/">Hilfe</a>
+    · <a href="/de/privacy/">Datenschutzerklärung</a>
+    · <a href="/de/fabric-calculator/">Stoffrechner</a>
+  </p>
+  <p class="footer-langs"><a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a> · <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a> · <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a> · <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de" aria-current="page">Deutsch</a> · <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a> · <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a> · <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a> · <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Generated from _src/pages/fabric-calculator/index.html by _src/build.py. Edit the source, then rebuild. -->
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Калькулятор канвы для вышивки крестом — StitchDuck</title>
+<meta name="description" content="Бесплатный калькулятор канвы для вышивки крестом: размер схемы в крестиках и каунт ткани (Aida, равномерка, лён) → итоговый размер и отрез в см и дюймах.">
+<link rel="canonical" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/">
+<link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/">
+<link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StitchDuck">
+<meta property="og:title" content="Калькулятор канвы для вышивки крестом — StitchDuck">
+<meta property="og:description" content="Бесплатный калькулятор канвы для вышивки крестом: размер схемы в крестиках и каунт ткани (Aida, равномерка, лён) → итоговый размер и отрез в см и дюймах.">
+<meta property="og:url" content="https://stitchduckapp.com/ru/fabric-calculator/">
+<meta property="og:image" content="https://stitchduckapp.com/assets/og/og-ru.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6797516970">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ru",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что такое каунт канвы?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Это число крестиков на дюйм. У канвы Aida 14 — 14 клеток на дюйм, то есть примерно 5,5 на сантиметр. Чем выше каунт, тем мельче каждый крестик и тем меньше готовая работа."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какой припуск оставлять?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Обычно с каждой стороны оставляют 5–8 см (2–3 дюйма) на оформление и обработку краёв. Если планируете широкое паспарту или оформление в пяльцах, оставьте чуть больше."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что значит «через две нити»?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "На равномерке и льне каждый крестик обычно перекрывает по две нити ткани в каждом направлении, поэтому ткань 28 каунта при вышивке через две нити даёт 14 крестиков на дюйм. Aida соткана клетками, и на ней вышивают один крестик в одной клетке."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=7ab74900">
+<script src="/assets/lang.js?v=0e4b28b6"></script>
+<script src="/assets/calculator.js?v=8a7adc17" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/ru/">
+      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <span class="brand-name">StitchDuck</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/ru/">Главная</a>
+      <a href="/ru/support/">Помощь</a>
+      <a href="/ru/privacy/">Приватность</a>
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
+          <span id="langBtnLabel">Русский</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="langPop" role="group" aria-label="Язык" hidden>
+          <a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a>
+          <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a>
+          <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a>
+          <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a>
+          <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a>
+          <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a>
+          <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a>
+          <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru" aria-current="page">Русский</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>Калькулятор канвы для вышивки крестом</h1>
+  <p class="lead">
+    Введите размер схемы в крестиках и каунт канвы — и вы увидите итоговый размер работы и размер отреза ткани.
+  </p>
+
+  <form class="calc" id="calc" novalidate data-unit-in="″" data-unit-cm="см" data-primary="cm">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label">Ширина (крестики)</span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label">Высота (крестики)</span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label">Каунт канвы (крестиков на дюйм)</span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">Вышивка через</span>
+        <select id="calcOver">
+          <option value="1">1 клетку — Aida</option>
+          <option value="2">2 нити — равномерка, лён</option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel">Припуск с каждой стороны</span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel" value="8">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in">дюймы</option>
+            <option value="cm">см</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label">Итоговый размер</span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label">Размер отреза</span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        Для калькулятора нужен JavaScript. Сам расчёт простой: крестики ÷ каунт = дюймы.
+      </p>
+    </noscript>
+  </form>
+
+  <h2>Та же схема на канве другого каунта</h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col">Канва</th>
+          <th scope="col">Дюймы</th>
+          <th scope="col">Сантиметры</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Как это считается</h2>
+  <p>
+    Итоговый размер — это число крестиков, делённое на каунт канвы. Схема 140 × 100 крестиков на канве Aida 14 получится размером 25,4 × 18,1 см (10 × 7,1 дюйма). На равномерке и льне каждый крестик обычно вышивают через две нити, поэтому каунт уменьшается вдвое: ткань 28 каунта через две нити даёт тот же размер, что и Aida 14. Припуск добавляется с каждой стороны, поэтому в каждом направлении он учитывается дважды.
+  </p>
+
+  <h2>Частые вопросы</h2>
+  <div class="faq">
+
+    <details>
+      <summary>Что такое каунт канвы?</summary>
+      <p>
+        Это число крестиков на дюйм. У канвы Aida 14 — 14 клеток на дюйм, то есть примерно 5,5 на сантиметр. Чем выше каунт, тем мельче каждый крестик и тем меньше готовая работа.
+      </p>
+    </details>
+
+    <details>
+      <summary>Какой припуск оставлять?</summary>
+      <p>
+        Обычно с каждой стороны оставляют 5–8 см (2–3 дюйма) на оформление и обработку краёв. Если планируете широкое паспарту или оформление в пяльцах, оставьте чуть больше.
+      </p>
+    </details>
+
+    <details>
+      <summary>Что значит «через две нити»?</summary>
+      <p>
+        На равномерке и льне каждый крестик обычно перекрывает по две нити ткани в каждом направлении, поэтому ткань 28 каунта при вышивке через две нити даёт 14 крестиков на дюйм. Aida соткана клетками, и на ней вышивают один крестик в одной клетке.
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      Схему тоже создаёте сами? StitchDuck превращает фото в схемы для вышивки крестом и указывает итоговый размер в каждом экспортированном PDF.
+    </p>
+    <div class="email-row">
+      <a class="btn" href="/ru/">Познакомиться со StitchDuck</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
+  <p>
+    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
+    · <a href="/ru/support/">Помощь</a>
+    · <a href="/ru/privacy/">Политика конфиденциальности</a>
+    · <a href="/ru/fabric-calculator/">Калькулятор канвы</a>
+  </p>
+  <p class="footer-langs"><a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a> · <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a> · <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a> · <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a> · <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a> · <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a> · <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a> · <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru" aria-current="page">Русский</a></p>
+</footer>
+
+</body>
+</html>

@@ -262,9 +262,14 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 }
 .pricing h2 { font-size: clamp(24px, 4vw, 32px); margin-bottom: 10px; }
 .pricing p { max-width: 640px; margin: 0 auto; font-size: 15.5px; line-height: 1.65; }
+.tools-link {
+  max-width: 1020px; margin: 22px auto 0; padding: 0 20px;
+  text-align: center; font-size: 14.5px; line-height: 1.6; color: var(--muted);
+}
 
 /* ---------- Inner pages (support / privacy) ---------- */
-.page { max-width: 760px; margin: 0 auto; padding: 48px 20px 24px; }
+/* An explicit width: with auto margins a flex item would otherwise size to its content, and a wide table could push it past the viewport. */
+.page { width: 100%; max-width: 760px; margin: 0 auto; padding: 48px 20px 24px; }
 .page h1 { font-size: clamp(30px, 5vw, 40px); margin-bottom: 10px; }
 .page .lead { font-size: 16.5px; line-height: 1.6; color: var(--muted); margin-bottom: 28px; }
 .eyebrow {
@@ -298,6 +303,43 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 }
 .faq summary::marker { color: var(--accent); }
 .faq details p, .faq details ul { padding: 2px 0 16px; }
+
+/* ---------- Fabric calculator ---------- */
+.calc {
+  background: var(--card); border: 1px solid var(--border); border-radius: 15px;
+  padding: 24px; margin-bottom: 12px; box-shadow: var(--shadow-accent);
+}
+.calc-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 16px 18px; }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field-label { font-size: 13px; font-weight: 600; color: var(--muted); line-height: 1.35; }
+.field-row { display: flex; gap: 8px; }
+.field-row input { flex: 1; min-width: 0; }
+.calc input, .calc select {
+  width: 100%; padding: 10px 12px; border-radius: 10px;
+  border: 1px solid var(--border-strong); background: var(--panel);
+  color: var(--heading); font: inherit; font-size: 16px; line-height: 1.3;
+}
+.field-row select { width: auto; flex: none; }
+.calc input:focus-visible, .calc select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.calc-results {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 12px;
+  margin-top: 20px;
+}
+.result { background: var(--soft-fill); border: 1px solid var(--soft-border); border-radius: 12px; padding: 14px 16px; }
+.result-label { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--eyebrow); margin-bottom: 4px; }
+.result output {
+  display: block; font-family: 'Newsreader', Georgia, 'Songti SC', 'Songti TC', serif;
+  font-size: 21px; font-weight: 600; line-height: 1.3; color: var(--heading);
+}
+.calc .hint { margin-top: 14px; }
+.table-wrap { overflow-x: auto; }
+.calc-table { width: 100%; border-collapse: collapse; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+.calc-table th, .calc-table td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--divider); white-space: nowrap; }
+.calc-table thead th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--eyebrow); }
+.calc-table tbody th { font-weight: 600; color: var(--heading); }
+.calc-table tr.current { background: var(--soft-fill); }
+.calc-table tr.current th, .calc-table tr.current td { color: var(--accent-text); font-weight: 600; }
+.calc-cta { margin-top: 36px; margin-bottom: 0; }
 
 .tldr {
   background: var(--soft-fill); border: 1px solid var(--soft-border);

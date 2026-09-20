@@ -82,7 +82,7 @@ DEFAULT = LANGS[0]
 KEYS = '|'.join(l.key for l in LANGS)
 
 # Page paths below each language root, and whether the page invites an install.
-PAGES = (('', True), ('support/', True), ('privacy/', False))
+PAGES = (('', True), ('support/', True), ('privacy/', False), ('fabric-calculator/', True))
 
 
 class BuildError(Exception):

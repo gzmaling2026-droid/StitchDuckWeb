@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Generated from _src/pages/fabric-calculator/index.html by _src/build.py. Edit the source, then rebuild. -->
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>クロスステッチ布サイズ計算ツール｜StitchDuck</title>
+<meta name="description" content="無料のクロスステッチ布サイズ計算ツール。図案の目数と布のカウント（アイーダ、リネンなど）から、仕上がりサイズと用意する布の大きさを cm とインチで計算します。">
+<link rel="canonical" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/">
+<link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/">
+<link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StitchDuck">
+<meta property="og:title" content="クロスステッチ布サイズ計算ツール｜StitchDuck">
+<meta property="og:description" content="無料のクロスステッチ布サイズ計算ツール。図案の目数と布のカウント（アイーダ、リネンなど）から、仕上がりサイズと用意する布の大きさを cm とインチで計算します。">
+<meta property="og:url" content="https://stitchduckapp.com/ja/fabric-calculator/">
+<meta property="og:image" content="https://stitchduckapp.com/assets/og/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6797516970">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "布のカウントとは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1 インチあたりの目数のことです。14 カウントのアイーダは 1 インチに 14 目、1 cm あたり約 5.5 目です。カウントが大きいほど 1 目が小さくなり、仕上がりも小さくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "余白はどのくらい取ればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "額装や仕立てのために、各辺に 5〜8 cm（2〜3 インチ）ほど取るのが一般的です。幅の広いマットを使う場合や、刺しゅう枠に入れて飾る場合は、もう少し多めに取ってください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「織り糸 2 本ごとに刺す」とは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "イーブンウィーブやリネンでは、ふつう縦横それぞれ織り糸 2 本をまたいで 1 目を刺します。そのため 28 カウントの布を 2 本ごとに刺すと、1 インチあたり 14 目になります。アイーダはマス目状に織られているので、1 マスに 1 目刺します。"
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=7ab74900">
+<script src="/assets/lang.js?v=0e4b28b6"></script>
+<script src="/assets/calculator.js?v=8a7adc17" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/ja/">
+      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <span class="brand-name">StitchDuck</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/support/">サポート</a>
+      <a href="/ja/privacy/">プライバシー</a>
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
+          <span id="langBtnLabel">日本語</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="langPop" role="group" aria-label="言語" hidden>
+          <a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a>
+          <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a>
+          <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a>
+          <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a>
+          <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a>
+          <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a>
+          <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja" aria-current="page">日本語</a>
+          <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>クロスステッチ布サイズ計算ツール</h1>
+  <p class="lead">
+    図案の目数と布のカウントを入力すると、仕上がりサイズと、用意する布の大きさがわかります。
+  </p>
+
+  <form class="calc" id="calc" novalidate data-unit-in="インチ" data-unit-cm="cm" data-primary="cm">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label">幅（目）</span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label">高さ（目）</span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label">布のカウント（1 インチあたりの目数）</span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">刺し方</span>
+        <select id="calcOver">
+          <option value="1">1 マスに 1 目 — アイーダ</option>
+          <option value="2">織り糸 2 本ごと — イーブンウィーブ、リネン</option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel">各辺の余白</span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel" value="8">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in">インチ</option>
+            <option value="cm">cm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label">仕上がりサイズ</span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label">用意する布</span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        この計算ツールには JavaScript が必要です。計算自体は簡単で、目数 ÷ カウント = インチ です。
+      </p>
+    </noscript>
+  </form>
+
+  <h2>同じ図案をほかのカウントの布に刺した場合</h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col">布</th>
+          <th scope="col">インチ</th>
+          <th scope="col">センチメートル</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>計算のしくみ</h2>
+  <p>
+    仕上がりサイズは、目数を布のカウントで割って求めます。140 × 100 目の図案を 14 カウントのアイーダに刺すと、25.4 × 18.1 cm（10 × 7.1 インチ）になります。イーブンウィーブやリネンでは、ふつう織り糸 2 本ごとに 1 目刺すのでカウントが半分になり、28 カウントの布を 2 本ごとに刺すと、14 カウントのアイーダと同じ大きさになります。余白は各辺に加えるため、縦横それぞれ 2 回分を足します。
+  </p>
+
+  <h2>よくある質問</h2>
+  <div class="faq">
+
+    <details>
+      <summary>布のカウントとは何ですか？</summary>
+      <p>
+        1 インチあたりの目数のことです。14 カウントのアイーダは 1 インチに 14 目、1 cm あたり約 5.5 目です。カウントが大きいほど 1 目が小さくなり、仕上がりも小さくなります。
+      </p>
+    </details>
+
+    <details>
+      <summary>余白はどのくらい取ればよいですか？</summary>
+      <p>
+        額装や仕立てのために、各辺に 5〜8 cm（2〜3 インチ）ほど取るのが一般的です。幅の広いマットを使う場合や、刺しゅう枠に入れて飾る場合は、もう少し多めに取ってください。
+      </p>
+    </details>
+
+    <details>
+      <summary>「織り糸 2 本ごとに刺す」とは？</summary>
+      <p>
+        イーブンウィーブやリネンでは、ふつう縦横それぞれ織り糸 2 本をまたいで 1 目を刺します。そのため 28 カウントの布を 2 本ごとに刺すと、1 インチあたり 14 目になります。アイーダはマス目状に織られているので、1 マスに 1 目刺します。
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      図案づくりもご自分で？ StitchDuck なら写真をクロスステッチ図案に変換でき、書き出した PDF 図案にはすべて仕上がりサイズが記載されます。
+    </p>
+    <div class="email-row">
+      <a class="btn" href="/ja/">StitchDuck を見る</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
+  <p>
+    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
+    · <a href="/ja/support/">サポート</a>
+    · <a href="/ja/privacy/">プライバシーポリシー</a>
+    · <a href="/ja/fabric-calculator/">布サイズ計算</a>
+  </p>
+  <p class="footer-langs"><a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a> · <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a> · <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a> · <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a> · <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a> · <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a> · <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja" aria-current="page">日本語</a> · <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a></p>
+</footer>
+
+</body>
+</html>

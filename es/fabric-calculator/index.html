@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Generated from _src/pages/fabric-calculator/index.html by _src/build.py. Edit the source, then rebuild. -->
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de tela para punto de cruz — StitchDuck</title>
+<meta name="description" content="Calculadora gratuita de tela para punto de cruz: puntos del patrón y cuenta de la tela (Aida, evenweave, lino) → tamaño final y tela a cortar, en cm y pulgadas.">
+<link rel="canonical" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/">
+<link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/">
+<link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StitchDuck">
+<meta property="og:title" content="Calculadora de tela para punto de cruz — StitchDuck">
+<meta property="og:description" content="Calculadora gratuita de tela para punto de cruz: puntos del patrón y cuenta de la tela (Aida, evenweave, lino) → tamaño final y tela a cortar, en cm y pulgadas.">
+<meta property="og:url" content="https://stitchduckapp.com/es/fabric-calculator/">
+<meta property="og:image" content="https://stitchduckapp.com/assets/og/og-es.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6797516970">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué significa la cuenta de la tela?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es el número de puntos por pulgada. Una Aida de 14 ct tiene 14 cuadros por pulgada, unos 5,5 por centímetro. Cuanto mayor es la cuenta, más pequeño es cada punto y más pequeña queda la labor terminada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto margen debo dejar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo habitual es dejar entre 5 y 8 cm (2–3 pulgadas) por cada lado para enmarcar y rematar. Si piensas usar un paspartú ancho o presentar la labor en un bastidor, deja un poco más."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa bordar «a dos hilos»?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En evenweave y lino cada cruz suele cubrir dos hilos de la tela en cada dirección, de modo que una tela de 28 ct bordada a dos hilos da 14 puntos por pulgada. La Aida está tejida en cuadros y se borda un punto por cuadro."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=7ab74900">
+<script src="/assets/lang.js?v=0e4b28b6"></script>
+<script src="/assets/calculator.js?v=8a7adc17" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/es/">
+      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <span class="brand-name">StitchDuck</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/es/">Inicio</a>
+      <a href="/es/support/">Ayuda</a>
+      <a href="/es/privacy/">Privacidad</a>
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
+          <span id="langBtnLabel">Español</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="langPop" role="group" aria-label="Idioma" hidden>
+          <a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a>
+          <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a>
+          <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a>
+          <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a>
+          <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es" aria-current="page">Español</a>
+          <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a>
+          <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a>
+          <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>Calculadora de tela para punto de cruz</h1>
+  <p class="lead">
+    Indica los puntos de tu patrón y la cuenta de tu tela para ver el tamaño final y el trozo de tela que debes cortar.
+  </p>
+
+  <form class="calc" id="calc" novalidate data-unit-in="″" data-unit-cm="cm" data-primary="cm">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label">Ancho (puntos)</span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label">Alto (puntos)</span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label">Cuenta de la tela (puntos por pulgada)</span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">Bordado a</span>
+        <select id="calcOver">
+          <option value="1">1 cuadro — Aida</option>
+          <option value="2">2 hilos — evenweave, lino</option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel">Margen por lado</span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel" value="8">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in">pulgadas</option>
+            <option value="cm">cm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label">Tamaño final</span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label">Tela a cortar</span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        Esta calculadora necesita JavaScript. La cuenta en sí es sencilla: puntos ÷ cuenta de la tela = pulgadas.
+      </p>
+    </noscript>
+  </form>
+
+  <h2>El mismo patrón en otras cuentas de tela</h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col">Tela</th>
+          <th scope="col">Pulgadas</th>
+          <th scope="col">Centímetros</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Cómo se calcula</h2>
+  <p>
+    El tamaño final es el número de puntos dividido entre la cuenta de la tela. Un patrón de 140 × 100 puntos en Aida de 14 ct mide 25,4 × 18,1 cm (10 × 7,1 pulgadas). En evenweave y lino cada cruz suele abarcar dos hilos, lo que reduce la cuenta a la mitad: una tela de 28 ct bordada a dos hilos da el mismo tamaño que una Aida de 14 ct. El margen se añade en cada lado, así que cuenta dos veces en cada dirección.
+  </p>
+
+  <h2>Preguntas frecuentes</h2>
+  <div class="faq">
+
+    <details>
+      <summary>¿Qué significa la cuenta de la tela?</summary>
+      <p>
+        Es el número de puntos por pulgada. Una Aida de 14 ct tiene 14 cuadros por pulgada, unos 5,5 por centímetro. Cuanto mayor es la cuenta, más pequeño es cada punto y más pequeña queda la labor terminada.
+      </p>
+    </details>
+
+    <details>
+      <summary>¿Cuánto margen debo dejar?</summary>
+      <p>
+        Lo habitual es dejar entre 5 y 8 cm (2–3 pulgadas) por cada lado para enmarcar y rematar. Si piensas usar un paspartú ancho o presentar la labor en un bastidor, deja un poco más.
+      </p>
+    </details>
+
+    <details>
+      <summary>¿Qué significa bordar «a dos hilos»?</summary>
+      <p>
+        En evenweave y lino cada cruz suele cubrir dos hilos de la tela en cada dirección, de modo que una tela de 28 ct bordada a dos hilos da 14 puntos por pulgada. La Aida está tejida en cuadros y se borda un punto por cuadro.
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      ¿También diseñas el patrón? StitchDuck convierte fotos en patrones de punto de cruz e indica el tamaño final en cada PDF que exporta.
+    </p>
+    <div class="email-row">
+      <a class="btn" href="/es/">Conoce StitchDuck</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
+  <p>
+    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
+    · <a href="/es/support/">Ayuda</a>
+    · <a href="/es/privacy/">Política de privacidad</a>
+    · <a href="/es/fabric-calculator/">Calculadora de tela</a>
+  </p>
+  <p class="footer-langs"><a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a> · <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a> · <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a> · <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a> · <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es" aria-current="page">Español</a> · <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a> · <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a> · <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a></p>
+</footer>
+
+</body>
+</html>

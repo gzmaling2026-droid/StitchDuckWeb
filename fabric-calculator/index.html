@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Generated from _src/pages/fabric-calculator/index.html by _src/build.py. Edit the source, then rebuild. -->
+<html lang="en" data-lang="en" data-alt-zh="/zh-hans/fabric-calculator/" data-alt-zht="/zh-hant/fabric-calculator/" data-alt-de="/de/fabric-calculator/" data-alt-es="/es/fabric-calculator/" data-alt-fr="/fr/fabric-calculator/" data-alt-ja="/ja/fabric-calculator/" data-alt-ru="/ru/fabric-calculator/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross Stitch Fabric Size Calculator — StitchDuck</title>
+<meta name="description" content="Free cross stitch fabric calculator: enter stitch count and fabric count (Aida, evenweave, linen) to get the finished size and fabric to cut, in inches and cm.">
+<link rel="canonical" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/">
+<link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/">
+<link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StitchDuck">
+<meta property="og:title" content="Cross Stitch Fabric Size Calculator — StitchDuck">
+<meta property="og:description" content="Free cross stitch fabric calculator: enter stitch count and fabric count (Aida, evenweave, linen) to get the finished size and fabric to cut, in inches and cm.">
+<meta property="og:url" content="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:image" content="https://stitchduckapp.com/assets/og/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6797516970">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "en",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does fabric count mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The number of stitches per inch. 14-count Aida has 14 squares to the inch, about 5.5 per centimeter. The higher the count, the smaller each stitch — and the smaller the finished piece."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much margin should I leave?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most stitchers leave 2–3 inches (5–8 cm) on every side for framing and finishing. If you plan a wide mat or a hoop finish, leave a little more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does “over two” mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On evenweave and linen each cross usually covers two fabric threads in each direction, so 28-count fabric stitched over two gives 14 stitches per inch. Aida is woven in squares and is stitched over one."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=7ab74900">
+<script src="/assets/lang.js?v=0e4b28b6"></script>
+<script src="/assets/calculator.js?v=8a7adc17" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <span class="brand-name">StitchDuck</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
+          <span id="langBtnLabel">English</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="langPop" role="group" aria-label="Language" hidden>
+          <a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en" aria-current="page">English</a>
+          <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a>
+          <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a>
+          <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a>
+          <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a>
+          <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a>
+          <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a>
+          <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>Cross-stitch fabric size calculator</h1>
+  <p class="lead">
+    Enter your pattern’s stitch count and your fabric count to see the finished size — and how big a piece of fabric to cut.
+  </p>
+
+  <form class="calc" id="calc" novalidate data-unit-in="in" data-unit-cm="cm" data-primary="in">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label">Width (stitches)</span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label">Height (stitches)</span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label">Fabric count (stitches per inch)</span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">Stitched over</span>
+        <select id="calcOver">
+          <option value="1">1 square — Aida</option>
+          <option value="2">2 threads — evenweave, linen</option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel">Margin on each side</span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel" value="3">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in">inches</option>
+            <option value="cm">cm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label">Finished size</span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label">Fabric to cut</span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        This calculator needs JavaScript. The sum itself is simple: stitches ÷ fabric count = inches.
+      </p>
+    </noscript>
+  </form>
+
+  <h2>The same pattern on other fabric counts</h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col">Fabric</th>
+          <th scope="col">Inches</th>
+          <th scope="col">Centimeters</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>How it works</h2>
+  <p>
+    Finished size is the stitch count divided by the fabric count. A 140 × 100 stitch pattern on 14-count Aida comes out at 10 × 7.1 inches (25.4 × 18.1 cm). On evenweave and linen each cross usually spans two threads, which halves the count: 28-count stitched over two gives the same size as 14-count Aida. The margin is added on every side, so it counts twice in each direction.
+  </p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+
+    <details>
+      <summary>What does fabric count mean?</summary>
+      <p>
+        The number of stitches per inch. 14-count Aida has 14 squares to the inch, about 5.5 per centimeter. The higher the count, the smaller each stitch — and the smaller the finished piece.
+      </p>
+    </details>
+
+    <details>
+      <summary>How much margin should I leave?</summary>
+      <p>
+        Most stitchers leave 2–3 inches (5–8 cm) on every side for framing and finishing. If you plan a wide mat or a hoop finish, leave a little more.
+      </p>
+    </details>
+
+    <details>
+      <summary>What does “over two” mean?</summary>
+      <p>
+        On evenweave and linen each cross usually covers two fabric threads in each direction, so 28-count fabric stitched over two gives 14 stitches per inch. Aida is woven in squares and is stitched over one.
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      Designing the pattern too? StitchDuck turns photos into cross-stitch patterns and puts the finished size on every PDF chart it exports.
+    </p>
+    <div class="email-row">
+      <a class="btn" href="/">Meet StitchDuck</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
+  <p>
+    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
+    · <a href="/support/">Support</a>
+    · <a href="/privacy/">Privacy Policy</a>
+    · <a href="/fabric-calculator/">Fabric calculator</a>
+  </p>
+  <p class="footer-langs"><a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en" aria-current="page">English</a> · <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh">简体中文</a> · <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a> · <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a> · <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a> · <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a> · <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a> · <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a></p>
+</footer>
+
+</body>
+</html>

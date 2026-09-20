@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><span class="l-en">Cross Stitch Fabric Size Calculator — StitchDuck</span><span class="l-zh">十字绣布料尺寸计算器 — 绣鸭 StitchDuck</span><span class="l-zht">十字繡布料尺寸計算機 — StitchDuck</span><span class="l-de">Kreuzstich-Stoffrechner: Stoffgröße berechnen – StitchDuck</span><span class="l-es">Calculadora de tela para punto de cruz — StitchDuck</span><span class="l-fr">Calculateur de toile pour point de croix – StitchDuck</span><span class="l-ja">クロスステッチ布サイズ計算ツール｜StitchDuck</span><span class="l-ru">Калькулятор канвы для вышивки крестом — StitchDuck</span></title>
+<meta name="description"
+  data-en-content="Free cross stitch fabric calculator: enter stitch count and fabric count (Aida, evenweave, linen) to get the finished size and fabric to cut, in inches and cm."
+  data-zh-content="免费十字绣布料计算器：输入图纸针数和布的 CT 数（Aida、平织布、亚麻布），算出成品尺寸和该裁多大的布，英寸与厘米同时显示。"
+  data-zht-content="免費十字繡布料計算機：輸入圖紙針數和布的 CT 數（Aida、平織布、亞麻布），算出成品尺寸和該裁多大的布，英吋與公分同時顯示。"
+  data-de-content="Kostenloser Kreuzstich-Stoffrechner: Stichzahl und Stoffdichte (Aida, Evenweave oder Leinen) eingeben und Endgröße sowie Stoffzuschnitt in cm und Zoll erhalten."
+  data-es-content="Calculadora gratuita de tela para punto de cruz: puntos del patrón y cuenta de la tela (Aida, evenweave, lino) → tamaño final y tela a cortar, en cm y pulgadas."
+  data-fr-content="Calculateur gratuit de toile pour point de croix : points du modèle et compte de la toile (Aïda, étamine, lin) → taille finie et toile à couper (cm, pouces)."
+  data-ja-content="無料のクロスステッチ布サイズ計算ツール。図案の目数と布のカウント（アイーダ、リネンなど）から、仕上がりサイズと用意する布の大きさを cm とインチで計算します。"
+  data-ru-content="Бесплатный калькулятор канвы для вышивки крестом: размер схемы в крестиках и каунт ткани (Aida, равномерка, лён) → итоговый размер и отрез в см и дюймах.">
+<!--seo-->
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/lang.js"></script>
+<script src="/assets/calculator.js" defer></script>
+</head>
+<body>
+
+<!--include:header-->
+
+<main class="page">
+  <h1><span class="l-en">Cross-stitch fabric size calculator</span><span class="l-zh">十字绣布料尺寸计算器</span><span class="l-zht">十字繡布料尺寸計算機</span><span class="l-de">Stoffrechner für Kreuzstich</span><span class="l-es">Calculadora de tela para punto de cruz</span><span class="l-fr">Calculateur de toile pour point de croix</span><span class="l-ja">クロスステッチ布サイズ計算ツール</span><span class="l-ru">Калькулятор канвы для вышивки крестом</span></h1>
+  <p class="lead">
+    <span class="l-en">Enter your pattern’s stitch count and your fabric count to see the finished size — and how big a piece of fabric to cut.</span>
+    <span class="l-zh">输入图纸的针数和布的 CT 数，立刻算出成品尺寸，以及该裁多大的一块布。</span>
+    <span class="l-zht">輸入圖紙的針數和布的 CT 數，立刻算出成品尺寸，以及該裁多大的一塊布。</span>
+    <span class="l-de">Gib die Stichzahl deines Musters und die Dichte deines Stoffs ein – du siehst sofort die Endgröße und wie groß du den Stoff zuschneiden solltest.</span>
+    <span class="l-es">Indica los puntos de tu patrón y la cuenta de tu tela para ver el tamaño final y el trozo de tela que debes cortar.</span>
+    <span class="l-fr">Indiquez le nombre de points de votre modèle et le compte de votre toile pour connaître la taille finie – et la dimension de toile à couper.</span>
+    <span class="l-ja">図案の目数と布のカウントを入力すると、仕上がりサイズと、用意する布の大きさがわかります。</span>
+    <span class="l-ru">Введите размер схемы в крестиках и каунт канвы — и вы увидите итоговый размер работы и размер отреза ткани.</span>
+  </p>
+
+  <form class="calc" id="calc" novalidate
+    data-en-data-unit-in="in"
+    data-zh-data-unit-in="英寸"
+    data-zht-data-unit-in="英吋"
+    data-de-data-unit-in="″"
+    data-es-data-unit-in="″"
+    data-fr-data-unit-in="″"
+    data-ja-data-unit-in="インチ"
+    data-ru-data-unit-in="″"
+    data-en-data-unit-cm="cm"
+    data-zh-data-unit-cm="厘米"
+    data-zht-data-unit-cm="公分"
+    data-de-data-unit-cm="cm"
+    data-es-data-unit-cm="cm"
+    data-fr-data-unit-cm="cm"
+    data-ja-data-unit-cm="cm"
+    data-ru-data-unit-cm="см"
+    data-en-data-primary="in"
+    data-zh-data-primary="cm"
+    data-zht-data-primary="cm"
+    data-de-data-primary="cm"
+    data-es-data-primary="cm"
+    data-fr-data-primary="cm"
+    data-ja-data-primary="cm"
+    data-ru-data-primary="cm">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label"><span class="l-en">Width (stitches)</span><span class="l-zh">宽（针）</span><span class="l-zht">寬（針）</span><span class="l-de">Breite (Stiche)</span><span class="l-es">Ancho (puntos)</span><span class="l-fr">Largeur (points)</span><span class="l-ja">幅（目）</span><span class="l-ru">Ширина (крестики)</span></span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label"><span class="l-en">Height (stitches)</span><span class="l-zh">高（针）</span><span class="l-zht">高（針）</span><span class="l-de">Höhe (Stiche)</span><span class="l-es">Alto (puntos)</span><span class="l-fr">Hauteur (points)</span><span class="l-ja">高さ（目）</span><span class="l-ru">Высота (крестики)</span></span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label"><span class="l-en">Fabric count (stitches per inch)</span><span class="l-zh">布的 CT 数（每英寸格数）</span><span class="l-zht">布的 CT 數（每英吋格數）</span><span class="l-de">Stoffdichte (Stiche pro Zoll)</span><span class="l-es">Cuenta de la tela (puntos por pulgada)</span><span class="l-fr">Compte de la toile (points par pouce)</span><span class="l-ja">布のカウント（1 インチあたりの目数）</span><span class="l-ru">Каунт канвы (крестиков на дюйм)</span></span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label"><span class="l-en">Stitched over</span><span class="l-zh">每针跨</span><span class="l-zht">每針跨</span><span class="l-de">Gestickt über</span><span class="l-es">Bordado a</span><span class="l-fr">Brodé sur</span><span class="l-ja">刺し方</span><span class="l-ru">Вышивка через</span></span>
+        <select id="calcOver">
+          <option value="1"><span class="l-en">1 square — Aida</span><span class="l-zh">1 格 — Aida 布</span><span class="l-zht">1 格 — Aida 布</span><span class="l-de">1 Kästchen – Aida</span><span class="l-es">1 cuadro — Aida</span><span class="l-fr">1 case – Aïda</span><span class="l-ja">1 マスに 1 目 — アイーダ</span><span class="l-ru">1 клетку — Aida</span></option>
+          <option value="2"><span class="l-en">2 threads — evenweave, linen</span><span class="l-zh">2 根布线 — 平织布、亚麻布</span><span class="l-zht">2 根布線 — 平織布、亞麻布</span><span class="l-de">2 Fäden – Evenweave, Leinen</span><span class="l-es">2 hilos — evenweave, lino</span><span class="l-fr">2 fils – étamine, lin</span><span class="l-ja">織り糸 2 本ごと — イーブンウィーブ、リネン</span><span class="l-ru">2 нити — равномерка, лён</span></option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel"><span class="l-en">Margin on each side</span><span class="l-zh">每边留边</span><span class="l-zht">每邊留邊</span><span class="l-de">Zugabe pro Seite</span><span class="l-es">Margen por lado</span><span class="l-fr">Marge de chaque côté</span><span class="l-ja">各辺の余白</span><span class="l-ru">Припуск с каждой стороны</span></span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel"
+            data-en-value="3"
+            data-zh-value="8"
+            data-zht-value="8"
+            data-de-value="8"
+            data-es-value="8"
+            data-fr-value="8"
+            data-ja-value="8"
+            data-ru-value="8">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in"><span class="l-en">inches</span><span class="l-zh">英寸</span><span class="l-zht">英吋</span><span class="l-de">Zoll</span><span class="l-es">pulgadas</span><span class="l-fr">pouces</span><span class="l-ja">インチ</span><span class="l-ru">дюймы</span></option>
+            <option value="cm"><span class="l-en">cm</span><span class="l-zh">厘米</span><span class="l-zht">公分</span><span class="l-de">cm</span><span class="l-es">cm</span><span class="l-fr">cm</span><span class="l-ja">cm</span><span class="l-ru">см</span></option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label"><span class="l-en">Finished size</span><span class="l-zh">成品尺寸</span><span class="l-zht">成品尺寸</span><span class="l-de">Endgröße</span><span class="l-es">Tamaño final</span><span class="l-fr">Taille finie</span><span class="l-ja">仕上がりサイズ</span><span class="l-ru">Итоговый размер</span></span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label"><span class="l-en">Fabric to cut</span><span class="l-zh">需裁布料</span><span class="l-zht">需裁布料</span><span class="l-de">Stoffzuschnitt</span><span class="l-es">Tela a cortar</span><span class="l-fr">Toile à couper</span><span class="l-ja">用意する布</span><span class="l-ru">Размер отреза</span></span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        <span class="l-en">This calculator needs JavaScript. The sum itself is simple: stitches ÷ fabric count = inches.</span>
+        <span class="l-zh">这个计算器需要启用 JavaScript。算法其实很简单：针数 ÷ CT 数 = 英寸。</span>
+        <span class="l-zht">這個計算機需要啟用 JavaScript。算法其實很簡單：針數 ÷ CT 數 = 英吋。</span>
+        <span class="l-de">Dieser Rechner braucht JavaScript. Die Rechnung selbst ist einfach: Stiche ÷ Stoffdichte (ct) = Zoll.</span>
+        <span class="l-es">Esta calculadora necesita JavaScript. La cuenta en sí es sencilla: puntos ÷ cuenta de la tela = pulgadas.</span>
+        <span class="l-fr">Ce calculateur nécessite JavaScript. Le calcul lui-même est simple : points ÷ compte de la toile = pouces.</span>
+        <span class="l-ja">この計算ツールには JavaScript が必要です。計算自体は簡単で、目数 ÷ カウント = インチ です。</span>
+        <span class="l-ru">Для калькулятора нужен JavaScript. Сам расчёт простой: крестики ÷ каунт = дюймы.</span>
+      </p>
+    </noscript>
+  </form>
+
+  <h2><span class="l-en">The same pattern on other fabric counts</span><span class="l-zh">同一图纸换用其他 CT 数的布</span><span class="l-zht">同一圖紙換用其他 CT 數的布</span><span class="l-de">Dasselbe Muster auf anderen Stoffdichten</span><span class="l-es">El mismo patrón en otras cuentas de tela</span><span class="l-fr">Le même modèle sur d’autres toiles</span><span class="l-ja">同じ図案をほかのカウントの布に刺した場合</span><span class="l-ru">Та же схема на канве другого каунта</span></h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col"><span class="l-en">Fabric</span><span class="l-zh">布</span><span class="l-zht">布</span><span class="l-de">Stoff</span><span class="l-es">Tela</span><span class="l-fr">Toile</span><span class="l-ja">布</span><span class="l-ru">Канва</span></th>
+          <th scope="col"><span class="l-en">Inches</span><span class="l-zh">英寸</span><span class="l-zht">英吋</span><span class="l-de">Zoll</span><span class="l-es">Pulgadas</span><span class="l-fr">Pouces</span><span class="l-ja">インチ</span><span class="l-ru">Дюймы</span></th>
+          <th scope="col"><span class="l-en">Centimeters</span><span class="l-zh">厘米</span><span class="l-zht">公分</span><span class="l-de">Zentimeter</span><span class="l-es">Centímetros</span><span class="l-fr">Centimètres</span><span class="l-ja">センチメートル</span><span class="l-ru">Сантиметры</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2><span class="l-en">How it works</span><span class="l-zh">计算方法</span><span class="l-zht">計算方式</span><span class="l-de">So wird gerechnet</span><span class="l-es">Cómo se calcula</span><span class="l-fr">Comment ça se calcule</span><span class="l-ja">計算のしくみ</span><span class="l-ru">Как это считается</span></h2>
+  <p>
+    <span class="l-en">Finished size is the stitch count divided by the fabric count. A 140 × 100 stitch pattern on 14-count Aida comes out at 10 × 7.1 inches (25.4 × 18.1 cm). On evenweave and linen each cross usually spans two threads, which halves the count: 28-count stitched over two gives the same size as 14-count Aida. The margin is added on every side, so it counts twice in each direction.</span>
+    <span class="l-zh">成品尺寸 = 针数 ÷ 布的 CT 数。140 × 100 针的图纸绣在 14CT 的 Aida 布上，成品是 25.4 × 18.1 厘米（10 × 7.1 英寸）。平织布和亚麻布通常每个十字跨两根布线，相当于 CT 数减半：28CT 的布跨两线绣，成品和 14CT 的 Aida 布一样大。留边加在四周，所以每个方向要算两次。</span>
+    <span class="l-zht">成品尺寸 = 針數 ÷ 布的 CT 數。140 × 100 針的圖紙繡在 14CT 的 Aida 布上，成品是 25.4 × 18.1 公分（10 × 7.1 英吋）。平織布和亞麻布通常每個十字跨兩根布線，相當於 CT 數減半：28CT 的布跨兩線繡，成品和 14CT 的 Aida 布一樣大。留邊加在四周，所以每個方向要算兩次。</span>
+    <span class="l-de">Die Endgröße ist die Stichzahl geteilt durch die Stoffdichte. Ein Muster mit 140 × 100 Stichen wird auf Aida 14 ct 25,4 × 18,1 cm groß (10 × 7,1 Zoll). Auf Evenweave und Leinen geht jedes Kreuz meist über zwei Fäden, die Dichte halbiert sich also: 28 ct über zwei Fäden ergibt dieselbe Größe wie Aida 14 ct. Die Zugabe kommt an jeder Seite dazu und zählt deshalb in jeder Richtung doppelt.</span>
+    <span class="l-es">El tamaño final es el número de puntos dividido entre la cuenta de la tela. Un patrón de 140 × 100 puntos en Aida de 14 ct mide 25,4 × 18,1 cm (10 × 7,1 pulgadas). En evenweave y lino cada cruz suele abarcar dos hilos, lo que reduce la cuenta a la mitad: una tela de 28 ct bordada a dos hilos da el mismo tamaño que una Aida de 14 ct. El margen se añade en cada lado, así que cuenta dos veces en cada dirección.</span>
+    <span class="l-fr">La taille finie est le nombre de points divisé par le compte de la toile. Un modèle de 140 × 100 points sur une Aïda 14 ct (5,5 points/cm) mesure 25,4 × 18,1 cm (10 × 7,1 pouces). Sur étamine et sur lin, chaque croix couvre en général deux fils, ce qui divise le compte par deux : une toile 28 ct brodée sur deux fils donne la même taille qu’une Aïda 14 ct. La marge s’ajoute de chaque côté ; elle compte donc deux fois dans chaque sens.</span>
+    <span class="l-ja">仕上がりサイズは、目数を布のカウントで割って求めます。140 × 100 目の図案を 14 カウントのアイーダに刺すと、25.4 × 18.1 cm（10 × 7.1 インチ）になります。イーブンウィーブやリネンでは、ふつう織り糸 2 本ごとに 1 目刺すのでカウントが半分になり、28 カウントの布を 2 本ごとに刺すと、14 カウントのアイーダと同じ大きさになります。余白は各辺に加えるため、縦横それぞれ 2 回分を足します。</span>
+    <span class="l-ru">Итоговый размер — это число крестиков, делённое на каунт канвы. Схема 140 × 100 крестиков на канве Aida 14 получится размером 25,4 × 18,1 см (10 × 7,1 дюйма). На равномерке и льне каждый крестик обычно вышивают через две нити, поэтому каунт уменьшается вдвое: ткань 28 каунта через две нити даёт тот же размер, что и Aida 14. Припуск добавляется с каждой стороны, поэтому в каждом направлении он учитывается дважды.</span>
+  </p>
+
+  <h2><span class="l-en">Frequently asked questions</span><span class="l-zh">常见问题</span><span class="l-zht">常見問題</span><span class="l-de">Häufige Fragen</span><span class="l-es">Preguntas frecuentes</span><span class="l-fr">Questions fréquentes</span><span class="l-ja">よくある質問</span><span class="l-ru">Частые вопросы</span></h2>
+  <div class="faq">
+
+    <details>
+      <summary><span class="l-en">What does fabric count mean?</span><span class="l-zh">布的 CT 数是什么意思？</span><span class="l-zht">布的 CT 數是什麼意思？</span><span class="l-de">Was bedeutet die Stoffdichte (ct)?</span><span class="l-es">¿Qué significa la cuenta de la tela?</span><span class="l-fr">Que signifie le compte d’une toile ?</span><span class="l-ja">布のカウントとは何ですか？</span><span class="l-ru">Что такое каунт канвы?</span></summary>
+      <p>
+        <span class="l-en">The number of stitches per inch. 14-count Aida has 14 squares to the inch, about 5.5 per centimeter. The higher the count, the smaller each stitch — and the smaller the finished piece.</span>
+        <span class="l-zh">就是每英寸有多少格。14CT 的 Aida 布每英寸 14 格，约合每厘米 5.5 格。CT 数越大，每一针越小，成品也越小。</span>
+        <span class="l-zht">就是每英吋有多少格。14CT 的 Aida 布每英吋 14 格，約合每公分 5.5 格。CT 數越大，每一針越小，成品也越小。</span>
+        <span class="l-de">Die Anzahl der Stiche pro Zoll. Aida 14 ct hat 14 Kästchen pro Zoll, also etwa 5,5 pro Zentimeter (54 Stiche auf 10 cm). Je höher der Wert, desto kleiner der einzelne Stich – und desto kleiner die fertige Arbeit.</span>
+        <span class="l-es">Es el número de puntos por pulgada. Una Aida de 14 ct tiene 14 cuadros por pulgada, unos 5,5 por centímetro. Cuanto mayor es la cuenta, más pequeño es cada punto y más pequeña queda la labor terminada.</span>
+        <span class="l-fr">C’est le nombre de points par pouce. Une Aïda 14 ct compte 14 cases par pouce, soit environ 5,5 points par centimètre. Plus le compte est élevé, plus chaque point est petit – et plus l’ouvrage fini l’est aussi.</span>
+        <span class="l-ja">1 インチあたりの目数のことです。14 カウントのアイーダは 1 インチに 14 目、1 cm あたり約 5.5 目です。カウントが大きいほど 1 目が小さくなり、仕上がりも小さくなります。</span>
+        <span class="l-ru">Это число крестиков на дюйм. У канвы Aida 14 — 14 клеток на дюйм, то есть примерно 5,5 на сантиметр. Чем выше каунт, тем мельче каждый крестик и тем меньше готовая работа.</span>
+      </p>
+    </details>
+
+    <details>
+      <summary><span class="l-en">How much margin should I leave?</span><span class="l-zh">四周该留多少边？</span><span class="l-zht">四周該留多少邊？</span><span class="l-de">Wie viel Zugabe sollte ich lassen?</span><span class="l-es">¿Cuánto margen debo dejar?</span><span class="l-fr">Quelle marge faut-il prévoir ?</span><span class="l-ja">余白はどのくらい取ればよいですか？</span><span class="l-ru">Какой припуск оставлять?</span></summary>
+      <p>
+        <span class="l-en">Most stitchers leave 2–3 inches (5–8 cm) on every side for framing and finishing. If you plan a wide mat or a hoop finish, leave a little more.</span>
+        <span class="l-zh">多数绣友每边留 5–8 厘米（2–3 英寸），方便装裱和收尾。如果打算配宽卡纸，或者直接用绣绷装饰，可以再多留一点。</span>
+        <span class="l-zht">多數繡友每邊留 5–8 公分（2–3 英吋），方便裝裱和收尾。如果打算配寬卡紙，或者直接用繡框裝飾，可以再多留一點。</span>
+        <span class="l-de">Meist lässt man an jeder Seite 5–8 cm (2–3 Zoll) für das Rahmen und Fertigstellen. Planst du ein breites Passepartout oder willst die Arbeit im Stickrahmen präsentieren, gib etwas mehr zu.</span>
+        <span class="l-es">Lo habitual es dejar entre 5 y 8 cm (2–3 pulgadas) por cada lado para enmarcar y rematar. Si piensas usar un paspartú ancho o presentar la labor en un bastidor, deja un poco más.</span>
+        <span class="l-fr">On laisse en général 5 à 8 cm (2 à 3 pouces) de chaque côté pour l’encadrement et les finitions. Si vous prévoyez un large passe-partout ou une présentation sur tambour, laissez un peu plus.</span>
+        <span class="l-ja">額装や仕立てのために、各辺に 5〜8 cm（2〜3 インチ）ほど取るのが一般的です。幅の広いマットを使う場合や、刺しゅう枠に入れて飾る場合は、もう少し多めに取ってください。</span>
+        <span class="l-ru">Обычно с каждой стороны оставляют 5–8 см (2–3 дюйма) на оформление и обработку краёв. Если планируете широкое паспарту или оформление в пяльцах, оставьте чуть больше.</span>
+      </p>
+    </details>
+
+    <details>
+      <summary><span class="l-en">What does “over two” mean?</span><span class="l-zh">「跨两线绣」是什么意思？</span><span class="l-zht">「跨兩線繡」是什麼意思？</span><span class="l-de">Was heißt „über zwei Fäden“?</span><span class="l-es">¿Qué significa bordar «a dos hilos»?</span><span class="l-fr">Que veut dire « sur deux fils » ?</span><span class="l-ja">「織り糸 2 本ごとに刺す」とは？</span><span class="l-ru">Что значит «через две нити»?</span></summary>
+      <p>
+        <span class="l-en">On evenweave and linen each cross usually covers two fabric threads in each direction, so 28-count fabric stitched over two gives 14 stitches per inch. Aida is woven in squares and is stitched over one.</span>
+        <span class="l-zh">平织布和亚麻布上，每个十字通常横竖各跨两根布线，所以 28CT 的布跨两线绣，相当于每英寸 14 针。Aida 布本身织成一格一格，一格绣一针。</span>
+        <span class="l-zht">平織布和亞麻布上，每個十字通常橫豎各跨兩根布線，所以 28CT 的布跨兩線繡，相當於每英吋 14 針。Aida 布本身織成一格一格，一格繡一針。</span>
+        <span class="l-de">Auf Evenweave und Leinen geht jedes Kreuz meist in beide Richtungen über zwei Gewebefäden; 28 ct über zwei Fäden ergibt also 14 Stiche pro Zoll. Aida ist in Kästchen gewebt und wird über ein Kästchen gestickt.</span>
+        <span class="l-es">En evenweave y lino cada cruz suele cubrir dos hilos de la tela en cada dirección, de modo que una tela de 28 ct bordada a dos hilos da 14 puntos por pulgada. La Aida está tejida en cuadros y se borda un punto por cuadro.</span>
+        <span class="l-fr">Sur étamine et sur lin, chaque croix couvre en général deux fils de la toile dans chaque sens : une toile 28 ct brodée sur deux fils donne donc 14 points par pouce. L’Aïda est tissée en cases et se brode une case à la fois.</span>
+        <span class="l-ja">イーブンウィーブやリネンでは、ふつう縦横それぞれ織り糸 2 本をまたいで 1 目を刺します。そのため 28 カウントの布を 2 本ごとに刺すと、1 インチあたり 14 目になります。アイーダはマス目状に織られているので、1 マスに 1 目刺します。</span>
+        <span class="l-ru">На равномерке и льне каждый крестик обычно перекрывает по две нити ткани в каждом направлении, поэтому ткань 28 каунта при вышивке через две нити даёт 14 крестиков на дюйм. Aida соткана клетками, и на ней вышивают один крестик в одной клетке.</span>
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      <span class="l-en">Designing the pattern too? StitchDuck turns photos into cross-stitch patterns and puts the finished size on every PDF chart it exports.</span>
+      <span class="l-zh">图纸也想自己设计？绣鸭能把照片变成十字绣图纸，导出的每份 PDF 图纸上都会标出成品尺寸。</span>
+      <span class="l-zht">圖紙也想自己設計？StitchDuck 能把照片變成十字繡圖紙，匯出的每份 PDF 圖紙上都會標出成品尺寸。</span>
+      <span class="l-de">Du entwirfst auch das Muster selbst? StitchDuck macht aus Fotos Kreuzstichmuster und gibt auf jedem exportierten PDF-Muster die Endgröße an.</span>
+      <span class="l-es">¿También diseñas el patrón? StitchDuck convierte fotos en patrones de punto de cruz e indica el tamaño final en cada PDF que exporta.</span>
+      <span class="l-fr">Vous créez aussi le modèle ? StitchDuck transforme vos photos en modèles de point de croix et indique la taille finie sur chaque PDF exporté.</span>
+      <span class="l-ja">図案づくりもご自分で？ StitchDuck なら写真をクロスステッチ図案に変換でき、書き出した PDF 図案にはすべて仕上がりサイズが記載されます。</span>
+      <span class="l-ru">Схему тоже создаёте сами? StitchDuck превращает фото в схемы для вышивки крестом и указывает итоговый размер в каждом экспортированном PDF.</span>
+    </p>
+    <div class="email-row">
+      <a class="btn" href="{{home}}"><span class="l-en">Meet StitchDuck</span><span class="l-zh">了解绣鸭</span><span class="l-zht">認識 StitchDuck</span><span class="l-de">StitchDuck ansehen</span><span class="l-es">Conoce StitchDuck</span><span class="l-fr">Découvrir StitchDuck</span><span class="l-ja">StitchDuck を見る</span><span class="l-ru">Познакомиться со StitchDuck</span></a>
+    </div>
+  </div>
+</main>
+
+<!--include:footer-->
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Generated from _src/pages/fabric-calculator/index.html by _src/build.py. Edit the source, then rebuild. -->
+<html lang="zh-Hans" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>十字绣布料尺寸计算器 — 绣鸭 StitchDuck</title>
+<meta name="description" content="免费十字绣布料计算器：输入图纸针数和布的 CT 数（Aida、平织布、亚麻布），算出成品尺寸和该裁多大的布，英寸与厘米同时显示。">
+<link rel="canonical" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/">
+<link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/">
+<link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/">
+<link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/">
+<link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/">
+<link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="绣鸭 StitchDuck">
+<meta property="og:title" content="十字绣布料尺寸计算器 — 绣鸭 StitchDuck">
+<meta property="og:description" content="免费十字绣布料计算器：输入图纸针数和布的 CT 数（Aida、平织布、亚麻布），算出成品尺寸和该裁多大的布，英寸与厘米同时显示。">
+<meta property="og:url" content="https://stitchduckapp.com/zh-hans/fabric-calculator/">
+<meta property="og:image" content="https://stitchduckapp.com/assets/og/og-zh-hans.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6797516970">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "zh-Hans",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "布的 CT 数是什么意思？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "就是每英寸有多少格。14CT 的 Aida 布每英寸 14 格，约合每厘米 5.5 格。CT 数越大，每一针越小，成品也越小。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "四周该留多少边？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数绣友每边留 5–8 厘米（2–3 英寸），方便装裱和收尾。如果打算配宽卡纸，或者直接用绣绷装饰，可以再多留一点。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「跨两线绣」是什么意思？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "平织布和亚麻布上，每个十字通常横竖各跨两根布线，所以 28CT 的布跨两线绣，相当于每英寸 14 针。Aida 布本身织成一格一格，一格绣一针。"
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=7ab74900">
+<script src="/assets/lang.js?v=0e4b28b6"></script>
+<script src="/assets/calculator.js?v=8a7adc17" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/zh-hans/">
+      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <span class="brand-name">绣鸭</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/zh-hans/">首页</a>
+      <a href="/zh-hans/support/">支持</a>
+      <a href="/zh-hans/privacy/">隐私</a>
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
+          <span id="langBtnLabel">简体中文</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="langPop" role="group" aria-label="语言" hidden>
+          <a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a>
+          <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh" aria-current="page">简体中文</a>
+          <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a>
+          <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a>
+          <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a>
+          <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a>
+          <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a>
+          <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <h1>十字绣布料尺寸计算器</h1>
+  <p class="lead">
+    输入图纸的针数和布的 CT 数，立刻算出成品尺寸，以及该裁多大的一块布。
+  </p>
+
+  <form class="calc" id="calc" novalidate data-unit-in="英寸" data-unit-cm="厘米" data-primary="cm">
+    <div class="calc-fields">
+      <label class="field">
+        <span class="field-label">宽（针）</span>
+        <input type="number" id="calcW" inputmode="numeric" min="1" max="5000" step="1" value="140">
+      </label>
+      <label class="field">
+        <span class="field-label">高（针）</span>
+        <input type="number" id="calcH" inputmode="numeric" min="1" max="5000" step="1" value="100">
+      </label>
+      <label class="field">
+        <span class="field-label">布的 CT 数（每英寸格数）</span>
+        <select id="calcCount">
+          <option value="11">11 ct · 4.3/cm</option>
+          <option value="14" selected>14 ct · 5.5/cm</option>
+          <option value="16">16 ct · 6.3/cm</option>
+          <option value="18">18 ct · 7.1/cm</option>
+          <option value="20">20 ct · 7.9/cm</option>
+          <option value="22">22 ct · 8.7/cm</option>
+          <option value="25">25 ct · 9.8/cm</option>
+          <option value="28">28 ct · 11/cm</option>
+          <option value="32">32 ct · 12.6/cm</option>
+          <option value="36">36 ct · 14.2/cm</option>
+          <option value="40">40 ct · 15.7/cm</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">每针跨</span>
+        <select id="calcOver">
+          <option value="1">1 格 — Aida 布</option>
+          <option value="2">2 根布线 — 平织布、亚麻布</option>
+        </select>
+      </label>
+      <div class="field">
+        <span class="field-label" id="calcMarginLabel">每边留边</span>
+        <div class="field-row">
+          <input type="number" id="calcMargin" inputmode="decimal" min="0" max="50" step="0.5" aria-labelledby="calcMarginLabel" value="8">
+          <select id="calcUnit" aria-labelledby="calcMarginLabel">
+            <option value="in">英寸</option>
+            <option value="cm">厘米</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results" aria-live="polite">
+      <div class="result">
+        <span class="result-label">成品尺寸</span>
+        <output id="calcSize" for="calcW calcH calcCount calcOver">—</output>
+      </div>
+      <div class="result">
+        <span class="result-label">需裁布料</span>
+        <output id="calcCut" for="calcW calcH calcCount calcOver calcMargin calcUnit">—</output>
+      </div>
+    </div>
+    <noscript>
+      <p class="hint">
+        这个计算器需要启用 JavaScript。算法其实很简单：针数 ÷ CT 数 = 英寸。
+      </p>
+    </noscript>
+  </form>
+
+  <h2>同一图纸换用其他 CT 数的布</h2>
+  <div class="table-wrap">
+    <table class="calc-table" id="calcTable">
+      <thead>
+        <tr>
+          <th scope="col">布</th>
+          <th scope="col">英寸</th>
+          <th scope="col">厘米</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>计算方法</h2>
+  <p>
+    成品尺寸 = 针数 ÷ 布的 CT 数。140 × 100 针的图纸绣在 14CT 的 Aida 布上，成品是 25.4 × 18.1 厘米（10 × 7.1 英寸）。平织布和亚麻布通常每个十字跨两根布线，相当于 CT 数减半：28CT 的布跨两线绣，成品和 14CT 的 Aida 布一样大。留边加在四周，所以每个方向要算两次。
+  </p>
+
+  <h2>常见问题</h2>
+  <div class="faq">
+
+    <details>
+      <summary>布的 CT 数是什么意思？</summary>
+      <p>
+        就是每英寸有多少格。14CT 的 Aida 布每英寸 14 格，约合每厘米 5.5 格。CT 数越大，每一针越小，成品也越小。
+      </p>
+    </details>
+
+    <details>
+      <summary>四周该留多少边？</summary>
+      <p>
+        多数绣友每边留 5–8 厘米（2–3 英寸），方便装裱和收尾。如果打算配宽卡纸，或者直接用绣绷装饰，可以再多留一点。
+      </p>
+    </details>
+
+    <details>
+      <summary>「跨两线绣」是什么意思？</summary>
+      <p>
+        平织布和亚麻布上，每个十字通常横竖各跨两根布线，所以 28CT 的布跨两线绣，相当于每英寸 14 针。Aida 布本身织成一格一格，一格绣一针。
+      </p>
+    </details>
+
+  </div>
+
+  <div class="contact-card calc-cta">
+    <p>
+      图纸也想自己设计？绣鸭能把照片变成十字绣图纸，导出的每份 PDF 图纸上都会标出成品尺寸。
+    </p>
+    <div class="email-row">
+      <a class="btn" href="/zh-hans/">了解绣鸭</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Guangzhou Maling Information Technology Co., Ltd.</p>
+  <p>
+    <a href="mailto:stitchduckapp@icloud.com">stitchduckapp@icloud.com</a>
+    · <a href="/zh-hans/support/">支持</a>
+    · <a href="/zh-hans/privacy/">隐私政策</a>
+    · <a href="/zh-hans/fabric-calculator/">布料计算器</a>
+  </p>
+  <p class="footer-langs"><a href="/fabric-calculator/" lang="en" hreflang="en" data-setlang="en">English</a> · <a href="/zh-hans/fabric-calculator/" lang="zh-Hans" hreflang="zh-Hans" data-setlang="zh" aria-current="page">简体中文</a> · <a href="/zh-hant/fabric-calculator/" lang="zh-Hant" hreflang="zh-Hant" data-setlang="zht">繁體中文</a> · <a href="/de/fabric-calculator/" lang="de" hreflang="de" data-setlang="de">Deutsch</a> · <a href="/es/fabric-calculator/" lang="es" hreflang="es" data-setlang="es">Español</a> · <a href="/fr/fabric-calculator/" lang="fr" hreflang="fr" data-setlang="fr">Français</a> · <a href="/ja/fabric-calculator/" lang="ja" hreflang="ja" data-setlang="ja">日本語</a> · <a href="/ru/fabric-calculator/" lang="ru" hreflang="ru" data-setlang="ru">Русский</a></p>
+</footer>
+
+</body>
+</html>
