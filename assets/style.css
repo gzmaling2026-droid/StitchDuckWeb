@@ -177,6 +177,19 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 .store-soon svg { width: 22px; height: 22px; fill: currentColor; flex: none; opacity: .75; }
 .store-soon .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-soon .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
+/* Too narrow for one row: the badge that works gets a row to itself and the two
+   platforms still to come share the next, so nothing is left dangling on its own. */
+@media (max-width: 640px) {
+  .platforms { display: grid; grid-template-columns: 1fr 1fr; max-width: 340px; margin: 0 auto; }
+  .store-badge { grid-column: 1 / -1; justify-content: center; }
+  .store-soon { justify-content: center; min-width: 0; padding: 9px 10px 11px; gap: 9px; }
+}
+@media (max-width: 360px) {
+  .store-soon { padding: 9px 6px 11px; gap: 7px; }
+  .store-soon svg { width: 18px; height: 18px; }
+  .store-soon .small { font-size: 10.5px; }
+  .store-soon .big { font-size: 17px; }
+}
 /* ---------- Download toast ---------- */
 /* Filled in and shown by platform.js when the App Store badge can't get
    anywhere; the copy-the-address row only appears on iPhone/iPad outside
