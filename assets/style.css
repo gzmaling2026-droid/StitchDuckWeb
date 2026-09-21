@@ -93,6 +93,15 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 }
 .site-nav > a:hover { background: var(--soft-fill); color: var(--accent-text); }
 .site-nav > a.active { background: var(--soft-fill); color: var(--accent-text); }
+.nav-menu { position: relative; }
+.nav-menu > button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 12px; border: 0; border-radius: 10px; background: transparent; cursor: pointer;
+  color: var(--muted); font: inherit; font-size: 14px; font-weight: 500; line-height: inherit; white-space: nowrap;
+}
+.nav-menu > button svg { transition: transform .15s ease; flex: none; }
+.nav-menu > button:hover, .nav-menu > button.active, .nav-menu.open > button { background: var(--soft-fill); color: var(--accent-text); }
+.nav-menu.open > button svg { transform: rotate(180deg); }
 .lang-menu { position: relative; margin-left: 8px; }
 .lang-btn {
   display: inline-flex; align-items: center; gap: 7px;
@@ -101,6 +110,7 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
   color: var(--muted); font-size: 13px; font-family: inherit; line-height: 1.3;
   white-space: nowrap;
 }
+.lang-short { display: none; }
 .lang-btn svg { transition: transform .15s ease; flex: none; }
 .lang-btn:hover { color: var(--accent-text); border-color: var(--accent); }
 .lang-menu.open .lang-btn { color: var(--accent-text); border-color: var(--accent); }
@@ -263,10 +273,6 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 .pricing h2 { font-size: clamp(24px, 4vw, 32px); margin-bottom: 10px; }
 .pricing p { max-width: 640px; margin: 0 auto; font-size: 15.5px; line-height: 1.65; }
 .pricing .pricing-own { margin-top: 12px; color: var(--heading); font-weight: 600; text-wrap: balance; }
-.tools-link {
-  max-width: 1020px; margin: 22px auto 0; padding: 0 20px;
-  text-align: center; font-size: 14.5px; line-height: 1.6; color: var(--muted);
-}
 
 /* ---------- Inner pages (support / privacy) ---------- */
 /* An explicit width: with auto margins a flex item would otherwise size to its content, and a wide table could push it past the viewport. */
@@ -361,24 +367,32 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 
 @media (max-width: 560px) {
   .header-inner { gap: 8px; }
-  .site-nav > a { padding: 8px 6px; font-size: 13px; }
+  .site-nav > a, .nav-menu > button { padding: 8px 6px; font-size: 13px; }
+  .nav-menu > button { gap: 4px; }
   .lang-menu { margin-left: 4px; }
   .lang-btn { padding: 6px 10px; font-size: 12.5px; gap: 6px; }
   .hero { padding-top: 44px; }
   .hero-frame img { width: 104px; height: 104px; }
 }
 
-/* Below ~460px the wordmark can no longer share a row with the nav and the
+/* Below ~560px the wordmark can no longer share a row with the nav and the
    language menu, so the logo carries the brand on phones. Under 360px even the
    logo-only row won't fit, so the wordmark comes back and the header wraps to
    two rows rather than leaving a lone logo on the first one. */
-@media (min-width: 360px) and (max-width: 460px) {
+@media (min-width: 360px) and (max-width: 560px) {
   .brand-name { display: none; }
 }
-/* Russian labels run long, so on phones the logo alone stands in for the Home link. */
-@media (max-width: 460px) {
-  :lang(ru) .site-nav > a:first-of-type { display: none; }
+/* With four items a phone header has no room to spare: the logo stands in for the Home
+   link, the language button shows a short code, and the Tools button drops its chevron. */
+@media (max-width: 720px) {
+  .site-nav > a:first-of-type { display: none; }
+  .lang-full, .nav-menu > button svg { display: none; }
+  .lang-short { display: inline; }
 }
-@media (max-width: 359px) {
-  :lang(ja) .site-nav > a:first-of-type { display: none; }
+@media (max-width: 400px) {
+  .header-inner { gap: 6px; }
+  .site-nav > a, .nav-menu > button { padding: 8px 5px; }
+  .lang-menu { margin-left: 2px; }
+  .lang-btn { padding: 6px 8px; gap: 5px; }
+  :lang(ru) .site-nav > a, :lang(ru) .nav-menu > button { padding: 8px 3px; }
 }

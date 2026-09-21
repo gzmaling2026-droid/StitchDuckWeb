@@ -1,4 +1,4 @@
-/* Language menu. Every language has its own URL — / for English, then
+/* Header menus. Every language has its own URL — / for English, then
  * /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/ and /ru/ — and the menu entries
  * are ordinary links between them. English is what everyone gets first: the
  * browser language is never sniffed, and only an explicit choice is
@@ -31,22 +31,30 @@
       });
     }
 
-    var btn = document.getElementById('langBtn');
-    var pop = document.getElementById('langPop');
-    if (!btn || !pop) return;
-    var menu = btn.parentNode;
-
-    function setOpen(open) {
+    // The header menus (Tools, language): a button that shows and hides the popover next to it.
+    var menus = document.querySelectorAll('.nav-menu, .lang-menu');
+    function setOpen(menu, open) {
+      var btn = menu.querySelector('button'), pop = menu.querySelector('.lang-pop');
       pop.hidden = !open;
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
       menu.classList.toggle('open', open);
     }
-    btn.addEventListener('click', function () { setOpen(pop.hidden); });
+    function closeAll(except) {
+      for (var i = 0; i < menus.length; i++) if (menus[i] !== except) setOpen(menus[i], false);
+    }
+    for (var m = 0; m < menus.length; m++) {
+      (function (menu) {
+        menu.querySelector('button').addEventListener('click', function () {
+          closeAll(menu);
+          setOpen(menu, menu.querySelector('.lang-pop').hidden);
+        });
+      })(menus[m]);
+    }
     document.addEventListener('click', function (e) {
-      if (!menu.contains(e.target)) setOpen(false);
+      for (var i = 0; i < menus.length; i++) if (!menus[i].contains(e.target)) setOpen(menus[i], false);
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key === 'Escape') closeAll(null);
     });
   });
 })();

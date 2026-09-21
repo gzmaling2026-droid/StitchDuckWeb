@@ -119,8 +119,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=14cb51bc">
-<script src="/assets/lang.js?v=0e4b28b6"></script>
+<link rel="stylesheet" href="/assets/style.css?v=7bacc44f">
+<script src="/assets/lang.js?v=6f8f5778"></script>
 <script src="/assets/platform.js?v=25a578b1" defer></script>
 </head>
 <body>
@@ -135,9 +135,18 @@
       <a href="/ru/" class="active">Главная</a>
       <a href="/ru/support/">Помощь</a>
       <a href="/ru/privacy/">Приватность</a>
+      <div class="nav-menu">
+        <button type="button" id="toolsBtn" aria-haspopup="true" aria-expanded="false" aria-controls="toolsPop">
+          <span>Сервисы</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-pop" id="toolsPop" role="group" aria-label="Сервисы" hidden>
+          <a href="/ru/fabric-calculator/">Калькулятор канвы</a>
+        </div>
+      </div>
       <div class="lang-menu">
         <button type="button" class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-controls="langPop">
-          <span id="langBtnLabel">Русский</span>
+          <span id="langBtnLabel"><span class="lang-full">Русский</span><span class="lang-short" aria-hidden="true">RU</span></span>
           <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="lang-pop" id="langPop" role="group" aria-label="Язык" hidden>
@@ -275,10 +284,6 @@
       </p>
     </div>
   </section>
-
-  <p class="tools-link">
-    Планируете новую работу? Рассчитайте ткань в бесплатном <a href="/ru/fabric-calculator/">калькуляторе канвы</a>.
-  </p>
 
   <section class="pricing">
     <div class="pricing-inner">

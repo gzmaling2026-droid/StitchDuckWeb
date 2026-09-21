@@ -13,12 +13,12 @@ and may use these tokens:
   {{home}}           root of the current language: /, /zh-hans/ or /zh-hant/
   {{appstore}}       App Store link for the current language
   {{shots}}          screenshot folder for the current language
-  {{lang_label}}     name of the current language
+  {{lang_label}}     name of the current language ({{lang_short}}: its short form for phones)
   <!--seo-->         canonical, hreflang, Open Graph and JSON-LD for the page
   <!--lang-menu-->   links to the same page in every language
   <!--lang-links-->  the same links as one line of plain text
   <!--include:x-->   the shared fragment _src/partials/x.html (the header and the footer)
-  {{active:path}}    marks the header link of the page being built
+  {{active:path}}    marks the header link of the page being built ({{current:path}} does it for a menu entry)
 
 Output is one page per language — / for English, which is also the x-default,
 and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/, /ru/ — plus sitemap.xml. The
@@ -55,6 +55,7 @@ class Lang(NamedTuple):
     tag: str        # <html lang> and hreflang
     og_locale: str
     label: str
+    short: str      # what the language button shows on a phone
     site_name: str
     app_name: str
     appstore: str
@@ -66,17 +67,18 @@ class Lang(NamedTuple):
 # home page rather than the app, so the Simplified Chinese pages name the
 # China storefront outright.
 LANGS = (
-    Lang('en', '', 'en', 'en_US', 'English', 'StitchDuck', 'StitchDuck',
+    Lang('en', '', 'en', 'en_US', 'English', 'EN', 'StitchDuck', 'StitchDuck',
          f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', '/assets/og/og-en.jpg'),
-    Lang('zh', 'zh-hans/', 'zh-Hans', 'zh_CN', '简体中文', '绣鸭 StitchDuck', '绣鸭',
+    Lang('zh', 'zh-hans/', 'zh-Hans', 'zh_CN', '简体中文', '简', '绣鸭 StitchDuck', '绣鸭',
          f'https://apps.apple.com/cn/app/id{APP_ID}', '/assets/shots/zh-hans', '/assets/og/og-zh-hans.jpg'),
-    Lang('zht', 'zh-hant/', 'zh-Hant', 'zh_TW', '繁體中文', 'StitchDuck', 'StitchDuck',
+    Lang('zht', 'zh-hant/', 'zh-Hant', 'zh_TW', '繁體中文', '繁', 'StitchDuck', 'StitchDuck',
          f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', '/assets/og/og-zh-hant.jpg'),
 ) + tuple(
-    Lang(key, f'{key}/', key, og_locale, label, 'StitchDuck', 'StitchDuck',
+    Lang(key, f'{key}/', key, og_locale, label, short, 'StitchDuck', 'StitchDuck',
          f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', f'/assets/og/og-{key}.jpg')
-    for key, og_locale, label in (('de', 'de_DE', 'Deutsch'), ('es', 'es_ES', 'Español'), ('fr', 'fr_FR', 'Français'),
-                                  ('ja', 'ja_JP', '日本語'), ('ru', 'ru_RU', 'Русский'))
+    for key, og_locale, label, short in (('de', 'de_DE', 'Deutsch', 'DE'), ('es', 'es_ES', 'Español', 'ES'),
+                                         ('fr', 'fr_FR', 'Français', 'FR'), ('ja', 'ja_JP', '日本語', '日'),
+                                         ('ru', 'ru_RU', 'Русский', 'RU'))
 )
 DEFAULT = LANGS[0]
 KEYS = '|'.join(l.key for l in LANGS)
@@ -98,6 +100,7 @@ L_ATTR = re.compile(rf'\s+data-({KEYS})-([a-z][a-z-]*)="([^"]*)"')
 TAG = re.compile(r'<[a-zA-Z][^<>]*>')
 INCLUDE = re.compile(r'<!--include:([a-z-]+)-->')
 ACTIVE = re.compile(r'\{\{active:([^}]*)\}\}')
+CURRENT = re.compile(r'\{\{current:([^}]*)\}\}')
 
 
 def language_spans(src, where):
@@ -292,6 +295,7 @@ def build_page(src_path, lang, page, invites_install):
                       src_path.read_text(encoding='utf-8'))
     out = pick_attrs(pick_text(src, lang.key, where), lang.key, where)
     out = ACTIVE.sub(lambda m: ' class="active"' if m.group(1) == page else '', out)
+    out = CURRENT.sub(lambda m: ' aria-current="page"' if m.group(1) == page else '', out)
 
     html_tag = f'<html lang="{lang.tag}" data-lang="{lang.key}"'
     if lang is DEFAULT:
@@ -302,7 +306,7 @@ def build_page(src_path, lang, page, invites_install):
         raise BuildError(f'{where}: no <html> tag')
 
     for token, value in (('{{home}}', url(lang, '')), ('{{appstore}}', lang.appstore),
-                         ('{{shots}}', lang.shots), ('{{lang_label}}', lang.label),
+                         ('{{shots}}', lang.shots), ('{{lang_label}}', lang.label), ('{{lang_short}}', lang.short),
                          ('<!--lang-menu-->', lang_links(lang, page, '\n          ')),
                          ('<!--lang-links-->', lang_links(lang, page, ' · '))):
         out = out.replace(token, value)
