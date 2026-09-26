@@ -22,7 +22,8 @@
 <body>
   <h1>404</h1>
   <p>Page not found · 页面不存在</p>
-  <p><a id="home" href="/">Back to StitchDuck · 回首页</a></p>
+  <!-- No referrer, so the home page picks the visitor's language as it does for anyone arriving from outside. -->
+  <p><a id="home" href="/" rel="noreferrer">Back to StitchDuck · 回首页</a></p>
   <script>
     // On *.github.io project pages the site root is /<repo>/; on the custom domain it's /.
     if (/\.github\.io$/.test(location.hostname)) {

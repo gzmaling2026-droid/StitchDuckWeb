@@ -299,7 +299,7 @@ def build_page(src_path, lang, page, invites_install):
 
     html_tag = f'<html lang="{lang.tag}" data-lang="{lang.key}"'
     if lang is DEFAULT:
-        # lang.js sends a visitor who chose another language to these.
+        # lang.js sends a visitor whose browser or earlier choice asks for another language to these.
         html_tag += ''.join(f' data-alt-{l.key}="{url(l, page)}"' for l in LANGS if l is not lang)
     out, n = re.subn(r'<html\b[^>]*>', html_tag + '>', out, count=1)
     if n != 1:
