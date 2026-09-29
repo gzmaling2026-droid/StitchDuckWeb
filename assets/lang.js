@@ -48,6 +48,17 @@
     }
   }
 
+  // The footer carries the filing numbers mainland China requires (ICP_FILING in _src/build.py).
+  // Visitors elsewhere don't need them, so they're hidden when the browser's time zone is outside
+  // mainland China, which tells without sending the visitor's IP anywhere and before anything
+  // paints. Hong Kong, Macau and Taiwan have zones of their own. With no time zone to go by, or
+  // without JS, the numbers show.
+  var zone = null;
+  try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
+  if (zone && !/^(Asia\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Kashgar)|PRC)$/.test(zone)) {
+    root.classList.add('outside-mainland-china');
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     // Remember an explicit choice, whether it came from the menu or the footer.
     var links = document.querySelectorAll('a[data-setlang]');

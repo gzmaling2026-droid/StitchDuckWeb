@@ -18,6 +18,7 @@ and may use these tokens:
   <!--lang-menu-->   links to the same page in every language
   <!--lang-links-->  the same links as one line of plain text
   <!--include:x-->   the shared fragment _src/partials/x.html (the header and the footer)
+  <!--cn-filing-->   mainland China's filing numbers (ICP_FILING and PSB_FILING below), once they are filled in
   {{active:path}}    marks the header link of the page being built ({{current:path}} does it for a menu entry)
 
 Output is one page per language — / for English, which is also the x-default,
@@ -47,6 +48,15 @@ PARTIALS_DIR = ROOT / '_src' / 'partials'
 ORG_NAME = 'Guangzhou Maling Information Technology Co., Ltd.'
 ORG_EMAIL = 'stitchduckapp@icloud.com'
 APP_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'ja', 'ru']
+
+# Mainland China's filing numbers for the footer: the ICP filing and, once that is granted, the
+# public security (公安) filing. Paste each exactly as issued, e.g. 粤ICP备XXXXXXXXXX号-1 and
+# 粤公网安备XXXXXXXXXXXXXX号; an empty one doesn't show. Until the ICP number is issued,
+# ICP_FILING says so instead, and words without a number show as plain text rather than a link.
+# The public security number also wants the badge the filing site hands out, saved as
+# assets/psb-badge.png. lang.js hides the line from visitors whose time zone is outside mainland China.
+ICP_FILING = 'ICP备案申请中'
+PSB_FILING = ''
 
 
 class Lang(NamedTuple):
@@ -190,6 +200,22 @@ def lang_links(lang, page, separator):
     return separator.join(links)
 
 
+def filing_line():
+    """Mainland China's filing numbers, each linked to the register that issued it; '' while there are none."""
+    items = []
+    if ICP_FILING:
+        # Only a number can be looked up there, so the words standing in for one stay plain.
+        text = html.escape(ICP_FILING)
+        items.append(f'<a href="https://beian.miit.gov.cn/">{text}</a>' if re.search(r'\d', ICP_FILING) else text)
+    if PSB_FILING:
+        if not (ROOT / 'assets' / 'psb-badge.png').is_file():
+            raise BuildError('PSB_FILING needs the badge from beian.mps.gov.cn saved as assets/psb-badge.png')
+        code = re.sub(r'\D', '', PSB_FILING)
+        items.append(f'<a href="https://beian.mps.gov.cn/#/query/webSearch?code={code}">'
+                     f'<img src="/assets/psb-badge.png" alt="">{html.escape(PSB_FILING)}</a>')
+    return f'<p class="footer-filing">{" · ".join(items)}</p>' if items else ''
+
+
 def text_of(fragment):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', fragment))).strip()
 
@@ -310,13 +336,16 @@ def build_page(src_path, lang, page, invites_install):
                          ('<!--lang-menu-->', lang_links(lang, page, '\n          ')),
                          ('<!--lang-links-->', lang_links(lang, page, ' · '))):
         out = out.replace(token, value)
+    # The token has a line of its own, which goes altogether while there is nothing to show.
+    filing = filing_line()
+    out = re.sub(r'(?m)^([ \t]*)<!--cn-filing-->\n', lambda m: m.group(1) + filing + '\n' if filing else '', out)
     out = out.replace('<!--seo-->', seo_block(lang, page, invites_install, out, where))
     out = re.sub(r'(/assets/[\w./-]+\.(?:css|js))(?=")', asset_version, out)
 
     banner = f'<!-- Generated from {src_path.relative_to(ROOT)} by _src/build.py. Edit the source, then rebuild. -->'
     out = out.replace('<!DOCTYPE html>\n', f'<!DOCTYPE html>\n{banner}\n', 1)
 
-    left = re.search(rf'{{{{|<!--(?:seo|lang-)|\bl-(?:{KEYS})"|\sdata-(?:{KEYS})-', out)
+    left = re.search(rf'{{{{|<!--(?:seo|lang-|cn-filing)|\bl-(?:{KEYS})"|\sdata-(?:{KEYS})-', out)
     if left:
         raise BuildError(f'{where}: unresolved "{left.group(0)}" in the output')
     return out
