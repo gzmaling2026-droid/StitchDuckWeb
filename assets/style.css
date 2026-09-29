@@ -241,24 +241,39 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 }
 
 /* ---------- Screenshots ---------- */
+/* One swipeable row at every width. It runs the full width of the window while
+   its first card lines up with the page column, so the next card always peeks
+   in from the edge. */
 .shots {
-  max-width: 1020px; margin: 0 auto; padding: 0 20px 12px;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px;
+  display: flex; gap: 16px; overflow-x: auto;
+  padding: 0 max(20px, calc(50% - 490px)) 16px;
+  scroll-snap-type: x mandatory; scroll-padding: 0 max(20px, calc(50% - 490px));
+  scrollbar-width: none;
 }
+.shots::-webkit-scrollbar { display: none; }
 .shot {
+  flex: 0 0 min(84%, 560px); scroll-snap-align: start;
   overflow: hidden; border-radius: 15px; border: 1px solid var(--border);
   background: var(--panel); box-shadow: var(--shadow-accent);
 }
 .shot img { display: block; width: 100%; height: auto; }
+/* A mouse can't swipe, so shots.js shows buttons that step through the row. */
+.shots-nav { max-width: 1020px; margin: 0 auto; padding: 4px 20px 0; display: flex; justify-content: flex-end; gap: 10px; }
+.shots-nav[hidden] { display: none; }
+.shots-nav button {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; padding: 0; border-radius: 50%; cursor: pointer;
+  border: 1px solid var(--border-strong); background: transparent; color: var(--muted);
+}
+.shots-nav button:hover:not(:disabled) { color: var(--accent-text); border-color: var(--accent); }
+.shots-nav button:disabled { opacity: .4; cursor: default; }
+@media (hover: none), (pointer: coarse) {
+  .shots-nav { display: none; }
+}
 @media (max-width: 640px) {
-  /* One swipeable row on phones rather than six stacked cards. */
-  .shots {
-    display: flex; gap: 12px; overflow-x: auto; padding-bottom: 16px;
-    scroll-snap-type: x mandatory; scroll-padding: 0 20px;
-    scrollbar-width: none;
-  }
-  .shots::-webkit-scrollbar { display: none; }
-  .shot { flex: 0 0 84%; scroll-snap-align: center; }
+  /* Phones centre the card they land on, with a sliver of its neighbours either side. */
+  .shots { gap: 12px; }
+  .shot { scroll-snap-align: center; }
 }
 
 /* ---------- Feature cards ---------- */

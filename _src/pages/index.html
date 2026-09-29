@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="/assets/style.css">
 <script src="/assets/lang.js"></script>
 <script src="/assets/platform.js" defer></script>
+<script src="/assets/shots.js" defer></script>
 </head>
 <body>
 
@@ -100,11 +101,11 @@
     </p>
   </section>
 
-  <section class="shots" data-en-aria-label="Screenshots" data-zh-aria-label="应用截图" data-zht-aria-label="App 截圖" data-de-aria-label="Screenshots" data-es-aria-label="Capturas de pantalla" data-fr-aria-label="Captures d’écran" data-ja-aria-label="スクリーンショット" data-ru-aria-label="Скриншоты">
+  <section class="shots" id="shots" data-en-aria-label="Screenshots" data-zh-aria-label="应用截图" data-zht-aria-label="App 截圖" data-de-aria-label="Screenshots" data-es-aria-label="Capturas de pantalla" data-fr-aria-label="Captures d’écran" data-ja-aria-label="スクリーンショット" data-ru-aria-label="Скриншоты">
     <figure class="shot">
       <img src="{{shots}}/photo-to-pattern-720.webp"
         srcset="{{shots}}/photo-to-pattern-720.webp 720w, {{shots}}/photo-to-pattern-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="StitchDuck on iPad turning a photo of a duck into a cross-stitch pattern, with DMC colors and brightness, contrast and saturation controls"
         data-zh-alt="绣鸭在 iPad 上把小鸭照片一键转成十字绣图纸，自动匹配 DMC 色号，可调亮度、对比度、饱和度"
@@ -118,7 +119,7 @@
     <figure class="shot">
       <img src="{{shots}}/cross-stitch-editor-720.webp"
         srcset="{{shots}}/cross-stitch-editor-720.webp 720w, {{shots}}/cross-stitch-editor-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="StitchDuck pattern editor on iPad showing stitches in cross view, with block and symbol views one tap away"
         data-zh-alt="绣鸭 iPad 编辑器的十字视图，可随时切换色块视图与符号视图"
@@ -132,7 +133,7 @@
     <figure class="shot">
       <img src="{{shots}}/pdf-chart-export-720.webp"
         srcset="{{shots}}/pdf-chart-export-720.webp 720w, {{shots}}/pdf-chart-export-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="PDF chart exported from StitchDuck with a symbol chart, thread list, floss usage and shopping list"
         data-zh-alt="绣鸭导出的 PDF 图纸：符号图、线材表、用线量与采购清单"
@@ -146,7 +147,7 @@
     <figure class="shot">
       <img src="{{shots}}/stitch-types-720.webp"
         srcset="{{shots}}/stitch-types-720.webp 720w, {{shots}}/stitch-types-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="StitchDuck stitch tools on iPad: full, half, quarter, three-quarter and petite stitches, backstitch, French knots and beads"
         data-zh-alt="绣鸭 iPad 编辑器的针法工具：全针、半针、1/4、3/4、小针、背针勾边、法国结、珠子"
@@ -160,7 +161,7 @@
     <figure class="shot">
       <img src="{{shots}}/large-charts-720.webp"
         srcset="{{shots}}/large-charts-720.webp 720w, {{shots}}/large-charts-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="A 1000 × 1000 stitch cross-stitch chart open in StitchDuck on iPad"
         data-zh-alt="绣鸭在 iPad 上打开 1000 × 1000 针的大幅十字绣图纸"
@@ -174,7 +175,7 @@
     <figure class="shot">
       <img src="{{shots}}/layers-720.webp"
         srcset="{{shots}}/layers-720.webp 720w, {{shots}}/layers-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async"
         data-en-alt="Layers panel in StitchDuck on iPad, each layer with its own thumbnail"
         data-zh-alt="绣鸭 iPad 编辑器的图层面板，每个图层都带缩略图"
@@ -186,6 +187,10 @@
         data-ru-alt="Панель слоёв в StitchDuck на iPad: у каждого слоя своя миниатюра">
     </figure>
   </section>
+  <div class="shots-nav" hidden>
+    <button type="button" class="shots-prev" aria-controls="shots" data-en-aria-label="Previous screenshot" data-zh-aria-label="上一张截图" data-zht-aria-label="上一張截圖" data-de-aria-label="Vorheriger Screenshot" data-es-aria-label="Captura anterior" data-fr-aria-label="Capture précédente" data-ja-aria-label="前のスクリーンショット" data-ru-aria-label="Предыдущий скриншот"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="shots-next" aria-controls="shots" data-en-aria-label="Next screenshot" data-zh-aria-label="下一张截图" data-zht-aria-label="下一張截圖" data-de-aria-label="Nächster Screenshot" data-es-aria-label="Captura siguiente" data-fr-aria-label="Capture suivante" data-ja-aria-label="次のスクリーンショット" data-ru-aria-label="Следующий скриншот"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
 
   <section class="features">
     <div class="card peach">
@@ -281,14 +286,14 @@
         <span class="l-ru">Творите бесплатно. Разблокируйте одной покупкой.</span>
       </h2>
       <p>
-        <span class="l-en">All conversion and editing tools are free, with up to 3 saved projects. A single one-time purchase — no subscription — unlocks every export format and unlimited projects across iPhone, iPad and Mac.</span>
-        <span class="l-zh">转换与编辑工具全部免费，可保存 3 个项目。一次性买断、非订阅，即解锁全部导出格式与不限量保存，iPhone、iPad、Mac 通用。</span>
-        <span class="l-zht">轉換與編輯工具全部免費，可儲存 3 個專案。一次性買斷、非訂閱，即解鎖全部匯出格式與不限量儲存，iPhone、iPad、Mac 通用。</span>
-        <span class="l-de">Alle Werkzeuge zum Umwandeln und Bearbeiten sind gratis, mit bis zu 3 gespeicherten Projekten. Ein einziger Einmalkauf – kein Abo – schaltet alle Exportformate und unbegrenzt viele Projekte frei, auf iPhone, iPad und Mac gleichermaßen.</span>
-        <span class="l-es">Todas las herramientas de conversión y edición son gratis, con hasta 3 proyectos guardados. Una compra única —sin suscripción— desbloquea todos los formatos de exportación y proyectos ilimitados en iPhone, iPad y Mac.</span>
-        <span class="l-fr">Tous les outils de conversion et d’édition sont gratuits, avec jusqu’à 3 projets enregistrés. Un achat unique – sans abonnement – débloque tous les formats d’export et un nombre illimité de projets sur iPhone, iPad et Mac.</span>
-        <span class="l-ja">変換ツールも編集ツールもすべて無料で、プロジェクトは 3 件まで保存できます。一度きりの買い切り（サブスクリプションではありません）で、すべての書き出し形式と無制限のプロジェクト保存が、iPhone・iPad・Mac のすべてでアンロックされます。</span>
-        <span class="l-ru">Все инструменты преобразования и редактирования бесплатны, сохранить можно до 3 проектов. Одна разовая покупка — без подписки — разблокирует все форматы экспорта и снимает ограничение на число проектов сразу на iPhone, iPad и Mac.</span>
+        <span class="l-en">Conversion and editing tools are free, with up to 3 saved projects. A single one-time purchase — no subscription — unlocks every export format and unlimited projects across iPhone, iPad and Mac.</span>
+        <span class="l-zh">转换与编辑工具免费，可保存 3 个项目。一次性买断、非订阅，即解锁全部导出格式与不限量保存，iPhone、iPad、Mac 通用。</span>
+        <span class="l-zht">轉換與編輯工具免費，可儲存 3 個專案。一次性買斷、非訂閱，即解鎖全部匯出格式與不限量儲存，iPhone、iPad、Mac 通用。</span>
+        <span class="l-de">Werkzeuge zum Umwandeln und Bearbeiten sind gratis, mit bis zu 3 gespeicherten Projekten. Ein einziger Einmalkauf – kein Abo – schaltet alle Exportformate und unbegrenzt viele Projekte frei, auf iPhone, iPad und Mac gleichermaßen.</span>
+        <span class="l-es">Las herramientas de conversión y edición son gratis, con hasta 3 proyectos guardados. Una compra única —sin suscripción— desbloquea todos los formatos de exportación y proyectos ilimitados en iPhone, iPad y Mac.</span>
+        <span class="l-fr">Les outils de conversion et d’édition sont gratuits, avec jusqu’à 3 projets enregistrés. Un achat unique – sans abonnement – débloque tous les formats d’export et un nombre illimité de projets sur iPhone, iPad et Mac.</span>
+        <span class="l-ja">変換ツールと編集ツールは無料で、プロジェクトは 3 件まで保存できます。一度きりの買い切り（サブスクリプションではありません）で、すべての書き出し形式と無制限のプロジェクト保存が、iPhone・iPad・Mac のすべてでアンロックされます。</span>
+        <span class="l-ru">Инструменты преобразования и редактирования бесплатны, сохранить можно до 3 проектов. Одна разовая покупка — без подписки — разблокирует все форматы экспорта и снимает ограничение на число проектов сразу на iPhone, iPad и Mac.</span>
       </p>
       <p class="pricing-own">
         <span class="l-en">Your patterns are yours — sell the pieces you stitch or the patterns themselves. Commercial use is included.</span>

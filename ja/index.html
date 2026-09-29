@@ -119,9 +119,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=5e0911fd">
+<link rel="stylesheet" href="/assets/style.css?v=443e0cd9">
 <script src="/assets/lang.js?v=547d8aac"></script>
 <script src="/assets/platform.js?v=25a578b1" defer></script>
+<script src="/assets/shots.js?v=4ca16863" defer></script>
 </head>
 <body>
 
@@ -207,44 +208,48 @@
     </p>
   </section>
 
-  <section class="shots" aria-label="スクリーンショット">
+  <section class="shots" id="shots" aria-label="スクリーンショット">
     <figure class="shot">
       <img src="/assets/shots/en/photo-to-pattern-720.webp"
         srcset="/assets/shots/en/photo-to-pattern-720.webp 720w, /assets/shots/en/photo-to-pattern-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="iPad の StitchDuck でアヒルの写真をクロスステッチ図案に変換している画面。DMC の色と、明るさ・コントラスト・彩度の調整つき">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/cross-stitch-editor-720.webp"
         srcset="/assets/shots/en/cross-stitch-editor-720.webp 720w, /assets/shots/en/cross-stitch-editor-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="iPad の StitchDuck の図案エディタ。ステッチをクロス表示にした画面で、ベタ塗り表示と記号表示にもワンタップで切り替えられる">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/pdf-chart-export-720.webp"
         srcset="/assets/shots/en/pdf-chart-export-720.webp 720w, /assets/shots/en/pdf-chart-export-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck から書き出した PDF 図案。記号図案、糸リスト、糸の使用量、買い物リストつき">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/stitch-types-720.webp"
         srcset="/assets/shots/en/stitch-types-720.webp 720w, /assets/shots/en/stitch-types-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="iPad の StitchDuck のステッチツール：フル、ハーフ、1/4、3/4、プチの各ステッチ、バックステッチ、フレンチノット、ビーズ">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/large-charts-720.webp"
         srcset="/assets/shots/en/large-charts-720.webp 720w, /assets/shots/en/large-charts-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="iPad の StitchDuck で開いた 1000 × 1000 目のクロスステッチ図案">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/layers-720.webp"
         srcset="/assets/shots/en/layers-720.webp 720w, /assets/shots/en/layers-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="iPad の StitchDuck のレイヤーパネル。各レイヤーにサムネイルが付いている">
     </figure>
   </section>
+  <div class="shots-nav" hidden>
+    <button type="button" class="shots-prev" aria-controls="shots" aria-label="前のスクリーンショット"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="shots-next" aria-controls="shots" aria-label="次のスクリーンショット"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
 
   <section class="features">
     <div class="card peach">
@@ -291,7 +296,7 @@
         デザインは無料。アンロックは買い切り。
       </h2>
       <p>
-        変換ツールも編集ツールもすべて無料で、プロジェクトは 3 件まで保存できます。一度きりの買い切り（サブスクリプションではありません）で、すべての書き出し形式と無制限のプロジェクト保存が、iPhone・iPad・Mac のすべてでアンロックされます。
+        変換ツールと編集ツールは無料で、プロジェクトは 3 件まで保存できます。一度きりの買い切り（サブスクリプションではありません）で、すべての書き出し形式と無制限のプロジェクト保存が、iPhone・iPad・Mac のすべてでアンロックされます。
       </p>
       <p class="pricing-own">
         作った図案はあなたのもの。刺し上げた作品も、図案そのものも販売できます。商用利用も含まれています。

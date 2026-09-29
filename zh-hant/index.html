@@ -119,9 +119,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=5e0911fd">
+<link rel="stylesheet" href="/assets/style.css?v=443e0cd9">
 <script src="/assets/lang.js?v=547d8aac"></script>
 <script src="/assets/platform.js?v=25a578b1" defer></script>
+<script src="/assets/shots.js?v=4ca16863" defer></script>
 </head>
 <body>
 
@@ -207,44 +208,48 @@
     </p>
   </section>
 
-  <section class="shots" aria-label="App 截圖">
+  <section class="shots" id="shots" aria-label="App 截圖">
     <figure class="shot">
       <img src="/assets/shots/en/photo-to-pattern-720.webp"
         srcset="/assets/shots/en/photo-to-pattern-720.webp 720w, /assets/shots/en/photo-to-pattern-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck 在 iPad 上把小鴨照片一鍵轉成十字繡圖紙，自動對應 DMC 色號，可調亮度、對比、飽和度">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/cross-stitch-editor-720.webp"
         srcset="/assets/shots/en/cross-stitch-editor-720.webp 720w, /assets/shots/en/cross-stitch-editor-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck iPad 編輯器的十字檢視，可隨時切換色塊檢視與符號檢視">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/pdf-chart-export-720.webp"
         srcset="/assets/shots/en/pdf-chart-export-720.webp 720w, /assets/shots/en/pdf-chart-export-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck 匯出的 PDF 圖紙：符號圖、線材表、用線量與採購清單">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/stitch-types-720.webp"
         srcset="/assets/shots/en/stitch-types-720.webp 720w, /assets/shots/en/stitch-types-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck iPad 編輯器的針法工具：全針、半針、1/4、3/4、小針、回針勾邊、法國結、珠子">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/large-charts-720.webp"
         srcset="/assets/shots/en/large-charts-720.webp 720w, /assets/shots/en/large-charts-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck 在 iPad 上開啟 1000 × 1000 針的大幅十字繡圖紙">
     </figure>
     <figure class="shot">
       <img src="/assets/shots/en/layers-720.webp"
         srcset="/assets/shots/en/layers-720.webp 720w, /assets/shots/en/layers-1366.webp 1366w"
-        sizes="(max-width: 640px) 84vw, (max-width: 960px) 46vw, 316px"
+        sizes="(max-width: 700px) 84vw, 560px"
         width="1366" height="1024" loading="lazy" decoding="async" alt="StitchDuck iPad 編輯器的圖層面板，每個圖層都有縮圖">
     </figure>
   </section>
+  <div class="shots-nav" hidden>
+    <button type="button" class="shots-prev" aria-controls="shots" aria-label="上一張截圖"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button type="button" class="shots-next" aria-controls="shots" aria-label="下一張截圖"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
 
   <section class="features">
     <div class="card peach">
@@ -291,7 +296,7 @@
         設計免費，一次買斷
       </h2>
       <p>
-        轉換與編輯工具全部免費，可儲存 3 個專案。一次性買斷、非訂閱，即解鎖全部匯出格式與不限量儲存，iPhone、iPad、Mac 通用。
+        轉換與編輯工具免費，可儲存 3 個專案。一次性買斷、非訂閱，即解鎖全部匯出格式與不限量儲存，iPhone、iPad、Mac 通用。
       </p>
       <p class="pricing-own">
         你做的圖紙歸你所有——成品能賣，圖紙也能賣，商用已包含在內。
