@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Link preview card, 1200×630. Rendered to /assets/og/ by _src/og/render.sh; pick the language with ?lang=en|zh|zht|de|es|fr|ja|ru. -->
+<!-- Link preview card, 1200×630. Rendered to /assets/og/ by _src/og/render.sh; pick the language with ?lang=en|zh|zht|de|es|fr|it|ja|ko|pl|pt|ru|tr|uk. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -45,6 +45,8 @@
   :lang(zh-Hans) .name { font-weight: 900; }
   /* Georgia's Chinese-font fallback would draw kana and kanji the Chinese way. */
   :lang(ja) h1 { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; letter-spacing: 0; line-height: 1.24; }
+  /* Hangul falls back to a Gothic face whose 600 looks light beside Newsreader; 800 matches it. */
+  :lang(ko) h1 { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; font-weight: 800; letter-spacing: 0; line-height: 1.22; }
   .marks { display: flex; gap: 12px; margin: 30px 0 26px; }
   .marks svg { width: 26px; height: 26px; }
   .sub { font-size: 25px; line-height: 1.4; color: #726864; font-weight: 500; white-space: nowrap; }
@@ -75,14 +77,20 @@
   <div class="device"><img id="device" alt=""></div>
 <script>
   var COPY = {
-    en:  { tag: 'en',      name: 'StitchDuck', headline: 'Turn photos into <em>cross-stitch</em> patterns.', sub: 'Pattern maker for iPhone, iPad &amp; Mac', device: 'device-en.webp' },
-    zh:  { tag: 'zh-Hans', name: '绣鸭',        headline: '把照片变成<br><em>十字绣</em>图纸',                 sub: '十字绣图纸设计 · iPhone、iPad、Mac',      device: 'device-zh.webp' },
+    en: { tag: 'en',      name: 'StitchDuck', headline: 'Turn photos into <em>cross-stitch</em> patterns.', sub: 'Pattern maker for iPhone, iPad &amp; Mac', device: 'device-en.webp' },
+    zh: { tag: 'zh-Hans', name: '绣鸭',        headline: '把照片变成<br><em>十字绣</em>图纸',                 sub: '十字绣图纸设计 · iPhone、iPad、Mac',      device: 'device-zh.webp' },
     zht: { tag: 'zh-Hant', name: 'StitchDuck', headline: '把照片變成<br><em>十字繡</em>圖紙',                 sub: '十字繡圖紙設計 · iPhone、iPad、Mac',      device: 'device-en.webp' },
     de: { tag: 'de', name: 'StitchDuck', headline: 'Aus Fotos werden <em>Kreuzstich</em>muster.', sub: 'Muster-Designer für iPhone, iPad &amp; Mac', device: 'device-en.webp' },
     es: { tag: 'es', name: 'StitchDuck', headline: 'Pasa tus fotos a <em>punto de cruz</em>.', sub: 'Creador de patrones · iPhone, iPad y Mac', device: 'device-en.webp' },
     fr: { tag: 'fr', name: 'StitchDuck', headline: 'Vos photos<br>en modèles de<br><em>point de croix</em>.', sub: 'Créez vos modèles sur iPhone, iPad et Mac', device: 'device-en.webp' },
+    it: { tag: 'it', name: 'StitchDuck', headline: 'Le tue foto<br>in schemi<br>a <em>punto croce</em>.', sub: 'Crea schemi su iPhone, iPad e Mac', device: 'device-en.webp' },
     ja: { tag: 'ja', name: 'StitchDuck', headline: '写真を<br><em>クロスステッチ</em><br>図案に', sub: 'iPhone・iPad・Mac 対応の図案作成アプリ', device: 'device-en.webp' },
-    ru: { tag: 'ru', name: 'StitchDuck', headline: 'Фото — в схему <em>вышивки крестом</em>', sub: 'Редактор схем для iPhone, iPad и Mac', device: 'device-en.webp' }
+    ko: { tag: 'ko', name: 'StitchDuck', headline: '사진 한 장을<br><em>십자수</em><br>도안으로', sub: 'iPhone, iPad, Mac용 십자수 도안 앱', device: 'device-en.webp' },
+    pl: { tag: 'pl', name: 'StitchDuck', headline: 'Zdjęcia<br>we wzory <em>haftu krzyżykowego</em>.', sub: 'Kreator wzorów · iPhone, iPad i Mac', device: 'device-en.webp' },
+    pt: { tag: 'pt-BR', name: 'StitchDuck', headline: 'Transforme fotos<br>em gráficos de<br><em>ponto cruz</em>.', sub: 'Criador de gráficos · iPhone, iPad e Mac', device: 'device-en.webp' },
+    ru: { tag: 'ru', name: 'StitchDuck', headline: 'Фото — в схему <em>вышивки крестом</em>', sub: 'Редактор схем для iPhone, iPad и Mac', device: 'device-en.webp' },
+    tr: { tag: 'tr', name: 'StitchDuck', headline: 'Fotoğrafınız<br><em>kanaviçeye</em><br>dönüşsün.', sub: 'Desen tasarımı · iPhone, iPad ve Mac', device: 'device-en.webp' },
+    uk: { tag: 'uk', name: 'StitchDuck', headline: 'Фото — у схему<br><em>вишивки хрестом</em>', sub: 'Створення схем для iPhone, iPad і Mac', device: 'device-en.webp' }
   };
   var c = COPY[new URLSearchParams(location.search).get('lang')] || COPY.en;
   document.documentElement.lang = c.tag;

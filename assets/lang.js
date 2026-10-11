@@ -1,9 +1,10 @@
 /* Header menus. Every language has its own URL — / for English, then
- * /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/ and /ru/ — and the menu entries
- * are ordinary links between them. The English URLs double as the default: a
+ * /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /it/, /ja/, /ko/, /pl/, /pt-br/, /ru/,
+ * /tr/ and /uk/ — and the menu entries are ordinary links between them. The English URLs double as the default: a
  * visitor arriving at one from elsewhere is sent on to the same page in the
  * first of their browser's languages that the site has, Chinese being
- * Traditional for Taiwan, Hong Kong and Macau and Simplified otherwise. A
+ * Traditional for Taiwan, Hong Kong and Macau and Simplified otherwise, and
+ * any Portuguese getting the site's Brazilian Portuguese. A
  * language picked from the menu is remembered and wins over the browser from
  * then on. Any other URL is always shown as asked for, and so is an English
  * one reached from within the site, so picking English sticks even where
@@ -19,7 +20,7 @@
   // The site's language for a browser language tag such as de-AT, zh-TW or zh-Hans-HK, or null.
   function siteLang(tag) {
     var sub = String(tag || '').toLowerCase().split(/[-_]/);
-    if (sub[0] !== 'zh') return /^(en|de|es|fr|ja|ru)$/.test(sub[0]) ? sub[0] : null;
+    if (sub[0] !== 'zh') return /^(en|de|es|fr|it|ja|ko|pl|pt|ru|tr|uk)$/.test(sub[0]) ? sub[0] : null;
     // A script subtag comes before the region, so it decides when there is one.
     for (var i = 1; i < sub.length; i++) {
       if (sub[i] === 'hans') return 'zh';

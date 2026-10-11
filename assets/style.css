@@ -58,16 +58,20 @@ a { color: var(--accent-text); }
 
 /* Newsreader and Work Sans cover Latin only. The default fallbacks above are
    Simplified Chinese faces, which would draw Traditional Chinese and Japanese
-   text with mainland glyph shapes and have no good Cyrillic, so those
+   text with mainland glyph shapes and have no good Cyrillic or Hangul, so those
    languages name their own fallbacks. */
 body:lang(zh-Hant) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', 'PingFang SC', sans-serif; }
 :lang(zh-Hant) :is(h1, h2, h3, .brand-name) { font-family: 'Newsreader', Georgia, 'Songti TC', 'Songti SC', serif; }
 body:lang(ja) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, 'Noto Sans JP', sans-serif; }
 :lang(ja) :is(h1, h2, h3, .brand-name) { font-family: 'Newsreader', Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif; }
-body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-:lang(ru) :is(h1, h2, h3, .brand-name) { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
-/* German and Russian have words wider than a phone at heading size; let them hyphenate rather than push the page sideways. */
-:lang(de) :is(h1, h2), :lang(ru) :is(h1, h2) { -webkit-hyphens: auto; hyphens: auto; overflow-wrap: anywhere; }
+body:lang(ko) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+:lang(ko) :is(h1, h2, h3, .brand-name) { font-family: 'Newsreader', Georgia, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+:is(:lang(ru), :lang(uk)) :is(h1, h2, h3, .brand-name) { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
+/* Korean breaks lines between words, not inside them. */
+:lang(ko) { word-break: keep-all; overflow-wrap: anywhere; }
+/* German, Polish, Russian and Ukrainian have words wider than a phone at heading size; let them hyphenate rather than push the page sideways. */
+:is(:lang(de), :lang(pl), :lang(ru), :lang(uk)) :is(h1, h2) { -webkit-hyphens: auto; hyphens: auto; overflow-wrap: anywhere; }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -166,6 +170,8 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
 .store-badge svg { width: 21px; height: 26px; fill: currentColor; flex: none; }
 .store-badge .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-badge .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
+/* Apple's Korean and Turkish badges put the big "App Store" line on top, the verb under it. */
+:is(:lang(ko), :lang(tr)) .store-badge > span { display: flex; flex-direction: column-reverse; }
 .hero-note { margin-top: 16px; font-size: 13px; color: var(--eyebrow); text-wrap: balance; }
 /* App Store badge plus the not-yet-shipped platforms, on one row where they fit. */
 .platforms { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 10px; }
@@ -427,5 +433,5 @@ body:lang(ru) { font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Se
   .site-nav > a, .nav-menu > button { padding: 8px 5px; }
   .lang-menu { margin-left: 2px; }
   .lang-btn { padding: 6px 8px; gap: 5px; }
-  :lang(ru) .site-nav > a, :lang(ru) .nav-menu > button { padding: 8px 3px; }
+  :is(:lang(ru), :lang(uk)) :is(.site-nav > a, .nav-menu > button) { padding: 8px 3px; }
 }

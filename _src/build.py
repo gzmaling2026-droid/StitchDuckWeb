@@ -10,7 +10,7 @@ A piece of copy that lacks a language stops the build.
 
 and may use these tokens:
 
-  {{home}}           root of the current language: /, /zh-hans/ or /zh-hant/
+  {{home}}           root of the current language: /, /zh-hans/, /de/ …
   {{appstore}}       App Store link for the current language
   {{shots}}          screenshot folder for the current language
   {{lang_label}}     name of the current language ({{lang_short}}: its short form for phones)
@@ -22,8 +22,9 @@ and may use these tokens:
   {{active:path}}    marks the header link of the page being built ({{current:path}} does it for a menu entry)
 
 Output is one page per language — / for English, which is also the x-default,
-and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /ja/, /ru/ — plus sitemap.xml. The
-languages and their order follow the app. Only the standard library is needed.
+and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /it/, /ja/, /ko/, /pl/, /pt-br/,
+/ru/, /tr/, /uk/ — plus sitemap.xml. The languages and their order follow the
+app. Only the standard library is needed.
 
   python3 _src/build.py           build
   python3 _src/build.py --check   exit 1 if the published files are out of date
@@ -47,7 +48,7 @@ PARTIALS_DIR = ROOT / '_src' / 'partials'
 
 ORG_NAME = 'Guangzhou Maling Information Technology Co., Ltd.'
 ORG_EMAIL = 'stitchduckapp@icloud.com'
-APP_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'ja', 'ru']
+APP_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'it', 'ja', 'ko', 'pl', 'pt-BR', 'ru', 'tr', 'uk']
 
 # Mainland China's filing numbers for the footer: the ICP filing and, once that is granted, the
 # public security (公安) filing. Paste each exactly as issued, e.g. 粤ICP备XXXXXXXXXX号-1 and
@@ -82,13 +83,20 @@ LANGS = (
     Lang('zh', 'zh-hans/', 'zh-Hans', 'zh_CN', '简体中文', '简', '绣鸭 StitchDuck', '绣鸭',
          f'https://apps.apple.com/cn/app/id{APP_ID}', '/assets/shots/zh-hans', '/assets/og/og-zh-hans.jpg'),
     Lang('zht', 'zh-hant/', 'zh-Hant', 'zh_TW', '繁體中文', '繁', 'StitchDuck', 'StitchDuck',
-         f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', '/assets/og/og-zh-hant.jpg'),
+         f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/zh-hant', '/assets/og/og-zh-hant.jpg'),
 ) + tuple(
-    Lang(key, f'{key}/', key, og_locale, label, short, 'StitchDuck', 'StitchDuck',
-         f'https://apps.apple.com/app/id{APP_ID}', '/assets/shots/en', f'/assets/og/og-{key}.jpg')
-    for key, og_locale, label, short in (('de', 'de_DE', 'Deutsch', 'DE'), ('es', 'es_ES', 'Español', 'ES'),
-                                         ('fr', 'fr_FR', 'Français', 'FR'), ('ja', 'ja_JP', '日本語', '日'),
-                                         ('ru', 'ru_RU', 'Русский', 'RU'))
+    Lang(key, f'{prefix}/', tag, og_locale, label, short, 'StitchDuck', 'StitchDuck',
+         f'https://apps.apple.com/app/id{APP_ID}', f'/assets/shots/{prefix}', f'/assets/og/og-{prefix}.jpg')
+    for key, prefix, tag, og_locale, label, short in (
+        ('de', 'de', 'de', 'de_DE', 'Deutsch', 'DE'), ('es', 'es', 'es', 'es_ES', 'Español', 'ES'),
+        ('fr', 'fr', 'fr', 'fr_FR', 'Français', 'FR'), ('it', 'it', 'it', 'it_IT', 'Italiano', 'IT'),
+        ('ja', 'ja', 'ja', 'ja_JP', '日本語', '日'), ('ko', 'ko', 'ko', 'ko_KR', '한국어', '한'),
+        ('pl', 'pl', 'pl', 'pl_PL', 'Polski', 'PL'),
+        # The app's Portuguese is Brazilian, and so is the site's.
+        ('pt', 'pt-br', 'pt-BR', 'pt_BR', 'Português (Brasil)', 'PT'),
+        ('ru', 'ru', 'ru', 'ru_RU', 'Русский', 'RU'), ('tr', 'tr', 'tr', 'tr_TR', 'Türkçe', 'TR'),
+        # UA rather than the language code, which would read as the United Kingdom.
+        ('uk', 'uk', 'uk', 'uk_UA', 'Українська', 'UA'))
 )
 DEFAULT = LANGS[0]
 KEYS = '|'.join(l.key for l in LANGS)
