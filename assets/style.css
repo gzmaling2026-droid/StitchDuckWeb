@@ -181,7 +181,12 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
 /* Each part between the dots stays whole, so a phone breaks the note between parts
    rather than inside one (Chinese would otherwise split 通用 as 通 / 用). */
 .hero-note .seg { white-space: nowrap; }
-/* The store badges plus the platform still to come, on one row where they fit. */
+/* Google Play can't be reached from mainland China, which gets an Android release of its own
+   later. lang.js marks every other time zone with .outside-mainland-china before anything
+   paints; without it (in mainland China, or with no time zone or no JS to go by) the page
+   shows Android as still to come instead of the Google Play badge. */
+.outside-mainland-china .mainland-only, html:not(.outside-mainland-china) .outside-mainland-only { display: none; }
+/* The store badges plus the platforms still to come, on one row where they fit. */
 .platforms { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 10px; }
 .store-soon {
   display: inline-flex; align-items: center; gap: 11px; text-align: left;
@@ -191,12 +196,20 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
 .store-soon svg { width: 22px; height: 22px; fill: currentColor; flex: none; opacity: .75; }
 .store-soon .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-soon .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
-/* Too narrow for one row: one column of equally wide buttons, the store badges
-   first and the platform still to come under them. Two badges side by side
-   don't fit a phone in every language (Korean's "Google Play에서" is the widest). */
+/* Too narrow for one row: every button gets a row to itself (two badges side by side
+   don't fit a phone in every language; Korean's "Google Play에서" is the widest),
+   except that in mainland China the two platforms still to come share one, so
+   neither is left dangling on its own. */
 @media (max-width: 640px) {
-  .platforms { display: grid; grid-template-columns: 1fr; max-width: 300px; margin: 0 auto; }
-  .store-badge, .store-soon { justify-content: center; }
+  .platforms { display: grid; grid-template-columns: 1fr 1fr; max-width: 340px; margin: 0 auto; }
+  .store-badge, .store-soon { grid-column: 1 / -1; justify-content: center; }
+  html:not(.outside-mainland-china) .store-soon { grid-column: auto; min-width: 0; padding: 9px 10px 11px; gap: 9px; }
+}
+@media (max-width: 360px) {
+  html:not(.outside-mainland-china) .store-soon { padding: 9px 6px 11px; gap: 7px; }
+  html:not(.outside-mainland-china) .store-soon svg { width: 18px; height: 18px; }
+  html:not(.outside-mainland-china) .store-soon .small { font-size: 10.5px; }
+  html:not(.outside-mainland-china) .store-soon .big { font-size: 17px; }
 }
 /* ---------- Download toast ---------- */
 /* Filled in and shown by platform.js when the App Store badge can't get

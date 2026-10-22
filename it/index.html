@@ -147,9 +147,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&family=Work+Sans:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=b526a3e9">
-<script src="/assets/lang.js?v=d12ccdb7"></script>
-<script src="/assets/platform.js?v=662ca948" defer></script>
+<link rel="stylesheet" href="/assets/style.css?v=eea2423c">
+<script src="/assets/lang.js?v=dca2ebca"></script>
+<script src="/assets/platform.js?v=199cfc02" defer></script>
 <script src="/assets/shots.js?v=4ca16863" defer></script>
 </head>
 <body>
@@ -219,7 +219,9 @@
         <span class="big">App Store</span>
       </span>
     </a>
-    <a class="store-badge" data-store="google" href="https://play.google.com/store/apps/details?id=com.stitchduckapp.app">
+    <!-- Google Play can't be reached from mainland China, which gets an Android release of its
+         own later: visitors there see Android as still to come (lang.js, .outside-mainland-china). -->
+    <a class="store-badge outside-mainland-only" data-store="google" href="https://play.google.com/store/apps/details?id=com.stitchduckapp.app">
       <!-- Google Play glyph: Font Awesome Free (CC BY 4.0) -->
       <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
       <span>
@@ -227,6 +229,14 @@
         <span class="big">Google Play</span>
       </span>
     </a>
+    <span class="store-soon mainland-only" aria-disabled="true">
+      <!-- Android robot glyph: Font Awesome Free (CC BY 4.0) -->
+      <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1-24 24m273.7-144.5 47.9-83a10 10 0 1 0-17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0-246.6 0L116.2 64.5a10 10 0 1 0-17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384h576c-8.2-98.5-64.5-181.8-146.9-226.6"/></svg>
+      <span>
+        <span class="small">In arrivo su</span>
+        <span class="big">Android</span>
+      </span>
+    </span>
     <!-- Not a link yet: Windows has nowhere to go until it ships. -->
     <span class="store-soon" aria-disabled="true">
       <!-- Windows glyph: Font Awesome Free (CC BY 4.0) -->
@@ -237,8 +247,11 @@
       </span>
     </span>
     </div>
-    <p class="hero-note">
+    <p class="hero-note outside-mainland-only">
       <span class="seg">Per iPhone, iPad, Mac e Android</span>&nbsp;· <span class="seg">Windows in arrivo</span>&nbsp;· <span class="seg">Funziona completamente offline</span>
+    </p>
+    <p class="hero-note mainland-only">
+      <span class="seg">Per iPhone, iPad e Mac</span>&nbsp;· <span class="seg">Android e Windows in arrivo</span>&nbsp;· <span class="seg">Funziona completamente offline</span>
     </p>
   </section>
 

@@ -49,11 +49,13 @@
     }
   }
 
-  // The footer carries the filing numbers mainland China requires (ICP_FILING in _src/build.py).
-  // Visitors elsewhere don't need them, so they're hidden when the browser's time zone is outside
-  // mainland China, which tells without sending the visitor's IP anywhere and before anything
-  // paints. Hong Kong, Macau and Taiwan have zones of their own. With no time zone to go by, or
-  // without JS, the numbers show.
+  // Two things differ for visitors in mainland China: the footer carries the filing numbers required
+  // there (ICP_FILING in _src/build.py), and Android shows as still to come rather than as a Google
+  // Play badge, since Google Play can't be reached there and the app gets a mainland release of its
+  // own later. Everyone else gets .outside-mainland-china, going by the browser's time zone, which
+  // tells without sending the visitor's IP anywhere and before anything paints. Hong Kong, Macau and
+  // Taiwan have zones of their own. With no time zone to go by, or without JS, a visitor gets the
+  // mainland version.
   var zone = null;
   try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
   if (zone && !/^(Asia\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Kashgar)|PRC)$/.test(zone)) {
