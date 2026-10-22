@@ -170,10 +170,18 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
 .store-badge svg { width: 21px; height: 26px; fill: currentColor; flex: none; }
 .store-badge .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-badge .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
-/* Apple's Korean and Turkish badges put the big "App Store" line on top, the verb under it. */
-:is(:lang(ko), :lang(tr)) .store-badge > span { display: flex; flex-direction: column-reverse; }
+/* Google's badges set the verb in capitals. */
+.store-badge[data-store="google"] .small { letter-spacing: .04em; }
+/* The big store name goes on top and the verb under it wherever the store's own
+   badge does that: Apple's in Korean and Turkish, Google's in Traditional Chinese,
+   Japanese and Korean. */
+:is(:lang(ko), :lang(tr)) .store-badge[data-store="apple"] > span,
+:is(:lang(zh-Hant), :lang(ja), :lang(ko)) .store-badge[data-store="google"] > span { display: flex; flex-direction: column-reverse; }
 .hero-note { margin-top: 16px; font-size: 13px; color: var(--eyebrow); text-wrap: balance; }
-/* App Store badge plus the not-yet-shipped platforms, on one row where they fit. */
+/* Each part between the dots stays whole, so a phone breaks the note between parts
+   rather than inside one (Chinese would otherwise split 通用 as 通 / 用). */
+.hero-note .seg { white-space: nowrap; }
+/* The store badges plus the platform still to come, on one row where they fit. */
 .platforms { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 10px; }
 .store-soon {
   display: inline-flex; align-items: center; gap: 11px; text-align: left;
@@ -183,18 +191,12 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
 .store-soon svg { width: 22px; height: 22px; fill: currentColor; flex: none; opacity: .75; }
 .store-soon .small { display: block; font-size: 11px; opacity: .8; line-height: 1.2; }
 .store-soon .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
-/* Too narrow for one row: the badge that works gets a row to itself and the two
-   platforms still to come share the next, so nothing is left dangling on its own. */
+/* Too narrow for one row: one column of equally wide buttons, the store badges
+   first and the platform still to come under them. Two badges side by side
+   don't fit a phone in every language (Korean's "Google Play에서" is the widest). */
 @media (max-width: 640px) {
-  .platforms { display: grid; grid-template-columns: 1fr 1fr; max-width: 340px; margin: 0 auto; }
-  .store-badge { grid-column: 1 / -1; justify-content: center; }
-  .store-soon { justify-content: center; min-width: 0; padding: 9px 10px 11px; gap: 9px; }
-}
-@media (max-width: 360px) {
-  .store-soon { padding: 9px 6px 11px; gap: 7px; }
-  .store-soon svg { width: 18px; height: 18px; }
-  .store-soon .small { font-size: 10.5px; }
-  .store-soon .big { font-size: 17px; }
+  .platforms { display: grid; grid-template-columns: 1fr; max-width: 300px; margin: 0 auto; }
+  .store-badge, .store-soon { justify-content: center; }
 }
 /* ---------- Download toast ---------- */
 /* Filled in and shown by platform.js when the App Store badge can't get

@@ -9,7 +9,9 @@
  * platform is the whole story, so the toast just says so.
  *
  * Silent where the badge works: Safari on iOS/iPadOS, and macOS on any browser.
- * Without JS the badge stays a plain link and behaves as it always did.
+ * Without JS the badge stays a plain link and behaves as it always did. The
+ * Google Play badge is left alone: it opens the Play Store app on Android and
+ * the store's web page everywhere else.
  *
  * Message text lives here rather than in the page sources like the rest of the
  * site because the browser name has to be interpolated into it. */
@@ -65,113 +67,113 @@
   var TEXT = {
     en: {
       ios: '{browser} can’t open the App Store. Copy the address below and open it in Safari.',
-      android: 'StitchDuck for Android is coming soon. For now it’s available on iPhone, iPad and Mac.',
-      windows: 'StitchDuck for Windows is coming soon. For now it’s available on iPhone, iPad and Mac.',
-      other: 'StitchDuck is available on iPhone, iPad and Mac — this device can’t install it.',
+      android: 'On Android, get StitchDuck from Google Play. The App Store is for iPhone, iPad and Mac.',
+      windows: 'StitchDuck for Windows is coming soon. For now it’s available on iPhone, iPad, Mac and Android.',
+      other: 'StitchDuck is available on iPhone, iPad, Mac and Android — this device can’t install it.',
       browser: 'This browser', copy: 'Copy', copied: 'Copied',
       hint: 'Press and hold the address to copy it.', dismiss: 'Dismiss'
     },
     zh: {
       ios: '{browser}无法打开 App Store，请复制下面的网址，在 Safari 中打开。',
-      android: '绣鸭 Android 版即将上架，目前有 iPhone、iPad、Mac 版。',
-      windows: '绣鸭 Windows 版即将上架，目前有 iPhone、iPad、Mac 版。',
-      other: '绣鸭目前有 iPhone、iPad、Mac 版，当前设备无法安装。',
+      android: 'Android 设备请到 Google Play 下载绣鸭，App Store 只适用于 iPhone、iPad、Mac。',
+      windows: '绣鸭 Windows 版即将上架，目前有 iPhone、iPad、Mac、Android 版。',
+      other: '绣鸭目前有 iPhone、iPad、Mac、Android 版，当前设备无法安装。',
       browser: '当前浏览器', copy: '复制', copied: '已复制',
       hint: '请长按网址手动复制。', dismiss: '关闭'
     },
     zht: {
       ios: '{browser}無法開啟 App Store，請複製下面的網址，在 Safari 中開啟。',
-      android: 'StitchDuck Android 版即將上架，目前有 iPhone、iPad、Mac 版。',
-      windows: 'StitchDuck Windows 版即將上架，目前有 iPhone、iPad、Mac 版。',
-      other: 'StitchDuck 目前有 iPhone、iPad、Mac 版，目前裝置無法安裝。',
+      android: 'Android 裝置請到 Google Play 下載 StitchDuck，App Store 只適用於 iPhone、iPad、Mac。',
+      windows: 'StitchDuck Windows 版即將上架，目前有 iPhone、iPad、Mac、Android 版。',
+      other: 'StitchDuck 目前有 iPhone、iPad、Mac、Android 版，目前裝置無法安裝。',
       browser: '目前瀏覽器', copy: '複製', copied: '已複製',
       hint: '請長按網址手動複製。', dismiss: '關閉'
     },
     de: {
       ios: '{browser} kann den App Store nicht öffnen. Kopiere die Adresse unten und öffne sie in Safari.',
-      android: 'StitchDuck für Android kommt demnächst. Aktuell gibt es die App für iPhone, iPad und Mac.',
-      windows: 'StitchDuck für Windows kommt demnächst. Aktuell gibt es die App für iPhone, iPad und Mac.',
-      other: 'StitchDuck gibt es für iPhone, iPad und Mac – auf diesem Gerät lässt sich die App nicht installieren.',
+      android: 'Auf Android bekommst du StitchDuck bei Google Play. Der App Store ist für iPhone, iPad und Mac.',
+      windows: 'StitchDuck für Windows kommt demnächst. Aktuell gibt es die App für iPhone, iPad, Mac und Android.',
+      other: 'StitchDuck gibt es für iPhone, iPad, Mac und Android – auf diesem Gerät lässt sich die App nicht installieren.',
       browser: 'Dieser Browser', copy: 'Kopieren', copied: 'Kopiert',
       hint: 'Adresse lange drücken, um sie zu kopieren.', dismiss: 'Schließen'
     },
     es: {
       ios: '{browser} no puede abrir el App Store. Copia la dirección de abajo y ábrela en Safari.',
-      android: 'StitchDuck para Android llegará pronto. Por ahora está disponible en iPhone, iPad y Mac.',
-      windows: 'StitchDuck para Windows llegará pronto. Por ahora está disponible en iPhone, iPad y Mac.',
-      other: 'StitchDuck está disponible en iPhone, iPad y Mac: no se puede instalar en este dispositivo.',
+      android: 'En Android, descarga StitchDuck desde Google Play. El App Store es para iPhone, iPad y Mac.',
+      windows: 'StitchDuck para Windows llegará pronto. Por ahora está disponible en iPhone, iPad, Mac y Android.',
+      other: 'StitchDuck está disponible en iPhone, iPad, Mac y Android: no se puede instalar en este dispositivo.',
       browser: 'Este navegador', copy: 'Copiar', copied: 'Copiado',
       hint: 'Mantén pulsada la dirección para copiarla.', dismiss: 'Cerrar'
     },
     fr: {
       ios: '{browser} ne peut pas ouvrir l’App Store. Copiez l’adresse ci-dessous et ouvrez-la dans Safari.',
-      android: 'StitchDuck pour Android arrive bientôt. Pour l’instant, il est disponible sur iPhone, iPad et Mac.',
-      windows: 'StitchDuck pour Windows arrive bientôt. Pour l’instant, il est disponible sur iPhone, iPad et Mac.',
-      other: 'StitchDuck est disponible sur iPhone, iPad et Mac – cet appareil ne peut pas l’installer.',
+      android: 'Sur Android, téléchargez StitchDuck sur Google Play. L’App Store, c’est pour iPhone, iPad et Mac.',
+      windows: 'StitchDuck pour Windows arrive bientôt. Pour l’instant, il est disponible sur iPhone, iPad, Mac et Android.',
+      other: 'StitchDuck est disponible sur iPhone, iPad, Mac et Android – cet appareil ne peut pas l’installer.',
       browser: 'Ce navigateur', copy: 'Copier', copied: 'Copié',
       hint: 'Faites un appui long sur l’adresse pour la copier.', dismiss: 'Fermer'
     },
     it: {
       ios: '{browser} non riesce ad aprire App Store. Copia l’indirizzo qui sotto e aprilo in Safari.',
-      android: 'StitchDuck per Android arriverà presto. Per ora è disponibile su iPhone, iPad e Mac.',
-      windows: 'StitchDuck per Windows arriverà presto. Per ora è disponibile su iPhone, iPad e Mac.',
-      other: 'StitchDuck è disponibile su iPhone, iPad e Mac: su questo dispositivo non si può installare.',
+      android: 'Su Android, scarica StitchDuck da Google Play. App Store è per iPhone, iPad e Mac.',
+      windows: 'StitchDuck per Windows arriverà presto. Per ora è disponibile su iPhone, iPad, Mac e Android.',
+      other: 'StitchDuck è disponibile su iPhone, iPad, Mac e Android: su questo dispositivo non si può installare.',
       browser: 'Questo browser', copy: 'Copia', copied: 'Copiato',
       hint: 'Tieni premuto l’indirizzo per copiarlo.', dismiss: 'Chiudi'
     },
     ja: {
       ios: '{browser}では App Store を開けません。下のアドレスをコピーして、Safari で開いてください。',
-      android: 'StitchDuck の Android 版は近日公開です。現在は iPhone・iPad・Mac でご利用いただけます。',
-      windows: 'StitchDuck の Windows 版は近日公開です。現在は iPhone・iPad・Mac でご利用いただけます。',
-      other: 'StitchDuck は iPhone・iPad・Mac でご利用いただけます。この端末にはインストールできません。',
+      android: 'Android では Google Play から StitchDuck をダウンロードしてください。App Store は iPhone・iPad・Mac 用です。',
+      windows: 'StitchDuck の Windows 版は近日公開です。現在は iPhone・iPad・Mac・Android でご利用いただけます。',
+      other: 'StitchDuck は iPhone・iPad・Mac・Android でご利用いただけます。この端末にはインストールできません。',
       browser: 'このブラウザ', copy: 'コピー', copied: 'コピー済み',
       hint: 'アドレスを長押ししてコピーしてください。', dismiss: '閉じる'
     },
     ko: {
       ios: '{browser}에서는 App Store를 열 수 없습니다. 아래 주소를 복사해 Safari에서 열어 주세요.',
-      android: 'Android용 StitchDuck은 곧 출시됩니다. 지금은 iPhone, iPad, Mac에서 이용할 수 있습니다.',
-      windows: 'Windows용 StitchDuck은 곧 출시됩니다. 지금은 iPhone, iPad, Mac에서 이용할 수 있습니다.',
-      other: 'StitchDuck은 iPhone, iPad, Mac용 앱이라 이 기기에는 설치할 수 없습니다.',
+      android: 'Android에서는 Google Play에서 StitchDuck을 다운로드하세요. App Store는 iPhone, iPad, Mac용입니다.',
+      windows: 'Windows용 StitchDuck은 곧 출시됩니다. 지금은 iPhone, iPad, Mac, Android에서 이용할 수 있습니다.',
+      other: 'StitchDuck은 iPhone, iPad, Mac, Android용 앱이라 이 기기에는 설치할 수 없습니다.',
       browser: '이 브라우저', copy: '복사', copied: '복사됨',
       hint: '주소를 길게 눌러 복사하세요.', dismiss: '닫기'
     },
     pl: {
       ios: '{browser} nie może otworzyć App Store. Skopiuj poniższy adres i otwórz go w Safari.',
-      android: 'StitchDuck na Androida już wkrótce. Na razie aplikacja jest dostępna na iPhonie, iPadzie i Macu.',
-      windows: 'StitchDuck na Windowsa już wkrótce. Na razie aplikacja jest dostępna na iPhonie, iPadzie i Macu.',
-      other: 'Aplikacja StitchDuck jest dostępna na iPhonie, iPadzie i Macu — na tym urządzeniu nie można jej zainstalować.',
+      android: 'Na Androidzie pobierz aplikację StitchDuck z Google Play. App Store jest dla iPhone’a, iPada i Maca.',
+      windows: 'StitchDuck na Windowsa już wkrótce. Na razie aplikacja jest dostępna na iPhonie, iPadzie, Macu i Androidzie.',
+      other: 'Aplikacja StitchDuck jest dostępna na iPhonie, iPadzie, Macu i Androidzie — na tym urządzeniu nie można jej zainstalować.',
       browser: 'Ta przeglądarka', copy: 'Kopiuj', copied: 'Skopiowano',
       hint: 'Dotknij i przytrzymaj adres, aby go skopiować.', dismiss: 'Zamknij'
     },
     pt: {
       ios: '{browser} não consegue abrir a App Store. Copie o endereço abaixo e abra-o no Safari.',
-      android: 'O StitchDuck para Android chega em breve. Por enquanto, ele está disponível para iPhone, iPad e Mac.',
-      windows: 'O StitchDuck para Windows chega em breve. Por enquanto, ele está disponível para iPhone, iPad e Mac.',
-      other: 'O StitchDuck está disponível para iPhone, iPad e Mac — não é possível instalá-lo neste dispositivo.',
+      android: 'No Android, baixe o StitchDuck no Google Play. A App Store é para iPhone, iPad e Mac.',
+      windows: 'O StitchDuck para Windows chega em breve. Por enquanto, ele está disponível para iPhone, iPad, Mac e Android.',
+      other: 'O StitchDuck está disponível para iPhone, iPad, Mac e Android — não é possível instalá-lo neste dispositivo.',
       browser: 'Este navegador', copy: 'Copiar', copied: 'Copiado',
       hint: 'Toque e segure o endereço para copiá-lo.', dismiss: 'Fechar'
     },
     ru: {
       ios: '{browser} не может открыть App Store. Скопируйте адрес ниже и откройте его в Safari.',
-      android: 'StitchDuck для Android скоро появится. Пока приложение доступно на iPhone, iPad и Mac.',
-      windows: 'StitchDuck для Windows скоро появится. Пока приложение доступно на iPhone, iPad и Mac.',
-      other: 'StitchDuck доступен на iPhone, iPad и Mac — на это устройство установить его нельзя.',
+      android: 'На Android скачайте StitchDuck в Google Play. App Store — для iPhone, iPad и Mac.',
+      windows: 'StitchDuck для Windows скоро появится. Пока приложение доступно на iPhone, iPad, Mac и Android.',
+      other: 'StitchDuck доступен на iPhone, iPad, Mac и Android — на это устройство установить его нельзя.',
       browser: 'Этот браузер', copy: 'Скопировать', copied: 'Скопировано',
       hint: 'Нажмите и удерживайте адрес, чтобы скопировать его.', dismiss: 'Закрыть'
     },
     tr: {
       ios: '{browser} App Store’u açamıyor. Aşağıdaki adresi kopyalayıp Safari’de açın.',
-      android: 'Android için StitchDuck çok yakında geliyor. Şimdilik iPhone, iPad ve Mac’te kullanılabilir.',
-      windows: 'Windows için StitchDuck çok yakında geliyor. Şimdilik iPhone, iPad ve Mac’te kullanılabilir.',
-      other: 'StitchDuck iPhone, iPad ve Mac’te kullanılabilir — bu aygıta yüklenemez.',
+      android: 'Android’de StitchDuck uygulamasını Google Play’den indirin. App Store; iPhone, iPad ve Mac içindir.',
+      windows: 'Windows için StitchDuck çok yakında geliyor. Şimdilik iPhone, iPad, Mac ve Android’de kullanılabilir.',
+      other: 'StitchDuck iPhone, iPad, Mac ve Android’de kullanılabilir — bu aygıta yüklenemez.',
       browser: 'Bu tarayıcı', copy: 'Kopyala', copied: 'Kopyalandı',
       hint: 'Kopyalamak için adresi basılı tutun.', dismiss: 'Kapat'
     },
     uk: {
       ios: '{browser} не може відкрити App Store. Скопіюйте адресу нижче й відкрийте її в Safari.',
-      android: 'StitchDuck для Android з’явиться незабаром. Поки що застосунок доступний на iPhone, iPad і Mac.',
-      windows: 'StitchDuck для Windows з’явиться незабаром. Поки що застосунок доступний на iPhone, iPad і Mac.',
-      other: 'StitchDuck доступний на iPhone, iPad і Mac — на цей пристрій його встановити не можна.',
+      android: 'На Android завантажте StitchDuck із Google Play. App Store — для iPhone, iPad і Mac.',
+      windows: 'StitchDuck для Windows з’явиться незабаром. Поки що застосунок доступний на iPhone, iPad, Mac і Android.',
+      other: 'StitchDuck доступний на iPhone, iPad, Mac і Android — на цей пристрій його встановити не можна.',
       browser: 'Цей браузер', copy: 'Скопіювати', copied: 'Скопійовано',
       hint: 'Натисніть і утримуйте адресу, щоб скопіювати її.', dismiss: 'Закрити'
     }
@@ -183,7 +185,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    var badge = document.querySelector('.store-badge');
+    var badge = document.querySelector('.store-badge[data-store="apple"]');
     var toast = document.getElementById('toast');
     if (!badge || !toast) return;
 

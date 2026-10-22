@@ -12,6 +12,7 @@ and may use these tokens:
 
   {{home}}           root of the current language: /, /zh-hans/, /de/ …
   {{appstore}}       App Store link for the current language
+  {{googleplay}}     Google Play link, the same for every language
   {{shots}}          screenshot folder for the current language
   {{lang_label}}     name of the current language ({{lang_short}}: its short form for phones)
   <!--seo-->         canonical, hreflang, Open Graph and JSON-LD for the page
@@ -42,6 +43,7 @@ from typing import NamedTuple
 
 SITE = 'https://stitchduckapp.com'
 APP_ID = '6797516970'
+PLAY_URL = 'https://play.google.com/store/apps/details?id=com.stitchduckapp.app'
 ROOT = Path(__file__).resolve().parent.parent
 PAGES_DIR = ROOT / '_src' / 'pages'
 PARTIALS_DIR = ROOT / '_src' / 'partials'
@@ -244,9 +246,9 @@ def app_schema(lang, page_html, canonical, description):
         'url': canonical,
         'image': SITE + lang.og_image,
         'applicationCategory': 'DesignApplication',
-        'operatingSystem': 'iOS, iPadOS, macOS',
+        'operatingSystem': 'iOS, iPadOS, macOS, Android',
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
-        'downloadUrl': lang.appstore,
+        'downloadUrl': [lang.appstore, PLAY_URL],
         'inLanguage': APP_LANGUAGES,
         'author': {'@id': org_id},
         'publisher': {'@id': org_id},
@@ -339,7 +341,7 @@ def build_page(src_path, lang, page, invites_install):
     if n != 1:
         raise BuildError(f'{where}: no <html> tag')
 
-    for token, value in (('{{home}}', url(lang, '')), ('{{appstore}}', lang.appstore),
+    for token, value in (('{{home}}', url(lang, '')), ('{{appstore}}', lang.appstore), ('{{googleplay}}', PLAY_URL),
                          ('{{shots}}', lang.shots), ('{{lang_label}}', lang.label), ('{{lang_short}}', lang.short),
                          ('<!--lang-menu-->', lang_links(lang, page, '\n          ')),
                          ('<!--lang-links-->', lang_links(lang, page, ' · '))):
