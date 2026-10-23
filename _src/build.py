@@ -58,8 +58,8 @@ APP_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'it', 'ja', 'ko',
 # ICP_FILING says so instead, and words without a number show as plain text rather than a link.
 # The public security number also wants the badge the filing site hands out, saved as
 # assets/psb-badge.png. lang.js hides the line from visitors whose time zone is outside mainland China.
-ICP_FILING = 'ICP备案申请中'
-PSB_FILING = ''
+ICP_FILING = '粤ICP备2026046477号-3'
+PSB_FILING = '粤公网安备44010602017487号'
 
 
 class Lang(NamedTuple):
