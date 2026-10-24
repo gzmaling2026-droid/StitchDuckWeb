@@ -20,12 +20,14 @@ and may use these tokens:
   <!--lang-links-->  the same links as one line of plain text
   <!--include:x-->   the shared fragment _src/partials/x.html (the header and the footer)
   <!--cn-filing-->   mainland China's filing numbers (ICP_FILING and PSB_FILING below), once they are filled in
+  <!--edition-link--> on the mainland China edition, links to the international site; elsewhere nothing
   {{active:path}}    marks the header link of the page being built ({{current:path}} does it for a menu entry)
 
 Output is one page per language — / for English, which is also the x-default,
 and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /it/, /ja/, /ko/, /pl/, /pt-br/,
-/ru/, /tr/, /uk/ — plus sitemap.xml. The languages and their order follow the
-app. Only the standard library is needed.
+/ru/, /tr/, /uk/ — plus the mainland China edition at /cn/ (CN below) and
+sitemap.xml. The languages and their order follow the app. Only the standard
+library is needed.
 
   python3 _src/build.py           build
   python3 _src/build.py --check   exit 1 if the published files are out of date
@@ -57,7 +59,8 @@ APP_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'it', 'ja', 'ko',
 # 粤公网安备XXXXXXXXXXXXXX号; an empty one doesn't show. Until the ICP number is issued,
 # ICP_FILING says so instead, and words without a number show as plain text rather than a link.
 # The public security number also wants the badge the filing site hands out, saved as
-# assets/psb-badge.png. lang.js hides the line from visitors whose time zone is outside mainland China.
+# assets/psb-badge.png. The mainland China edition always shows the line; on the international pages
+# lang.js hides it from visitors whose time zone is outside mainland China.
 ICP_FILING = '粤ICP备2026046477号-3'
 PSB_FILING = '粤公网安备44010602017487号'
 
@@ -74,6 +77,12 @@ class Lang(NamedTuple):
     appstore: str
     shots: str
     og_image: str
+    region: str = ''  # 'cn' for the mainland China edition, which reuses the Simplified Chinese copy
+
+    @property
+    def id(self):
+        """What names the edition in data-alt-*, data-setlang and the choice lang.js remembers."""
+        return self.region or self.key
 
 
 # Region-less App Store links send visitors in mainland China to the storefront
@@ -102,6 +111,16 @@ LANGS = (
 )
 DEFAULT = LANGS[0]
 KEYS = '|'.join(l.key for l in LANGS)
+
+# The mainland China edition: the Simplified Chinese pages again, at /cn/, for mainland China. lang.js
+# sends visitors there from the English pages when they arrive from elsewhere with a mainland time zone,
+# and anyone can open it or leave it for the international pages. Which edition a page belongs to decides
+# what it shows: only this one shows what the sources mark .mainland-only (Android still to come, no
+# Google Play) and always shows the filing numbers; the international pages show .outside-mainland-only.
+CN = Lang('zh', 'cn/', 'zh-CN', 'zh_CN', '简体中文（中国大陆）', '大陆', '绣鸭 StitchDuck', '绣鸭',
+          f'https://apps.apple.com/cn/app/id{APP_ID}', '/assets/shots/zh-hans', '/assets/og/og-zh-hans.jpg', 'cn')
+# Every edition that gets pages, in menu order.
+EDITIONS = LANGS[:2] + (CN,) + LANGS[2:]
 
 # Page paths below each language root, and whether the page invites an install.
 PAGES = (('', True), ('support/', True), ('privacy/', False), ('fabric-calculator/', True))
@@ -203,11 +222,20 @@ def url(lang, page):
 
 def lang_links(lang, page, separator):
     links = []
-    for l in LANGS:
+    for l in EDITIONS:
         current = ' aria-current="page"' if l is lang else ''
         links.append(f'<a href="{url(l, page)}" lang="{l.tag}" hreflang="{l.tag}" '
-                     f'data-setlang="{l.key}"{current}>{l.label}</a>')
+                     f'data-setlang="{l.id}"{current}>{l.label}</a>')
     return separator.join(links)
+
+
+def edition_link(lang, page):
+    """On the mainland China edition, the way out to the same page on the international site."""
+    if lang is not CN:
+        return ''
+    zh = next(l for l in LANGS if l.key == CN.key)
+    return (f'<p class="footer-edition"><a href="{url(zh, page)}" data-setlang="{zh.id}">国际版</a>'
+            f' · <a href="{url(DEFAULT, page)}" lang="{DEFAULT.tag}" data-setlang="{DEFAULT.id}">International site</a></p>')
 
 
 def filing_line():
@@ -246,9 +274,10 @@ def app_schema(lang, page_html, canonical, description):
         'url': canonical,
         'image': SITE + lang.og_image,
         'applicationCategory': 'DesignApplication',
-        'operatingSystem': 'iOS, iPadOS, macOS, Android',
+        # Google Play can't be reached from mainland China, which gets an Android release of its own later.
+        'operatingSystem': 'iOS, iPadOS, macOS' if lang.region == 'cn' else 'iOS, iPadOS, macOS, Android',
         'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'USD'},
-        'downloadUrl': [lang.appstore, PLAY_URL],
+        'downloadUrl': [lang.appstore] if lang.region == 'cn' else [lang.appstore, PLAY_URL],
         'inLanguage': APP_LANGUAGES,
         'author': {'@id': org_id},
         'publisher': {'@id': org_id},
@@ -291,7 +320,7 @@ def seo_block(lang, page, invites_install, page_html, where):
     esc = lambda s: html.escape(s, quote=True)
 
     lines = [f'<link rel="canonical" href="{canonical}">']
-    lines += [f'<link rel="alternate" hreflang="{l.tag}" href="{SITE}{url(l, page)}">' for l in LANGS]
+    lines += [f'<link rel="alternate" hreflang="{l.tag}" href="{SITE}{url(l, page)}">' for l in EDITIONS]
     lines += [f'<link rel="alternate" hreflang="x-default" href="{SITE}{url(DEFAULT, page)}">']
     lines += [
         '<meta property="og:type" content="website">',
@@ -304,7 +333,8 @@ def seo_block(lang, page, invites_install, page_html, where):
         '<meta property="og:image:height" content="630">',
         f'<meta property="og:locale" content="{lang.og_locale}">',
     ]
-    lines += [f'<meta property="og:locale:alternate" content="{l.og_locale}">' for l in LANGS if l is not lang]
+    lines += [f'<meta property="og:locale:alternate" content="{locale}">'
+              for locale in dict.fromkeys(l.og_locale for l in EDITIONS) if locale != lang.og_locale]
     lines += ['<meta name="twitter:card" content="summary_large_image">']
     if invites_install:
         lines += [f'<meta name="apple-itunes-app" content="app-id={APP_ID}">']
@@ -326,7 +356,7 @@ def asset_version(m):
 
 
 def build_page(src_path, lang, page, invites_install):
-    where = f'{src_path.relative_to(ROOT)} [{lang.key}]'
+    where = f'{src_path.relative_to(ROOT)} [{lang.id}]'
     src = INCLUDE.sub(lambda m: (PARTIALS_DIR / f'{m.group(1)}.html').read_text(encoding='utf-8').rstrip('\n'),
                       src_path.read_text(encoding='utf-8'))
     out = pick_attrs(pick_text(src, lang.key, where), lang.key, where)
@@ -334,9 +364,11 @@ def build_page(src_path, lang, page, invites_install):
     out = CURRENT.sub(lambda m: ' aria-current="page"' if m.group(1) == page else '', out)
 
     html_tag = f'<html lang="{lang.tag}" data-lang="{lang.key}"'
+    if lang.region == 'cn':
+        html_tag += ' class="mainland-edition"'
     if lang is DEFAULT:
-        # lang.js sends a visitor whose browser or earlier choice asks for another language to these.
-        html_tag += ''.join(f' data-alt-{l.key}="{url(l, page)}"' for l in LANGS if l is not lang)
+        # lang.js sends a visitor whose time zone, browser or earlier choice asks for another edition to these.
+        html_tag += ''.join(f' data-alt-{l.id}="{url(l, page)}"' for l in EDITIONS if l is not lang)
     out, n = re.subn(r'<html\b[^>]*>', html_tag + '>', out, count=1)
     if n != 1:
         raise BuildError(f'{where}: no <html> tag')
@@ -346,16 +378,16 @@ def build_page(src_path, lang, page, invites_install):
                          ('<!--lang-menu-->', lang_links(lang, page, '\n          ')),
                          ('<!--lang-links-->', lang_links(lang, page, ' · '))):
         out = out.replace(token, value)
-    # The token has a line of its own, which goes altogether while there is nothing to show.
-    filing = filing_line()
-    out = re.sub(r'(?m)^([ \t]*)<!--cn-filing-->\n', lambda m: m.group(1) + filing + '\n' if filing else '', out)
+    # Each token has a line of its own, which goes altogether while there is nothing to show.
+    for token, value in (('<!--cn-filing-->', filing_line()), ('<!--edition-link-->', edition_link(lang, page))):
+        out = re.sub(rf'(?m)^([ \t]*){re.escape(token)}\n', lambda m: m.group(1) + value + '\n' if value else '', out)
     out = out.replace('<!--seo-->', seo_block(lang, page, invites_install, out, where))
     out = re.sub(r'(/assets/[\w./-]+\.(?:css|js))(?=")', asset_version, out)
 
     banner = f'<!-- Generated from {src_path.relative_to(ROOT)} by _src/build.py. Edit the source, then rebuild. -->'
     out = out.replace('<!DOCTYPE html>\n', f'<!DOCTYPE html>\n{banner}\n', 1)
 
-    left = re.search(rf'{{{{|<!--(?:seo|lang-|cn-filing)|\bl-(?:{KEYS})"|\sdata-(?:{KEYS})-', out)
+    left = re.search(rf'{{{{|<!--(?:seo|lang-|cn-filing|edition-link)|\bl-(?:{KEYS})"|\sdata-(?:{KEYS})-', out)
     if left:
         raise BuildError(f'{where}: unresolved "{left.group(0)}" in the output')
     return out
@@ -380,10 +412,10 @@ def build_sitemap():
              'xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for page, _ in PAGES:
         modified = last_modified(PAGES_DIR / page / 'index.html')
-        for lang in LANGS:
+        for lang in EDITIONS:
             lines.append('  <url>')
             lines.append(f'    <loc>{SITE}{url(lang, page)}</loc>')
-            for l in LANGS:
+            for l in EDITIONS:
                 lines.append(f'    <xhtml:link rel="alternate" hreflang="{l.tag}" href="{SITE}{url(l, page)}"/>')
             lines.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{url(DEFAULT, page)}"/>')
             lines.append(f'    <lastmod>{modified}</lastmod>')
@@ -397,7 +429,7 @@ def main():
     outputs = {}
     for page, invites_install in PAGES:
         src_path = PAGES_DIR / page / 'index.html'
-        for lang in LANGS:
+        for lang in EDITIONS:
             outputs[ROOT / lang.prefix / page / 'index.html'] = build_page(src_path, lang, page, invites_install)
     outputs[ROOT / 'sitemap.xml'] = build_sitemap()
 

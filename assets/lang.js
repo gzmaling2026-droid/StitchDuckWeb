@@ -1,15 +1,17 @@
 /* Header menus. Every language has its own URL — / for English, then
  * /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /it/, /ja/, /ko/, /pl/, /pt-br/, /ru/,
- * /tr/ and /uk/ — and the menu entries are ordinary links between them. The English URLs double as the default: a
- * visitor arriving at one from elsewhere is sent on to the same page in the
- * first of their browser's languages that the site has, Chinese being
- * Traditional for Taiwan, Hong Kong and Macau and Simplified otherwise, and
- * any Portuguese getting the site's Brazilian Portuguese. A
- * language picked from the menu is remembered and wins over the browser from
- * then on. Any other URL is always shown as asked for, and so is an English
- * one reached from within the site, so picking English sticks even where
- * nothing can be remembered. Loaded synchronously in <head> so that hop
- * happens before anything paints. Without JS the popover stays shut and the
+ * /tr/ and /uk/ — and so does the mainland China edition, /cn/; the menu
+ * entries are ordinary links between them. The English URLs double as the
+ * default: a visitor arriving at one from elsewhere is sent on to the same page
+ * on the mainland China edition if their time zone is mainland China's, and
+ * otherwise in the first of their browser's languages that the site has,
+ * Chinese being Traditional for Taiwan, Hong Kong and Macau and Simplified
+ * otherwise, and any Portuguese getting the site's Brazilian Portuguese. A
+ * language or edition picked from the menu or the footer is remembered and
+ * wins over both from then on. Any other URL is always shown as asked for, and
+ * so is an English one reached from within the site, so picking English sticks
+ * even where nothing can be remembered. Loaded synchronously in <head> so that
+ * hop happens before anything paints. Without JS the popover stays shut and the
  * footer links do the same job. */
 (function () {
   var KEY = 'sd-lang';
@@ -38,9 +40,16 @@
     return null;
   }
 
+  // Whether the visitor is in mainland China, going by the browser's time zone, which tells without
+  // sending the visitor's IP anywhere and before anything paints; null when there is no time zone to
+  // go by. Hong Kong, Macau and Taiwan have zones of their own.
+  var zone = null;
+  try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
+  var mainland = zone ? /^(Asia\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Kashgar)|PRC)$/.test(zone) : null;
+
   if (root.getAttribute('data-lang') === 'en') {
     var want = /^[a-z]{2,3}$/.test(saved || '') ? saved : null;
-    if (!want && document.referrer.indexOf(location.origin + '/') !== 0) want = browserLang();
+    if (!want && document.referrer.indexOf(location.origin + '/') !== 0) want = mainland ? 'cn' : browserLang();
     // Only ever a path the page itself lists; an unknown value finds nothing.
     var to = want && want !== 'en' && root.getAttribute('data-alt-' + want);
     if (to) {
@@ -49,21 +58,14 @@
     }
   }
 
-  // Two things differ for visitors in mainland China: the footer carries the filing numbers required
-  // there (ICP_FILING in _src/build.py), and Android shows as still to come rather than as a Google
-  // Play badge, since Google Play can't be reached there and the app gets a mainland release of its
-  // own later. Everyone else gets .outside-mainland-china, going by the browser's time zone, which
-  // tells without sending the visitor's IP anywhere and before anything paints. Hong Kong, Macau and
-  // Taiwan have zones of their own. With no time zone to go by, or without JS, a visitor gets the
-  // mainland version.
-  var zone = null;
-  try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) {}
-  if (zone && !/^(Asia\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Kashgar)|PRC)$/.test(zone)) {
-    root.classList.add('outside-mainland-china');
-  }
+  // The international pages carry mainland China's filing numbers too (ICP_FILING in _src/build.py),
+  // for visitors there who chose them or arrived at one other than the English ones. Everyone else
+  // gets .outside-mainland-china, which hides the numbers; with no time zone to go by, or without JS,
+  // they show. The mainland China edition always shows them.
+  if (mainland === false) root.classList.add('outside-mainland-china');
 
   document.addEventListener('DOMContentLoaded', function () {
-    // Remember an explicit choice, whether it came from the menu or the footer.
+    // Remember an explicit choice of language or edition, whether it came from the menu or the footer.
     var links = document.querySelectorAll('a[data-setlang]');
     for (var i = 0; i < links.length; i++) {
       links[i].addEventListener('click', function () {

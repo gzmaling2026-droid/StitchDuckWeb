@@ -182,10 +182,10 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
    rather than inside one (Chinese would otherwise split 通用 as 通 / 用). */
 .hero-note .seg { white-space: nowrap; }
 /* Google Play can't be reached from mainland China, which gets an Android release of its own
-   later. lang.js marks every other time zone with .outside-mainland-china before anything
-   paints; without it (in mainland China, or with no time zone or no JS to go by) the page
-   shows Android as still to come instead of the Google Play badge. */
-.outside-mainland-china .mainland-only, html:not(.outside-mainland-china) .outside-mainland-only { display: none; }
+   later. The mainland China edition (/cn/, marked .mainland-edition by _src/build.py) shows
+   Android as still to come instead of the Google Play badge; the international pages show the
+   badge to everyone, wherever they are. */
+html:not(.mainland-edition) .mainland-only, .mainland-edition .outside-mainland-only { display: none; }
 /* The store badges plus the platforms still to come, on one row where they fit. */
 .platforms { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 10px; }
 .store-soon {
@@ -198,18 +198,18 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
 .store-soon .big { display: block; font-size: 18px; font-weight: 600; line-height: 1.25; }
 /* Too narrow for one row: every button gets a row to itself (two badges side by side
    don't fit a phone in every language; Korean's "Google Play에서" is the widest),
-   except that in mainland China the two platforms still to come share one, so
+   except that on the mainland China edition the two platforms still to come share one, so
    neither is left dangling on its own. */
 @media (max-width: 640px) {
   .platforms { display: grid; grid-template-columns: 1fr 1fr; max-width: 340px; margin: 0 auto; }
   .store-badge, .store-soon { grid-column: 1 / -1; justify-content: center; }
-  html:not(.outside-mainland-china) .store-soon { grid-column: auto; min-width: 0; padding: 9px 10px 11px; gap: 9px; }
+  .mainland-edition .store-soon { grid-column: auto; min-width: 0; padding: 9px 10px 11px; gap: 9px; }
 }
 @media (max-width: 360px) {
-  html:not(.outside-mainland-china) .store-soon { padding: 9px 6px 11px; gap: 7px; }
-  html:not(.outside-mainland-china) .store-soon svg { width: 18px; height: 18px; }
-  html:not(.outside-mainland-china) .store-soon .small { font-size: 10.5px; }
-  html:not(.outside-mainland-china) .store-soon .big { font-size: 17px; }
+  .mainland-edition .store-soon { padding: 9px 6px 11px; gap: 7px; }
+  .mainland-edition .store-soon svg { width: 18px; height: 18px; }
+  .mainland-edition .store-soon .small { font-size: 10.5px; }
+  .mainland-edition .store-soon .big { font-size: 17px; }
 }
 /* ---------- Download toast ---------- */
 /* Filled in and shown by platform.js when the App Store badge can't get
@@ -413,11 +413,14 @@ body:is(:lang(ru), :lang(uk)) { font-family: 'Work Sans', -apple-system, BlinkMa
 .site-footer a:hover { color: var(--accent-text); text-decoration: underline; }
 .footer-langs a[aria-current] { color: var(--accent-text); }
 .footer-legal { max-width: 760px; margin: 14px auto 0; font-size: 11.5px; line-height: 1.65; opacity: .85; }
-/* Mainland China's filing numbers (ICP_FILING in _src/build.py), which lang.js hides from visitors elsewhere. */
+/* Mainland China's filing numbers (ICP_FILING in _src/build.py): always on the mainland China edition;
+   on the international pages lang.js hides them from visitors whose time zone is elsewhere. */
 .footer-filing { margin-top: 10px; font-size: 12px; }
 .footer-filing a { white-space: nowrap; }
 .footer-filing img { height: 16px; width: auto; margin-right: 4px; vertical-align: -3px; }
-.outside-mainland-china .footer-filing { display: none; }
+.outside-mainland-china:not(.mainland-edition) .footer-filing { display: none; }
+/* The mainland China edition's way out to the international site (edition_link in _src/build.py). */
+.footer-edition { margin-top: 10px; }
 
 @media (max-width: 560px) {
   .header-inner { gap: 8px; }

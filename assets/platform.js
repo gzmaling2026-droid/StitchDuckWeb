@@ -11,9 +11,9 @@
  * Silent where the badge works: Safari on iOS/iPadOS, and macOS on any browser.
  * Without JS the badge stays a plain link and behaves as it always did. The
  * Google Play badge is left alone: it opens the Play Store app on Android and
- * the store's web page everywhere else. In mainland China, where Google Play
- * can't be reached, the page shows Android as still to come instead, and the
- * messages say the same (the *Mainland entries).
+ * the store's web page everywhere else. The mainland China edition (/cn/), for
+ * where Google Play can't be reached, shows Android as still to come instead,
+ * and the messages say the same (the *Mainland entries).
  *
  * Message text lives here rather than in the page sources like the rest of the
  * site because the browser name has to be interpolated into it. */
@@ -66,8 +66,8 @@
            : 'other';
 
   // {browser} is the app or browser the page is open in, or the "browser" entry when it isn't known.
-  // The *Mainland entries are for mainland China, where Google Play can't be reached and Android
-  // is still to come.
+  // The *Mainland entries are for the mainland China edition, where Google Play can't be reached and
+  // Android is still to come.
   var TEXT = {
     en: {
       ios: '{browser} can’t open the App Store. Copy the address below and open it in Safari.',
@@ -275,8 +275,8 @@
     function show() {
       var l = lang(), t = TEXT[l];
       var browser = named ? (named[l] || named.en) : t.browser;
-      // Read at tap time: lang.js has set the class long before, and it can't change after.
-      var mainland = !document.documentElement.classList.contains('outside-mainland-china');
+      // _src/build.py marks the mainland China edition's pages.
+      var mainland = document.documentElement.classList.contains('mainland-edition');
       msgEl.textContent = t[kind !== 'ios' && mainland ? kind + 'Mainland' : kind].replace('{browser}', browser);
       copyBtn.textContent = t.copy;
       closeBtn.setAttribute('aria-label', t.dismiss);
