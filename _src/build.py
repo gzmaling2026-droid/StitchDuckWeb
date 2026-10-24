@@ -10,7 +10,7 @@ A piece of copy that lacks a language stops the build.
 
 and may use these tokens:
 
-  {{home}}           root of the current language: /, /zh-hans/, /de/ …
+  {{home}}           root of the current language: /intl/, /intl/zh-hans/, /cn/ …
   {{appstore}}       App Store link for the current language
   {{googleplay}}     Google Play link, the same for every language
   {{shots}}          screenshot folder for the current language
@@ -19,15 +19,21 @@ and may use these tokens:
   <!--lang-menu-->   links to the same page in every language
   <!--lang-links-->  the same links as one line of plain text
   <!--include:x-->   the shared fragment _src/partials/x.html (the header and the footer)
-  <!--cn-filing-->   mainland China's filing numbers (ICP_FILING and PSB_FILING below), once they are filled in
+  <!--cn-filing-->   on the mainland China edition, its filing numbers (ICP_FILING and PSB_FILING below); elsewhere nothing
   <!--edition-link--> on the mainland China edition, links to the international site; elsewhere nothing
   {{active:path}}    marks the header link of the page being built ({{current:path}} does it for a menu entry)
 
-Output is one page per language — / for English, which is also the x-default,
-and /zh-hans/, /zh-hant/, /de/, /es/, /fr/, /it/, /ja/, /ko/, /pl/, /pt-br/,
-/ru/, /tr/, /uk/ — plus the mainland China edition at /cn/ (CN below) and
-sitemap.xml. The languages and their order follow the app. Only the standard
-library is needed.
+Output comes in two editions. The international one has a page per language
+under /intl/ — /intl/ for English, which is also the x-default, then
+/intl/zh-hans/, /intl/zh-hant/, /intl/de/, /intl/es/, /intl/fr/, /intl/it/,
+/intl/ja/, /intl/ko/, /intl/pl/, /intl/pt-br/, /intl/ru/, /intl/tr/, /intl/uk/ —
+and the mainland China one (CN below) is Simplified Chinese at /cn/. The
+addresses the international pages had before they moved under /intl/ (/,
+/zh-hans/, /de/ …) are entry pages: / is what people type, and the rest are in
+links, bookmarks and the app stores. Each serves the international page it
+stands for, so it still reads right without JS, and lang.js sends the visitor
+on to their edition. Plus sitemap.xml. The languages and their order follow the
+app. Only the standard library is needed.
 
   python3 _src/build.py           build
   python3 _src/build.py --check   exit 1 if the published files are out of date
@@ -59,15 +65,14 @@ APP_LANGUAGES = ['en', 'zh-Hans', 'zh-Hant', 'de', 'es', 'fr', 'it', 'ja', 'ko',
 # 粤公网安备XXXXXXXXXXXXXX号; an empty one doesn't show. Until the ICP number is issued,
 # ICP_FILING says so instead, and words without a number show as plain text rather than a link.
 # The public security number also wants the badge the filing site hands out, saved as
-# assets/psb-badge.png. The mainland China edition always shows the line; on the international pages
-# lang.js hides it from visitors whose time zone is outside mainland China.
+# assets/psb-badge.png. Only the mainland China edition shows the line.
 ICP_FILING = '粤ICP备2026046477号-3'
 PSB_FILING = '粤公网安备44010602017487号'
 
 
 class Lang(NamedTuple):
     key: str        # l-<key> classes and data-<key>-* attributes in the sources
-    prefix: str     # URL prefix below the site root
+    prefix: str     # URL prefix below the edition's root, /intl/ or /cn/
     tag: str        # <html lang> and hreflang
     og_locale: str
     label: str
@@ -77,12 +82,12 @@ class Lang(NamedTuple):
     appstore: str
     shots: str
     og_image: str
-    region: str = ''  # 'cn' for the mainland China edition, which reuses the Simplified Chinese copy
+    region: str = 'intl'  # the edition: 'intl', or 'cn' for mainland China, which reuses the Simplified Chinese copy
 
     @property
     def id(self):
-        """What names the edition in data-alt-*, data-setlang and the choice lang.js remembers."""
-        return self.region or self.key
+        """What names the language, or the mainland China edition, in data-alt-*, data-setlang and lang.js."""
+        return self.key if self.region == 'intl' else self.region
 
 
 # Region-less App Store links send visitors in mainland China to the storefront
@@ -112,12 +117,11 @@ LANGS = (
 DEFAULT = LANGS[0]
 KEYS = '|'.join(l.key for l in LANGS)
 
-# The mainland China edition: the Simplified Chinese pages again, at /cn/, for mainland China. lang.js
-# sends visitors there from the English pages when they arrive from elsewhere with a mainland time zone,
-# and anyone can open it or leave it for the international pages. Which edition a page belongs to decides
-# what it shows: only this one shows what the sources mark .mainland-only (Android still to come, no
-# Google Play) and always shows the filing numbers; the international pages show .outside-mainland-only.
-CN = Lang('zh', 'cn/', 'zh-CN', 'zh_CN', '简体中文（中国大陆）', '大陆', '绣鸭 StitchDuck', '绣鸭',
+# The mainland China edition: the Simplified Chinese pages again, at /cn/. Which edition a page belongs
+# to decides what it shows: only this one shows what the sources mark .mainland-only (Android still to
+# come, no Google Play) and the filing numbers; the international pages show .outside-mainland-only.
+# Anyone can open either; the entry pages pick one for the visitor by time zone.
+CN = Lang('zh', '', 'zh-CN', 'zh_CN', '简体中文（中国大陆）', '大陆', '绣鸭 StitchDuck', '绣鸭',
           f'https://apps.apple.com/cn/app/id{APP_ID}', '/assets/shots/zh-hans', '/assets/og/og-zh-hans.jpg', 'cn')
 # Every edition that gets pages, in menu order.
 EDITIONS = LANGS[:2] + (CN,) + LANGS[2:]
@@ -217,6 +221,11 @@ def pick_attrs(src, key, where):
 # ---------- generated fragments ----------
 
 def url(lang, page):
+    return f'/{lang.region}/{lang.prefix}{page}'
+
+
+def entry_url(lang, page):
+    """Where an international page was before the editions (2026-10-24), now its entry page."""
     return f'/{lang.prefix}{page}'
 
 
@@ -310,18 +319,20 @@ def faq_schema(lang, page_html):
     }
 
 
-def seo_block(lang, page, invites_install, page_html, where):
+def seo_block(lang, page, invites_install, page_html, where, entry):
     title = re.search(r'<title>(.*?)</title>', page_html, re.S)
     desc = re.search(r'<meta name="description" content="([^"]*)"', page_html)
     if not title or not desc:
         raise BuildError(f'{where}: needs a <title> and a meta description')
     title, desc = text_of(title.group(1)), html.unescape(desc.group(1))
+    # An entry page names the page it stands for as the canonical one and leaves the alternates to it.
     canonical = SITE + url(lang, page)
     esc = lambda s: html.escape(s, quote=True)
 
     lines = [f'<link rel="canonical" href="{canonical}">']
-    lines += [f'<link rel="alternate" hreflang="{l.tag}" href="{SITE}{url(l, page)}">' for l in EDITIONS]
-    lines += [f'<link rel="alternate" hreflang="x-default" href="{SITE}{url(DEFAULT, page)}">']
+    if not entry:
+        lines += [f'<link rel="alternate" hreflang="{l.tag}" href="{SITE}{url(l, page)}">' for l in EDITIONS]
+        lines += [f'<link rel="alternate" hreflang="x-default" href="{SITE}{url(DEFAULT, page)}">']
     lines += [
         '<meta property="og:type" content="website">',
         f'<meta property="og:site_name" content="{esc(lang.site_name)}">',
@@ -355,8 +366,8 @@ def asset_version(m):
     return f'{m.group(1)}?v={hashlib.sha1(path.read_bytes()).hexdigest()[:8]}'
 
 
-def build_page(src_path, lang, page, invites_install):
-    where = f'{src_path.relative_to(ROOT)} [{lang.id}]'
+def build_page(src_path, lang, page, invites_install, entry=False):
+    where = f'{src_path.relative_to(ROOT)} [{lang.id}{" entry" if entry else ""}]'
     src = INCLUDE.sub(lambda m: (PARTIALS_DIR / f'{m.group(1)}.html').read_text(encoding='utf-8').rstrip('\n'),
                       src_path.read_text(encoding='utf-8'))
     out = pick_attrs(pick_text(src, lang.key, where), lang.key, where)
@@ -366,9 +377,19 @@ def build_page(src_path, lang, page, invites_install):
     html_tag = f'<html lang="{lang.tag}" data-lang="{lang.key}"'
     if lang.region == 'cn':
         html_tag += ' class="mainland-edition"'
-    if lang is DEFAULT:
-        # lang.js sends a visitor whose time zone, browser or earlier choice asks for another edition to these.
-        html_tag += ''.join(f' data-alt-{l.id}="{url(l, page)}"' for l in EDITIONS if l is not lang)
+    if entry:
+        # lang.js always sends the visitor on from an entry page: to the mainland China edition (data-cn)
+        # when their earlier choice or else their time zone says so, otherwise to the international page in
+        # the language the address names or, for the English addresses, the visitor's own. Only the English
+        # and Simplified Chinese addresses offer the mainland China edition: they are where people in
+        # mainland China used to land.
+        html_tag += f' data-entry="{lang.id}"'
+        if lang.key in (DEFAULT.key, CN.key):
+            html_tag += f' data-cn="{url(CN, page)}"'
+        html_tag += ''.join(f' data-alt-{l.id}="{url(l, page)}"' for l in (LANGS if lang is DEFAULT else (lang,)))
+    elif lang is DEFAULT:
+        # lang.js sends a visitor whose browser or earlier choice asks for another language to these.
+        html_tag += ''.join(f' data-alt-{l.id}="{url(l, page)}"' for l in LANGS if l is not lang)
     out, n = re.subn(r'<html\b[^>]*>', html_tag + '>', out, count=1)
     if n != 1:
         raise BuildError(f'{where}: no <html> tag')
@@ -379,9 +400,10 @@ def build_page(src_path, lang, page, invites_install):
                          ('<!--lang-links-->', lang_links(lang, page, ' · '))):
         out = out.replace(token, value)
     # Each token has a line of its own, which goes altogether while there is nothing to show.
-    for token, value in (('<!--cn-filing-->', filing_line()), ('<!--edition-link-->', edition_link(lang, page))):
+    for token, value in (('<!--cn-filing-->', filing_line() if lang.region == 'cn' else ''),
+                         ('<!--edition-link-->', edition_link(lang, page))):
         out = re.sub(rf'(?m)^([ \t]*){re.escape(token)}\n', lambda m: m.group(1) + value + '\n' if value else '', out)
-    out = out.replace('<!--seo-->', seo_block(lang, page, invites_install, out, where))
+    out = out.replace('<!--seo-->', seo_block(lang, page, invites_install, out, where, entry))
     out = re.sub(r'(/assets/[\w./-]+\.(?:css|js))(?=")', asset_version, out)
 
     banner = f'<!-- Generated from {src_path.relative_to(ROOT)} by _src/build.py. Edit the source, then rebuild. -->'
@@ -430,7 +452,10 @@ def main():
     for page, invites_install in PAGES:
         src_path = PAGES_DIR / page / 'index.html'
         for lang in EDITIONS:
-            outputs[ROOT / lang.prefix / page / 'index.html'] = build_page(src_path, lang, page, invites_install)
+            outputs[ROOT / url(lang, page).lstrip('/') / 'index.html'] = build_page(src_path, lang, page, invites_install)
+        for lang in LANGS:
+            outputs[ROOT / entry_url(lang, page).lstrip('/') / 'index.html'] = build_page(
+                src_path, lang, page, invites_install, entry=True)
     outputs[ROOT / 'sitemap.xml'] = build_sitemap()
 
     stale = [p for p, text in outputs.items()

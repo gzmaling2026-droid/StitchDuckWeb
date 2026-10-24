@@ -1,1203 +1,1203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stitchduckapp.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hans/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hans/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://stitchduckapp.com/cn/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hant/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/de/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/it/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ja/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ko/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pl/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pt-br/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/tr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/uk/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/"/>
+    <loc>https://stitchduckapp.com/intl/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hans/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hans/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://stitchduckapp.com/cn/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hant/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hant/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/de/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/de/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/es/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/es/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/fr/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/it/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/it/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ja/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/ja/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ko/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/ko/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pl/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/pl/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pt-br/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/pt-br/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ru/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/ru/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/tr/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/tr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/uk/support/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/support/"/>
+    <loc>https://stitchduckapp.com/intl/uk/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/support/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/support/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/support/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/support/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/support/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/support/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/support/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/support/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/support/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/support/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/support/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/support/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/support/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hans/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hans/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://stitchduckapp.com/cn/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hant/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hant/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/de/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/de/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/es/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/es/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/fr/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/it/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/it/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ja/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/ja/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ko/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/ko/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pl/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/pl/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pt-br/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/pt-br/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ru/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/ru/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/tr/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/tr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/uk/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/privacy/"/>
+    <loc>https://stitchduckapp.com/intl/uk/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/privacy/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/privacy/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hans/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hans/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://stitchduckapp.com/cn/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/zh-hant/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/zh-hant/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/de/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/de/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/es/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/es/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/fr/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/fr/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/it/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/it/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ja/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/ja/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ko/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/ko/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pl/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/pl/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/pt-br/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/pt-br/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/ru/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/ru/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/tr/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/tr/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://stitchduckapp.com/uk/fabric-calculator/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/zh-hans/fabric-calculator/"/>
+    <loc>https://stitchduckapp.com/intl/uk/fabric-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stitchduckapp.com/intl/zh-hans/fabric-calculator/"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://stitchduckapp.com/cn/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/zh-hant/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/de/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/es/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/fr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/it/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/ja/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/ko/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/pl/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/pt-br/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/ru/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/tr/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/uk/fabric-calculator/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stitchduckapp.com/intl/zh-hant/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://stitchduckapp.com/intl/de/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://stitchduckapp.com/intl/es/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stitchduckapp.com/intl/fr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://stitchduckapp.com/intl/it/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stitchduckapp.com/intl/ja/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stitchduckapp.com/intl/ko/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stitchduckapp.com/intl/pl/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://stitchduckapp.com/intl/pt-br/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://stitchduckapp.com/intl/ru/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://stitchduckapp.com/intl/tr/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stitchduckapp.com/intl/uk/fabric-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stitchduckapp.com/intl/fabric-calculator/"/>
     <lastmod>2026-10-24</lastmod>
   </url>
 </urlset>
